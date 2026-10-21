@@ -33,7 +33,7 @@ CATEGORIES = {
     "quan_dai": ["quần dài", "quần kaki", "quần chino", "quần vải", "quần ống rộng",
                  "quần ống suông", "quần culottes", "pants", "trousers"],
     "quan_au": ["quần âu", "quần tây", "quần công sở", "quần vest", "quần vải âu"],
-    "quan_jogger": ["quần jogger", "jogger", "joggers", "quần nỉ", "quần thể thao",
+    "quan_jogger": ["quần jogger", "jogger", "joggers", "quần nỉ",
                     "quần bo gấu", "quần bo ống", "quần ống bo", "quần thun dài"],
     "quan_short": ["quần short", "quần shorts", "short", "shorts", "quần sooc", "quần soóc",
                    "quần sọt", "quần đùi", "quần ngắn", "quần cộc"],
@@ -142,9 +142,10 @@ OCCASIONS = {
     "đi làm": (["đi làm", "công sở", "văn phòng", "đi phỏng vấn", "phỏng vấn", "đi họp",
                 "lịch sự", "thanh lịch"],
                ["ao_so_mi", "ao_blazer", "ao_kieu", "ao_polo", "quan_au"]),
+    # no category list: sportswear is a property of the product (see SPORTSWEAR_OCCASION)
     "tập thể thao": (["đi tập", "tập gym", "gym", "chạy bộ", "tập thể dục", "thể thao", "yoga",
                       "đá bóng", "đi bộ"],
-                     ["quan_legging", "quan_jogger", "quan_short", "ao_phong", "ao_hoodie"]),
+                     []),
     "đi biển / trời nóng": (["đi biển", "đi chơi biển", "du lịch biển", "mùa hè", "trời nóng",
                              "nóng", "thoáng mát", "mát mẻ"],
                             ["ao_phong", "ao_hai_day", "quan_short", "ao_so_mi"]),
@@ -161,6 +162,9 @@ OCCASIONS = {
     "trời mưa / gió": (["đi mưa", "trời mưa", "mưa", "chống nước", "chống gió"],
                        ["ao_khoac"]),
 }
+# "áo thể thao" means sportswear of any kind (sports tops, sports jackets...), not every
+# T-shirt or hoodie: this occasion becomes the `sportswear` filter of ProductRepository
+SPORTSWEAR_OCCASION = "tập thể thao"
 
 SORTS = {
     "price_asc": ["rẻ nhất", "giá rẻ nhất", "giá thấp nhất", "rẻ", "giá rẻ", "rẻ rẻ",

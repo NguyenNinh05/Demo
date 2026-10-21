@@ -136,6 +136,7 @@ class RuleParser:
                  "categories": [], "genders": [], "colors": [], "materials": [],
                  "patterns": [], "brands": [], "features": [], "occasions": [],
                  "min_price": None, "max_price": None, "sort": None, "in_stock": False,
+                 "sportswear": False,
                  "keywords": [], "unsupported": [], "understood": notes, "parser": "rule"}
 
         # 3. order intent
@@ -406,6 +407,7 @@ class RuleParser:
         q["understood"].append({"kind": kind, "text": span, "label": label, "value": value})
 
     def _post_process(self, q):
+        q["sportswear"] = L.SPORTSWEAR_OCCASION in q["occasions"]
         # occasion -> categories (intersect with the explicit ones when possible)
         occ_cats = []
         for occ in q["occasions"]:

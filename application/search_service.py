@@ -24,7 +24,7 @@ import numpy as np
 from shared.vietnamese import search_terms, strip_accents
 
 FILTER_KEYS = ("categories", "genders", "colors", "materials", "patterns",
-               "min_price", "max_price", "in_stock")
+               "min_price", "max_price", "in_stock", "sportswear")
 
 
 class SearchService:

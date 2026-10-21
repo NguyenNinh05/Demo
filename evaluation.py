@@ -50,6 +50,9 @@ TEST_SET = [
     ("Text", "áo len nam màu xám", {"cat": ["ao_len"], "gender": "nam", "color": ["xám"]}),
     ("Text", "cardigan", {"cat": ["ao_cardigan"]}),
     ("Text", "quần legging tập gym", {"cat": ["quan_legging"]}),
+    ("Text", "áo thể thao", {"cat": ["ao"], "sport": True}),
+    ("Text", "áo khoác thể thao", {"cat": ["ao_khoac"], "sport": True}),
+    ("Text", "quần thể thao nam", {"cat": ["quan"], "gender": "nam", "sport": True}),
     ("Text", "ao polo nam duoi 400k", {"cat": ["ao_polo"], "gender": "nam", "max": 400_000}),
     ("Text", "áo sơ mi denim", {"cat": ["ao_so_mi"], "material": ["denim"]}),
     ("Text", "quần jogger nỉ xám", {"cat": ["quan_jogger"], "color": ["xám"]}),
@@ -90,6 +93,8 @@ def satisfies(p, cond):
     if "material" in cond and p["material"] not in cond["material"]:
         return False
     if "pattern" in cond and p["pattern"] not in cond["pattern"]:
+        return False
+    if cond.get("sport") and not (p["brand"] == "H&M Sport" or p["material"] == "vải thể thao"):
         return False
     return True
 

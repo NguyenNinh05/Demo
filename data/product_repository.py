@@ -53,11 +53,12 @@ class ProductRepository:
     # ---------------------------------------------------------- filtering
     def find(self, categories=None, genders=None, colors=None, materials=None,
              patterns=None, brands=None, min_price=None, max_price=None, in_stock=False,
-             fuzzy_terms=None):
+             sportswear=False, fuzzy_terms=None):
         """Products that satisfy every given condition.
 
         categories: ids at any level ("ao" also returns every kind of top,
         through a recursive query on category.parent_id).
+        sportswear: only the H&M Sport line or products in sports fabric.
         fuzzy_terms: words compared with pg_trgm word_similarity, so a typo
         such as "hodie" still matches "hoodie".
         Returns {product_id: trigram score in [0, 1]}.
@@ -82,6 +83,8 @@ class ProductRepository:
             params["max_price"] = int(max_price)
         if in_stock:
             where.append("p.stock > 0")
+        if sportswear:
+            where.append("(p.brand = 'H&M Sport' OR p.material = 'vải thể thao')")
         fuzzy = "0.0"
         if fuzzy_terms:
             fuzzy = ("(SELECT avg(word_similarity(t, p.search_doc)) "

@@ -5,7 +5,7 @@ so SearchService and RankingService do not care whether the customer typed,
 spoke or uploaded a photo:
 
   {type, intent, categories, genders, colors, materials, patterns, features,
-   occasions, min_price, max_price, sort, in_stock, keywords, semantic_text,
+   occasions, sportswear, min_price, max_price, sort, in_stock, keywords, semantic_text,
    embedding?, understood (for the UI), parser, confidence}
 
 Text understanding = RuleParser first (about 1 ms). An LLM (DeepSeek or Gemini,
@@ -142,7 +142,7 @@ class QueryService:
     def image_query(self, embedding, image=None):
         return {"type": "image", "intent": "product", "embedding": embedding, "image": image,
                 "categories": [], "genders": [], "colors": [], "materials": [], "patterns": [],
-                "brands": [], "features": [], "occasions": [], "keywords": [],
+                "brands": [], "features": [], "occasions": [], "sportswear": False, "keywords": [],
                 "min_price": None, "max_price": None, "sort": None, "in_stock": False,
                 "understood": [], "parser": "clip", "confidence": 1.0, "semantic_text": ""}
 
