@@ -327,7 +327,7 @@ td .muted { color: var(--muted); }
   <h1>Sơ đồ component theo 3 tầng</h1>
   <div class="body">
     <figure class="diagram full">
-      <img src="diagrams/component.png" alt="Sơ đồ component 3 tầng"
+      <img data-src="diagrams/component.png" alt="Sơ đồ component 3 tầng"
            data-hint="Sơ đồ component 3 tầng (Presentation, Application, Data).">
     </figure>
   </div>
@@ -357,7 +357,7 @@ td .muted { color: var(--muted); }
   <h1>Thiết kế cơ sở dữ liệu: 6 bảng</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/erd.png" alt="ERD"
+      <img data-src="diagrams/erd.png" alt="ERD"
            data-hint="ERD 6 bảng xuất từ Visual Paradigm. Nhớ xóa các cột khóa ngoại bị lặp (Orderorder_id, Productproduct_id, Categorycategory_id).">
     </figure>
     <div class="notes">
@@ -452,7 +452,7 @@ td .muted { color: var(--muted); }
   <h1>Các lớp xử lý đầu vào</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/class-input.png" alt="Class diagram xử lý đầu vào"
+      <img data-src="diagrams/class-input.png" alt="Class diagram xử lý đầu vào"
            data-hint="Gồm SearchUI, VoiceInput, ImageUpload (boundary); SpeechService, ImageService, QueryService, RuleParser (control); Query (entity).">
     </figure>
     <div class="notes">
@@ -473,7 +473,7 @@ td .muted { color: var(--muted); }
   <h1>Các lớp truy xuất và xếp hạng</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/class-search.png" alt="Class diagram truy xuất và xếp hạng"
+      <img data-src="diagrams/class-search.png" alt="Class diagram truy xuất và xếp hạng"
            data-hint="Gồm SearchService, RankingService (control); ProductRepository, TextIndex, VectorIndex (tầng Data); Query, Product (entity).">
     </figure>
     <div class="notes">
@@ -602,7 +602,7 @@ td .muted { color: var(--muted); }
   <h1>Search by Keyword</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/seq-keyword.png" alt="Sequence Search by Keyword"
+      <img data-src="diagrams/seq-keyword.png" alt="Sequence Search by Keyword"
            data-hint="Customer, SearchUI, SearchService, QueryService, RuleParser, ProductRepository, TextIndex, RankingService. Có khối alt khi không có kết quả.">
     </figure>
     <div class="notes">
@@ -627,7 +627,7 @@ td .muted { color: var(--muted); }
   <h1>Search by Voice</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/seq-voice.png" alt="Sequence Search by Voice"
+      <img data-src="diagrams/seq-voice.png" alt="Sequence Search by Voice"
            data-hint="Customer, SearchUI, SpeechService, SearchService, QueryService, ProductRepository, RankingService.">
     </figure>
     <div class="notes">
@@ -649,7 +649,7 @@ td .muted { color: var(--muted); }
   <h1>Search by Image</h1>
   <div class="body">
     <figure class="diagram wide">
-      <img src="diagrams/seq-image.png" alt="Sequence Search by Image"
+      <img data-src="diagrams/seq-image.png" alt="Sequence Search by Image"
            data-hint="Customer, SearchUI, ImageUpload, ImageService, SearchService, QueryService, VectorIndex, ProductRepository, RankingService. Có khối alt khi ảnh không hợp lệ.">
     </figure>
     <div class="notes">
@@ -717,10 +717,12 @@ td .muted { color: var(--muted); }
 
   // diagrams/<name>.png is the Visual Paradigm export; without it the redrawn copy in
   // diagrams/ve-lai/ is shown with a warning badge, and without both a placeholder
+  // (src is set only after the error listener is attached, otherwise a missing file
+  // can fail before the script runs and the fallback never happens)
   document.querySelectorAll(".diagram img").forEach(function (img) {
-    var official = img.getAttribute("src");
+    var official = img.dataset.src;
+    var fig = img.parentNode;
     img.addEventListener("error", function () {
-      var fig = img.parentNode;
       if (!img.dataset.fallback) {
         img.dataset.fallback = "1";
         fig.classList.add("redrawn");
@@ -732,16 +734,17 @@ td .muted { color: var(--muted); }
         return;
       }
       fig.classList.remove("redrawn");
-      if (fig.querySelector(".badge")) fig.removeChild(fig.querySelector(".badge"));
-      img.setAttribute("src", official);
+      var old = fig.querySelector(".badge");
+      if (old) fig.removeChild(old);
       var box = document.createElement("div");
       box.className = "placeholder";
-      box.innerHTML = '<div class="icon">＋</div><b>Chèn ảnh từ Visual Paradigm</b>' +
-        "<code>slides/" + img.getAttribute("src") + "</code><p></p>";
+      box.innerHTML = '<div class="icon">＋</div><b>Chèn ảnh từ Visual Paradigm</b><code></code><p></p>';
+      box.querySelector("code").textContent = "slides/" + official;
       box.querySelector("p").textContent = img.dataset.hint || "";
       fig.style.cursor = "default";
       fig.replaceChild(box, img);
     });
+    img.src = official;
   });
 
   document.addEventListener("click", function (e) {
