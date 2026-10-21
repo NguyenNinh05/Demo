@@ -329,7 +329,6 @@
   function renderNotices(data) {
     const q = data.query || {};
     const out = [];
-    (data.relaxed || []).forEach((r) => out.push(`<div class="notice">${ICON.alert}<div>${esc(r.message)}</div></div>`));
     if (data.message) out.push(`<div class="notice">${ICON.info}<div>${esc(data.message)}</div></div>`);
     if (q.explanation) out.push(`<div class="notice notice--info">${ICON.sparkle}<div><b>AI hiểu là:</b> ${esc(q.explanation)}</div></div>`);
     if (q.llm_error) out.push(`<div class="notice notice--info">${ICON.info}<div>${esc(q.llm_error)}</div></div>`);
@@ -381,7 +380,7 @@
     const items = sortedItems();
     const grid = $("#grid");
     if (!items.length) {
-      grid.innerHTML = `<div class="empty"><h3>Chưa tìm thấy sản phẩm</h3><p>Bạn thử bỏ bớt điều kiện hoặc mô tả khác đi nhé.</p></div>`;
+      grid.innerHTML = `<div class="empty"><h3>Không tìm thấy sản phẩm phù hợp</h3><p>Bạn thử bỏ bớt điều kiện hoặc mô tả khác đi nhé.</p></div>`;
       $("#moreBtn").hidden = true;
       return;
     }

@@ -3,9 +3,9 @@ Experimental evaluation of SnapShop search.
 
 A text / voice query is successful when the Top-1 product satisfies every
 condition the customer gave (category, price, colour, gender, material ...),
-or when the system does the right thing for a special case (relaxing an
-impossible price, refusing a product the shop does not sell, finding the
-right order). P@5 = share of the Top-5 products that satisfy the conditions.
+or when the system does the right thing for a special case (an empty result
+with a "not found" message for an impossible request, refusing a product the
+shop does not sell, finding the right order). P@5 = share of the Top-5 products that satisfy the conditions.
 
 Photo queries (data/query_images/queries.json):
   * augmented : an edited photo of a catalogue product -> the same product must be Top-1
@@ -30,7 +30,7 @@ Q = os.path.join(ROOT, "data", "query_images")
 TEST_SET = [
     # ---- text ----
     ("Text", "áo phông dưới 100k", {"cat": ["ao_phong"], "max": 100_000}),
-    ("Text", "áo phông trên 2 triệu", {"cat": ["ao_phong"], "relaxed": "price", "top": "price_desc"}),
+    ("Text", "áo phông trên 2 triệu", {"empty": True}),
     ("Text", "ao thun duoi 150k", {"cat": ["ao_phong"], "max": 150_000}),
     ("Text", "quần jeans nam tầm 600-900 nghìn", {"cat": ["quan_jeans"], "gender": "nam",
                                                 "min": 600_000, "max": 900_000}),
@@ -42,7 +42,7 @@ TEST_SET = [
                                          "quan_au"], "gender": "nu"}),
     ("Text", "quần âu nam", {"cat": ["quan_au"], "gender": "nam"}),
     ("Text", "áo hai dây màu hồng", {"cat": ["ao_hai_day"], "color": ["hồng"]}),
-    ("Text", "áo hai dây màu đỏ", {"cat": ["ao_hai_day"], "relaxed": "colors"}),
+    ("Text", "áo hai dây màu đỏ", {"empty": True}),
     ("Text", "áo kẻ sọc", {"cat": ["ao"], "pattern": ["kẻ sọc"]}),
     ("Text", "quần bò xanh", {"cat": ["quan_jeans"],
                               "color": ["xanh dương", "xanh lá", "xanh rêu", "xanh ngọc"]}),
@@ -101,8 +101,6 @@ def check_products(out, cond, all_products):
     top5 = results[:5]
     p5 = sum(satisfies(p, cond) for p in top5) / len(top5)
     ok = satisfies(results[0], cond)
-    if cond.get("relaxed"):
-        ok = ok and any(r["condition"] == cond["relaxed"] for r in out.get("relaxed", []))
     if cond.get("top"):
         pool = [p for p in all_products if satisfies(p, cond)]
         if pool:
@@ -139,6 +137,9 @@ def evaluate(ui):
         if "intent" in cond:
             ok = out["query"]["intent"] == cond["intent"]
             record(value, mode, out.get("message", "-")[:60], None, ok, ms)
+        elif cond.get("empty"):
+            ok = not out.get("results") and bool(out.get("message"))
+            record(value, mode, out.get("message") or "-", None, ok, ms)
         elif "order" in cond or "orders" in cond:
             orders = out.get("orders") or []
             ok = (orders and orders[0]["order_id"] == cond["order"]) if "order" in cond \

@@ -68,8 +68,6 @@ class SearchResultView:
         for step in response["trace"]:
             print(f" PROCESSING : {step['component']:<16} [{step['layer']:<12}] "
                   f"{step['detail']}  ({step['ms']} ms)")
-        for r in response.get("relaxed", []):
-            print(f" NỚI ĐK     : {r['message']}")
         if response.get("message"):
             print(f" THÔNG BÁO  : {response['message']}")
         if response.get("image_category"):

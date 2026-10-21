@@ -341,9 +341,9 @@ td .muted { color: var(--muted); }
     <table>
       <thead><tr><th style="width:230px">Yêu cầu</th><th>Quyết định thiết kế</th><th style="width:470px">Bằng chứng</th></tr></thead>
       <tbody>
-        <tr><td>Hiệu năng</td><td>Vector ảnh giữ trong một ma trận; tìm ảnh gần nhất chỉ là một phép nhân ma trận</td><td class="muted">Trung bình: chữ 663 ms, ảnh 330 ms trên bộ đánh giá 135 truy vấn</td></tr>
+        <tr><td>Hiệu năng</td><td>Vector ảnh giữ trong một ma trận; tìm ảnh gần nhất chỉ là một phép nhân ma trận</td><td class="muted">Trung bình: chữ 644 ms, ảnh 255 ms trên bộ đánh giá 135 truy vấn</td></tr>
         <tr><td>Dễ sử dụng</td><td>Một ô tìm kiếm chung; SearchUI tự gọi đúng service theo loại đầu vào</td><td class="muted">Chữ, giọng nói, ảnh và chữ + ảnh dùng chung một màn hình kết quả</td></tr>
-        <tr><td>Tin cậy</td><td>ImageUpload kiểm tra ảnh; không có kết quả thì tự nới điều kiện và báo cho khách</td><td class="muted">Chỉ nhận PNG, JPG, WEBP, BMP và tối đa 10 MB</td></tr>
+        <tr><td>Tin cậy</td><td>ImageUpload kiểm tra ảnh; không có kết quả thì báo rõ "Không tìm thấy sản phẩm phù hợp"</td><td class="muted">Chỉ nhận PNG, JPG, WEBP, BMP và tối đa 10 MB</td></tr>
         <tr><td>Dễ bảo trì</td><td>Mỗi tầng là một thư mục riêng, giao tiếp qua service</td><td class="muted">Giao diện web và giao diện console dùng chung các service</td></tr>
         <tr><td>Dễ mở rộng</td><td>Mô hình AI nằm sau ImageService; chỉ mục nằm sau VectorIndex</td><td class="muted">Đổi mô hình ảnh chỉ sửa ImageService; VectorIndex có thể thay bằng pgvector hoặc FAISS</td></tr>
       </tbody>
@@ -441,6 +441,7 @@ td .muted { color: var(--muted); }
         <tr><td>Extract image features</td><td><code>ImageService.encode()</code></td><td class="muted">Application</td></tr>
         <tr><td>Analyze keywords</td><td><code>QueryService</code> → <code>RuleParser.parse()</code></td><td class="muted">Application</td></tr>
         <tr><td>Find matching products · Rank by relevance</td><td><code>SearchService.retrieve()</code> → <code>RankingService.rank()</code></td><td class="muted">Application</td></tr>
+        <tr><td>Show "No products found"</td><td><code>SearchResultView.show_response()</code></td><td class="muted">Presentation</td></tr>
       </tbody>
     </table>
   </div>
@@ -556,7 +557,7 @@ td .muted { color: var(--muted); }
       <div class="arrow">→</div>
       <div class="card">
         <div class="num">BƯỚC 2</div><h3>retrieve(query) → ứng viên</h3>
-        <div class="branch"><b>Chữ / giọng nói</b><p>Lọc trong PostgreSQL theo điều kiện; rỗng thì nới bớt điều kiện; chấm S_text bằng BM25 và khớp gần đúng.</p></div>
+        <div class="branch"><b>Chữ / giọng nói</b><p>Lọc trong PostgreSQL theo đúng mọi điều kiện; chấm S_text bằng BM25 và khớp gần đúng.</p></div>
         <div class="branch"><b>Ảnh</b><p>Chấm S_image bằng cosine trên VectorIndex.</p></div>
         <div class="branch"><b>Chữ + ảnh</b><p>Chữ lọc ứng viên, ảnh chấm độ giống.</p></div>
       </div>
@@ -564,7 +565,8 @@ td .muted { color: var(--muted); }
       <div class="card">
         <div class="num">BƯỚC 3</div><h3>rank(…, top_k)</h3>
         <p>RankingService tính điểm cuối và cắt Top-K.</p>
-        <p style="margin-top:16px"><b style="color:var(--ink)">Response:</b> kết quả, trọng số, các điều kiện đã nới, thời gian xử lý.</p>
+        <p style="margin-top:16px"><b style="color:var(--ink)">Response:</b> kết quả, trọng số, thời gian xử lý.</p>
+        <p style="margin-top:16px"><b style="color:var(--ink)">Không có ứng viên:</b> không xếp hạng, trả về thông báo "Không tìm thấy sản phẩm phù hợp".</p>
       </div>
     </div>
   </div>
@@ -612,7 +614,7 @@ td .muted { color: var(--muted); }
         <li>SearchService → QueryService: <code>text_query(text)</code></li>
         <li>QueryService → RuleParser: <code>parse(text)</code>, trả về Query</li>
         <li>SearchService → ProductRepository: <code>find(điều kiện)</code></li>
-        <li class="alt">Không có kết quả: nới điều kiện, tìm lại và báo cho khách</li>
+        <li class="alt">Không có kết quả: báo "Không tìm thấy sản phẩm phù hợp", dừng</li>
         <li>SearchService → TextIndex: <code>score(từ khóa)</code></li>
         <li>SearchService → RankingService: <code>rank(…, top_k)</code></li>
         <li>SearchUI hiển thị kết quả</li>

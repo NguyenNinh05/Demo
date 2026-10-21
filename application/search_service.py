@@ -11,8 +11,8 @@ The single entry point of the search use case for the Presentation layer:
              - semantic score: multilingual CLIP text vs product photos (semantic index)
              - photo: FashionSigLIP similarity (photo index) + category vote of the
                nearest neighbours
-             - if nothing matches, conditions are relaxed one by one and the
-               customer is told which one was dropped
+             - conditions are never dropped: if nothing satisfies all of them the
+               result is empty and the customer is told so
         3. RankingService    orders the candidates
 
 Retrieval is done here, ranking is delegated, so the two stay separate.
@@ -25,12 +25,6 @@ from shared.vietnamese import search_terms, strip_accents
 
 FILTER_KEYS = ("categories", "genders", "colors", "materials", "patterns",
                "min_price", "max_price", "in_stock")
-# order in which conditions are dropped when nothing matches
-RELAX_ORDER = ("in_stock", "patterns", "materials", "colors", "genders", "price", "categories")
-
-
-def fmt_vnd(v):
-    return f"{int(v):,}".replace(",", ".") + "₫"
 
 
 class SearchService:
@@ -78,7 +72,7 @@ class SearchService:
             detail += f", AI {query['llm_ms']} ms"
         self._step(trace, "QueryService", "Application", detail, t0)
 
-        response = {"query": self._public_query(query), "trace": trace, "relaxed": []}
+        response = {"query": self._public_query(query), "trace": trace}
         if query["intent"] == "order":
             t = time.perf_counter()
             response["orders"] = self.search_order(query)
@@ -97,6 +91,11 @@ class SearchService:
         candidates = self.retrieve(query, response)
         self._step(trace, "SearchService", "Application",
                    f"{len(candidates)} ứng viên C(q)", t)
+        if not candidates:
+            response["message"] = (f"Không tìm thấy {self._cat_label(query)} phù hợp "
+                                   f"với yêu cầu của bạn.")
+            response.update(results=[], candidates=0)
+            return self._done(response, t0)
 
         # 3. ranking
         t = time.perf_counter()
@@ -142,49 +141,6 @@ class SearchService:
     def _cat_label(self, q):
         names = [self.category_names.get(c, c) for c in q.get("categories") or []]
         return " / ".join(names[:3]) if names else "sản phẩm"
-
-    def find_with_relaxation(self, q, fuzzy_terms, response):
-        """Products that satisfy the query filters; if there are none, drop the
-        least important condition, tell the customer, and try again."""
-        f = self._filters(q)
-        found = self._find(f, fuzzy_terms)
-        what = self._cat_label(q)
-        for key in RELAX_ORDER:
-            if found:
-                break
-            if key == "price":
-                lo, hi = f["min_price"], f["max_price"]
-                if lo is None and hi is None:
-                    continue
-                if lo is not None and hi is None:
-                    msg = f"Không có {what} trên {fmt_vnd(lo)}. Đây là các mẫu giá cao nhất."
-                    q["sort"] = "price_desc"
-                elif hi is not None and lo is None:
-                    msg = f"Không có {what} dưới {fmt_vnd(hi)}. Đây là các mẫu giá thấp nhất."
-                    q["sort"] = "price_asc"
-                else:
-                    msg = (f"Không có {what} trong khoảng {fmt_vnd(lo)} – {fmt_vnd(hi)}. "
-                           f"Đây là các mẫu có giá gần nhất.")
-                    q["sort"] = "price_asc" if self._find(dict(f, min_price=hi, max_price=None)) \
-                        else "price_desc"
-                f["min_price"] = f["max_price"] = None
-            elif f.get(key):
-                value = f[key]
-                f[key] = False if key == "in_stock" else []
-                msg = {
-                    "in_stock": "Không còn hàng sẵn phù hợp, đã hiển thị cả sản phẩm tạm hết.",
-                    "patterns": f"Không có {what} họa tiết {', '.join(value)}, đã bỏ điều kiện họa tiết.",
-                    "materials": f"Không có {what} chất {', '.join(value)}, đã bỏ điều kiện chất liệu.",
-                    "colors": f"Không có {what} màu {', '.join(value)} phù hợp, đã bỏ điều kiện màu.",
-                    "genders": f"Không có {what} cho {'nam' if 'nam' in value else 'nữ'} phù hợp, "
-                               f"đã hiển thị cả nam và nữ.",
-                    "categories": f"Không tìm thấy {what} phù hợp, đã mở rộng sang loại khác.",
-                }[key]
-            else:
-                continue
-            response["relaxed"].append({"condition": key, "message": msg})
-            found = self._find(f, fuzzy_terms)
-        return found
 
     # ------------------------------------------------------------ semantic
     def _semantic_scores(self, q):
@@ -252,7 +208,7 @@ class SearchService:
             return [{"product": p, "s_text": 0.0, "s_image": 0.0}
                     for p in self.browse(size=24)["products"]]
         fuzzy = [strip_accents(k) for k in q["keywords"] if " " not in k][:6]
-        found = self.find_with_relaxation(q, fuzzy, response)
+        found = self._find(self._filters(q), fuzzy)
         scores = self._text_scores(q, found)
         return [{"product": self.products.get_product(pid), "s_text": s, "s_image": 0.0}
                 for pid, s in scores.items()]
@@ -303,8 +259,7 @@ class SearchService:
         """Photo + text: the text filters ("màu đen", "dưới 500k") restrict the
         candidates, the photo decides which ones look alike. "Giống cái này nhưng
         màu đen" means the same KIND of garment, so when the text names no
-        category, the category recognised in the photo becomes a filter too (and
-        is relaxed like any other condition if nothing matches)."""
+        category, the category recognised in the photo becomes a filter too."""
         _, prediction = self._image_scores(q["embedding"])
         response["image_category"] = prediction
         if not q["categories"]:
@@ -319,7 +274,7 @@ class SearchService:
                 q["understood"].append({"kind": "category", "label": f"{name} (từ ảnh)",
                                         "value": cat, "source": "image"})
         fuzzy = [strip_accents(k) for k in q["keywords"] if " " not in k][:6]
-        found = self.find_with_relaxation(q, fuzzy, response)
+        found = self._find(self._filters(q), fuzzy)
         text_scores = self._text_scores(q, found, prune=False)
         image_scores, _ = self._image_scores(q["embedding"], allowed=found)
         lt, li = q["weights"]["text"], q["weights"]["image"]

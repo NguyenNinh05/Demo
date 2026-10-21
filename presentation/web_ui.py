@@ -74,7 +74,6 @@ class SearchResponse(BaseModel):
     orders: Optional[List[dict]] = None
     weights: Optional[dict] = None
     candidates: Optional[int] = None
-    relaxed: List[dict] = []
     message: Optional[str] = None
     image_category: Optional[dict] = None
     total_ms: float
@@ -187,7 +186,7 @@ class WebSearchUI:
             product_id=product_id, top_k=48)
         response["trace"] = trace + response["trace"]
         out = {"mode": mode, "input": shown_input, "query": self._clean(response["query"]),
-               "trace": response["trace"], "relaxed": response["relaxed"],
+               "trace": response["trace"],
                "message": response.get("message"),
                "image_category": response.get("image_category"),
                "total_ms": round(response["total_ms"] + sum(

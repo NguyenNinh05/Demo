@@ -14,7 +14,6 @@ package "Application Layer" {
     - retrieve_text(query, response)
     - retrieve_image(query, response)
     - retrieve_multimodal(query, response)
-    - find_with_relaxation(query, fuzzy_terms, response)
     + search_order(query) : List<Order>
   }
 

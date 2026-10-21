@@ -41,7 +41,8 @@ application/    QueryService      mọi đầu vào -> một biểu diễn truy 
                 SpeechService     Soniox (realtime, key tạm cho trình duyệt) hoặc Gemini (dự phòng)
                 SonioxClient      tạo key tạm, cấu hình stream, nhận dạng file ghi âm
                 ImageService      CLIP: ảnh -> vector, câu tiếng Việt -> vector (cùng không gian)
-                SearchService     điều phối: lọc SQL, BM25, fuzzy, ngữ nghĩa, ảnh, nới điều kiện
+                SearchService     điều phối: lọc SQL, BM25, fuzzy, ngữ nghĩa, ảnh; không có kết
+                                  quả thì báo "Không tìm thấy", không tự bỏ điều kiện
                 RankingService    S = α·S_text + β·S_image + γ·S_business
 data/           ProductRepository, OrderRepository (PostgreSQL), TextIndex (BM25),
                 VectorIndex (NumPy), schema.sql, catalog/ (ảnh + seed), query_images/

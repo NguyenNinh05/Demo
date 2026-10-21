@@ -30,26 +30,28 @@ SearchService -> ProductRepository : find(điều kiện, fuzzy_terms)
 activate ProductRepository
 ProductRepository --> SearchService : ứng viên
 deactivate ProductRepository
-opt không có sản phẩm thỏa mọi điều kiện
-  loop đến khi có kết quả
-    SearchService -> SearchService : nới bớt một điều kiện
-    SearchService -> ProductRepository : find(điều kiện còn lại)
-  end
-end
 
-SearchService -> TextIndex : score(từ khóa, ứng viên)
-activate TextIndex
-TextIndex --> SearchService : điểm BM25
-deactivate TextIndex
-SearchService -> RankingService : rank(candidates, query, top_k)
-activate RankingService
-RankingService --> SearchService : Top-K, (α, β, γ)
-deactivate RankingService
-SearchService --> SearchUI : response
+alt không có sản phẩm thỏa mọi điều kiện
+  SearchService --> SearchUI : response (rỗng)
+  SearchUI -> SearchResultView : show_response(response)
+  activate SearchResultView
+  SearchResultView --> Customer : "Không tìm thấy sản phẩm phù hợp"
+  deactivate SearchResultView
+else có ứng viên
+  SearchService -> TextIndex : score(từ khóa, ứng viên)
+  activate TextIndex
+  TextIndex --> SearchService : điểm BM25
+  deactivate TextIndex
+  SearchService -> RankingService : rank(candidates, query, top_k)
+  activate RankingService
+  RankingService --> SearchService : Top-K, (α, β, γ)
+  deactivate RankingService
+  SearchService --> SearchUI : response
+  SearchUI -> SearchResultView : show_response(response)
+  activate SearchResultView
+  SearchResultView --> Customer : danh sách đã xếp hạng
+  deactivate SearchResultView
+end
 deactivate SearchService
-SearchUI -> SearchResultView : show_response(response)
-activate SearchResultView
-SearchResultView --> Customer : danh sách đã xếp hạng
-deactivate SearchResultView
 deactivate SearchUI
 @enduml
