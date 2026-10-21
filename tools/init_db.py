@@ -88,11 +88,12 @@ def init_database(url=config.DATABASE_URL,
         cur.executemany("""
             INSERT INTO product (product_id, category_id, name, brand, gender, price, stock,
                 color, color_detail, material, pattern, description, description_en,
-                image_path, popularity, source_url, created_at)
+                image_path, popularity, occasions, source_url, created_at)
             VALUES (%(product_id)s, %(category_id)s, %(name)s, %(brand)s, %(gender)s,
                 %(price)s, %(stock)s, %(color)s, %(color_detail)s, %(material)s, %(pattern)s,
                 %(description)s, %(description_en)s, %(image_path)s, %(popularity)s,
-                %(source_url)s, %(created_at)s)""", products)
+                %(occasions)s, %(source_url)s, %(created_at)s)""",
+            [dict(p, occasions=p.get("occasions", [])) for p in products])
         cur.executemany("INSERT INTO customer (customer_id, full_name, email, phone, address, "
                         "created_at) VALUES (%s, %s, %s, %s, %s, '2026-01-10')", CUSTOMERS)
         address = {c[0]: c[4] for c in CUSTOMERS}

@@ -35,7 +35,7 @@ package "Application Layer" {
 
 package "Data Layer" {
   class ProductRepository {
-    + find(filters, fuzzy_terms) : Map<id, float>
+    + find(filters, occasions, fuzzy_terms) : Map<id, float>
     + get_product(product_id) : Product
     + image_path(product) : String
   }
@@ -70,6 +70,7 @@ package "Data Layer" {
     color : String
     image_path : String
     popularity : float
+    occasions : List<String>
   }
 }
 

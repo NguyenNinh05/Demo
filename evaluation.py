@@ -25,6 +25,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
 Q = os.path.join(ROOT, "data", "query_images")
+WARM = ["len", "nỉ", "nhung tăm", "da"]
+THIN = ["lụa", "voan", "linen"]
 
 # (mode, input, expected conditions)
 TEST_SET = [
@@ -38,8 +40,9 @@ TEST_SET = [
     ("Text", "ao so mi trang tay dai", {"cat": ["ao_so_mi"], "color": ["trắng"]}),
     ("Text", "hoodie đen rẻ nhất", {"cat": ["ao_hoodie"], "color": ["đen"], "top": "price_asc"}),
     ("Text", "quần short nữ", {"cat": ["quan_short"], "gender": "nu"}),
-    ("Text", "đồ đi làm cho nữ", {"cat": ["ao_so_mi", "ao_blazer", "ao_kieu", "ao_polo",
-                                         "quan_au"], "gender": "nu"}),
+    ("Text", "đồ đi làm cho nữ", {"gender": "nu", "avoid_name": ["croptop", "sát nách", "rách"],
+                                  "avoid_cat": ["ao_hoodie", "quan_legging", "quan_jogger",
+                                                "quan_short", "quan_jeans"]}),
     ("Text", "quần âu nam", {"cat": ["quan_au"], "gender": "nam"}),
     ("Text", "áo hai dây màu hồng", {"cat": ["ao_hai_day"], "color": ["hồng"]}),
     ("Text", "áo hai dây màu đỏ", {"empty": True}),
@@ -53,12 +56,28 @@ TEST_SET = [
     ("Text", "áo thể thao", {"cat": ["ao"], "sport": True}),
     ("Text", "áo khoác thể thao", {"cat": ["ao_khoac"], "sport": True}),
     ("Text", "quần thể thao nam", {"cat": ["quan"], "gender": "nam", "sport": True}),
+    # occasions: checked against the product's own attributes, not against its labels
+    ("Text", "đồ đi biển", {"avoid_mat": WARM, "avoid_cat": ["ao_khoac", "ao_hoodie", "ao_len",
+                                                             "quan_jeans"]}),
+    ("Text", "áo mặc trời lạnh", {"cat": ["ao"], "avoid_mat": THIN,
+                                  "avoid_name": ["ngắn tay", "sát nách", "croptop"]}),
+    ("Text", "đồ đi làm", {"avoid_name": ["croptop", "sát nách", "rách"],
+                           "avoid_cat": ["ao_hoodie", "quan_legging", "quan_jogger", "quan_short",
+                                         "quan_jeans"]}),
+    ("Text", "áo đi mưa", {"cat": ["ao"], "desc_any": ["water", "rain", "wind"]}),
+    ("Text", "đồ đi tiệc", {"avoid_cat": ["ao_hoodie", "ao_ni", "quan_jogger", "quan_legging"],
+                            "avoid_name": ["rách"]}),
+    ("Text", "đồ mặc ở nhà", {"avoid_cat": ["ao_blazer", "quan_au", "quan_jeans", "ao_khoac"]}),
+    ("Text", "áo thun lạnh", {"cat": ["ao_phong"], "no_occasion": True}),
+    ("Text", "quần jeans thoải mái", {"cat": ["quan_jeans"], "no_occasion": True}),
+    ("Text", "đầm đi tiệc", {"intent": "unsupported"}),
+    ("Text", "áo len đi biển", {"empty": True}),
     ("Text", "ao polo nam duoi 400k", {"cat": ["ao_polo"], "gender": "nam", "max": 400_000}),
     ("Text", "áo sơ mi denim", {"cat": ["ao_so_mi"], "material": ["denim"]}),
     ("Text", "quần jogger nỉ xám", {"cat": ["quan_jogger"], "color": ["xám"]}),
     ("Text", "áo blazer nữ đắt nhất", {"cat": ["ao_blazer"], "gender": "nu", "top": "price_desc"}),
-    ("Text", "đồ mặc khi trời lạnh", {"cat": ["ao_len", "ao_khoac", "ao_hoodie", "ao_cardigan",
-                                             "ao_ni"]}),
+    ("Text", "đồ mặc khi trời lạnh", {"avoid_mat": THIN, "avoid_cat": ["quan_short"],
+                                      "avoid_name": ["ngắn tay", "sát nách", "croptop"]}),
     ("Text", "giày nike", {"intent": "unsupported"}),
     ("Text", "đơn hàng DH004", {"order": "DH004"}),
     ("Text", "các đơn hàng của tôi", {"orders": 4}),
@@ -96,6 +115,13 @@ def satisfies(p, cond):
         return False
     if cond.get("sport") and not (p["brand"] == "H&M Sport" or p["material"] == "vải thể thao"):
         return False
+    if p["material"] in cond.get("avoid_mat", ()) or p["category_id"] in cond.get("avoid_cat", ()):
+        return False
+    if any(w in p["name"] for w in cond.get("avoid_name", ())):
+        return False
+    if "desc_any" in cond and not any(w in (p["description_en"] or "").lower()
+                                      for w in cond["desc_any"]):
+        return False
     return True
 
 
@@ -106,6 +132,8 @@ def check_products(out, cond, all_products):
     top5 = results[:5]
     p5 = sum(satisfies(p, cond) for p in top5) / len(top5)
     ok = satisfies(results[0], cond)
+    if cond.get("no_occasion"):
+        ok = ok and not out["query"].get("occasions")
     if cond.get("top"):
         pool = [p for p in all_products if satisfies(p, cond)]
         if pool:

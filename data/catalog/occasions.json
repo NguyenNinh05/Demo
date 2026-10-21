@@ -1,0 +1,5072 @@
+{
+ "1": {
+  "name": "Áo phông xanh dương",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo phông vải scuba dày dặn, kiểu dáng cơ bản phù hợp mặc hàng ngày hoặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "2": {
+  "name": "Áo phông vải thể thao cổ lọ khóa kéo",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Dòng H&M Sport với vải chức năng thoáng khí, nhanh khô chuyên dụng cho chạy bộ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "3": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông cotton cơ bản, mỏng nhẹ và thoáng mát cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "4": {
+  "name": "Áo phông họa tiết cotton cổ tim",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông họa tiết da báo cá tính, phù hợp cho các dịp đi chơi năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "5": {
+  "name": "Áo phông kẻ sọc cotton cổ tròn",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ sọc và chất liệu cotton thoáng mát, phù hợp đi chơi hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "6": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông trơn màu tím nhạt, chất liệu cotton mỏng nhẹ dễ mặc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "7": {
+  "name": "Áo phông cotton dáng ôm",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông trắng cơ bản dáng ôm, phù hợp làm áo lót hoặc mặc thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "8": {
+  "name": "Áo phông vải thể thao ngắn tay",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo tập chuyên dụng dòng H&M Sport với chất liệu co giãn và nhanh khô.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "9": {
+  "name": "Áo phông họa tiết cotton",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông họa tiết hoa văn nghệ thuật, phù hợp để đi chơi hoặc dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "10": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông trắng cotton mỏng, thiết kế đơn giản cho thời tiết nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "11": {
+  "name": "Áo phông cotton dáng ôm",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông dáng ôm màu tối, thanh lịch vừa đủ cho các buổi đi chơi casual.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "12": {
+  "name": "Áo phông linen dáng rộng",
+  "occasions": [
+   "đi biển / trời nóng"
+  ],
+  "reason": "Chất liệu linen (lanh) cực kỳ thoáng mát, là lựa chọn tối ưu cho đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "13": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo dài tay chất liệu vải gân dày dặn, phù hợp cho thời tiết se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "14": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông cotton màu vàng tươi tắn, phù hợp cho các hoạt động ngoài trời.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "15": {
+  "name": "Áo phông in hình cotton dài tay",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Áo thể thao dài tay giúp giữ nhiệt nhẹ khi tập luyện trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "16": {
+  "name": "Áo phông in hình cotton",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông in chữ phía sau năng động, phù hợp cho học sinh, sinh viên đi học, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "17": {
+  "name": "Áo phông in hình cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun dài tay in hình, phù hợp mặc khi trời chuyển lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "18": {
+  "name": "Áo phông in hình cotton cổ tròn dáng rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng áo rộng (loose fit) hiện đại, phù hợp phong cách dạo phố trẻ trung.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "19": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Vải cotton mỏng có hiệu ứng burnout thoáng khí, thích hợp cho trời nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "20": {
+  "name": "Áo phông in hình ngắn tay",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo phông in hình thuộc dòng đồ tập, thiết kế vạt sau dài hỗ trợ vận động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "21": {
+  "name": "Áo phông kẻ sọc cotton cổ tròn dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông dài tay chất liệu cotton mềm mại, phù hợp mặc giữ ấm nhẹ khi trời lạnh hoặc mặc thoải mái ở nhà, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "22": {
+  "name": "Áo phông kẻ sọc cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông ngắn tay họa tiết kẻ sọc trẻ trung, chất cotton thoáng mát cho ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "23": {
+  "name": "Áo phông xanh ngọc",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông trơn ngắn tay cơ bản, phù hợp cho các hoạt động thường ngày và thời tiết nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "24": {
+  "name": "Áo phông phối màu vải thể thao cổ tròn ngắn tay",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Sản phẩm thuộc dòng H&M Sport, vải chức năng nhanh khô chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "25": {
+  "name": "Áo phông cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun dài tay đơn giản, thích hợp mặc lót hoặc mặc giữ ấm nhẹ trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "26": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông tay bồng nhẹ nhàng, nữ tính, phù hợp cho các dịp đi chơi, đi học thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "27": {
+  "name": "Áo phông vải thể thao cổ lọ dáng ôm",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Áo tập chuyên dụng dài tay, cổ lọ có khóa kéo, phù hợp tập luyện trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "28": {
+  "name": "Áo phông họa tiết voan sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu voan mỏng nhẹ, sát nách thoáng mát cho trời nóng và họa tiết thanh lịch hợp đi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "29": {
+  "name": "Áo phông cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun dài tay có chi tiết nhún cách điệu, phù hợp mặc đi chơi khi trời se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "30": {
+  "name": "Áo phông cổ tròn ngắn tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo đính kim sa nổi bật, thiết kế sang trọng phù hợp cho các buổi tiệc tối hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "31": {
+  "name": "Áo phông đen",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo sát nách phối ren thanh lịch, chất liệu viscose mát mẻ hợp đi chơi hoặc hẹn hò ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "32": {
+  "name": "Áo phông cotton dáng ôm",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông dáng ôm ngắn (baby tee) năng động, phù hợp cho giới trẻ đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "33": {
+  "name": "Áo phông ren cổ tim dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế bodysuit ren quyến rũ, phù hợp cho các buổi tiệc hoặc hẹn hò buổi tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "34": {
+  "name": "Áo phông kẻ sọc dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun kẻ sọc dài tay, chất liệu mềm mại phù hợp mặc thường ngày khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "35": {
+  "name": "Áo phông kẻ caro len cổ tròn",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Họa tiết kẻ caro (dogtooth) và chất liệu dệt jacquard tạo vẻ lịch sự, phù hợp đi làm hoặc đi tiệc nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "36": {
+  "name": "Áo phông thêu",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông trắng thêu họa tiết nhỏ đơn giản, thoáng mát cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "37": {
+  "name": "Áo phông thêu cotton",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông dáng ngắn thêu hoa trẻ trung, phù hợp cho học sinh, sinh viên đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "38": {
+  "name": "Áo phông thêu",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế trễ vai phối voan thêu điệu đà, phù hợp đi du lịch biển hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "39": {
+  "name": "Áo phông cổ tròn ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo croptop ngắn tay, chất thun gân thoáng mát, phù hợp đi chơi ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "40": {
+  "name": "Áo phông dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo dài tay dáng rộng phối ren thanh lịch, phù hợp mặc đi chơi hoặc hẹn hò khi trời mát.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "41": {
+  "name": "Áo phông len cổ tim sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo hai dây len mỏng, dáng croptop thời trang phù hợp đi chơi, hẹn hò hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi biển / trời nóng"
+  ]
+ },
+ "42": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông cotton trơn màu trung tính, thiết kế lịch sự có thể mặc đi làm hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "43": {
+  "name": "Áo phông họa tiết cotton ngắn tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo phông họa tiết cotton thoải mái cho các hoạt động thường ngày hoặc mặc tại nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "44": {
+  "name": "Áo phông cổ tim",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Váy dáng dài thanh lịch, chất liệu vải dệt phù hợp cho môi trường công sở hoặc các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "45": {
+  "name": "Áo phông vải thể thao sát nách",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo bra thể thao chuyên dụng với chất liệu nhanh khô và thiết kế hỗ trợ vận động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "46": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo phông dáng rộng, chất liệu mỏng nhẹ phù hợp mặc ở nhà hoặc thời tiết nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "47": {
+  "name": "Áo phông in hình croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông in hình dáng croptop năng động, phù hợp cho giới trẻ đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "48": {
+  "name": "Áo phông ngắn tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo phông thun gân cơ bản, dễ mặc cho các dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "49": {
+  "name": "Áo phông vải thể thao ngắn tay",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo phông từ dòng H&M Sport với chất liệu vải chức năng chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "50": {
+  "name": "Áo phông len dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo len dài tay dày dặn, thiết kế điệu đà phù hợp giữ ấm và đi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "51": {
+  "name": "Áo phông cổ tròn",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo kiểu tay bồng thời trang, phù hợp cho các buổi hẹn hò hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "52": {
+  "name": "Áo phông dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun dài tay phù hợp cho thời tiết se lạnh khi đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "53": {
+  "name": "Áo phông sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo sát nách vải dệt có độ bóng nhẹ, kiểu dáng thanh lịch hợp đi làm hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi làm"
+  ]
+ },
+ "54": {
+  "name": "Áo phông linen cổ tim ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu linen thoáng mát và màu sắc tươi sáng rất hợp cho mùa hè và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "55": {
+  "name": "Áo phông cotton",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế áo peplum chiết eo điệu đà, phù hợp để đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "56": {
+  "name": "Áo phông ngắn tay dáng ôm",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo phông cotton dáng ôm cơ bản, thoải mái cho các hoạt động thường nhật.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "57": {
+  "name": "Áo phông họa tiết cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo trễ vai họa tiết nhiệt đới, lựa chọn hoàn hảo cho đi biển và du lịch.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "58": {
+  "name": "Áo phông cổ tròn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phông tay bồng nữ tính, phù hợp cho các bạn nữ đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "59": {
+  "name": "Áo phông cổ tim sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo hai dây dáng ôm thời trang, phù hợp cho các dịp đi chơi, hẹn hò hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "60": {
+  "name": "Áo phông nỉ",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo chất liệu nỉ dày dặn, giữ ấm tốt, phù hợp mặc khi trời lạnh hoặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "61": {
+  "name": "Áo polo phối màu len ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo polo len dệt kim thanh lịch, phù hợp cho cả môi trường công sở và các buổi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "62": {
+  "name": "Áo polo thêu cotton ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng polo trơn lịch sự, chất liệu cotton thoải mái cho đi làm và đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "63": {
+  "name": "Áo polo len ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo polo len mỏng nhẹ, màu sắc trung tính dễ phối đồ cho nhiều dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "64": {
+  "name": "Áo polo kẻ sọc cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế cổ hở không khuy và họa tiết kẻ sọc mang phong cách phóng khoáng, hợp đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "65": {
+  "name": "Áo polo cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo polo trắng cổ hở không khuy, chất liệu cotton mỏng mát cho ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "66": {
+  "name": "Áo polo cotton ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo polo hồng nhạt thanh lịch, phù hợp cho môi trường công sở hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "67": {
+  "name": "Áo polo len cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo len cổ lọ dài tay giữ ấm tốt, màu sắc nổi bật phù hợp cho các buổi hẹn hò mùa đông.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "68": {
+  "name": "Áo polo len cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len lông mềm mại giữ ấm, dáng croptop trẻ trung cho các buổi đi chơi ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "69": {
+  "name": "Áo polo kẻ sọc cotton dáng rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng áo rộng (boxy) và họa tiết kẻ ngang mang phong cách năng động, phù hợp đi học, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "70": {
+  "name": "Áo polo cotton ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo polo cotton cơ bản, lịch sự cho nữ khi đi làm hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "71": {
+  "name": "Áo polo len ngắn tay dáng ôm",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len tăm cổ cao ngắn tay thời trang, phù hợp cho các hoạt động dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "72": {
+  "name": "Áo polo cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi làm"
+  ],
+  "reason": "Áo thun cổ lọ dài tay đơn giản, dễ mặc bên trong áo khoác để giữ ấm khi đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "73": {
+  "name": "Áo polo cotton dài tay dáng ôm",
+  "occasions": [
+   "trời lạnh",
+   "đi làm"
+  ],
+  "reason": "Chất liệu cotton co giãn, thiết kế cổ lọ kín đáo giữ ấm hiệu quả cho dân công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "74": {
+  "name": "Áo polo cotton dài tay dáng ôm",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo thun gân cổ lọ ôm sát, phù hợp mặc lót bên trong vào những ngày trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "75": {
+  "name": "Áo polo cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế cổ lọ dài tay cơ bản, giữ ấm tốt cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "76": {
+  "name": "Áo sơ mi họa tiết cotton dài tay dáng ôm",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết da thú nổi bật và dáng ôm phù hợp cho các buổi tiệc hoặc đi chơi tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "77": {
+  "name": "Áo sơ mi kẻ caro cotton dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Sơ mi kẻ caro chất liệu cotton casual, phù hợp cho phong cách đi học, đi chơi năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "78": {
+  "name": "Áo sơ mi lụa dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu satin bóng nhẹ sang trọng, rất hợp cho các buổi tiệc hoặc môi trường công sở cao cấp.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "79": {
+  "name": "Áo sơ mi cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Sơ mi trắng poplin cao cấp, món đồ cơ bản và trang trọng nhất cho đi làm và sự kiện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "80": {
+  "name": "Áo sơ mi cotton dài tay dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế cổ tàu (mandarin) hiện đại và thanh lịch, phù hợp cho cả đi làm và đi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "81": {
+  "name": "Áo sơ mi kẻ sọc cotton dài tay dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi kẻ sọc dài tay dáng ôm thanh lịch, phù hợp cho cả môi trường công sở và các buổi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "82": {
+  "name": "Áo sơ mi họa tiết cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết quả dứa và chất liệu cotton ngắn tay rất phù hợp cho các chuyến đi biển hoặc dạo phố ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "83": {
+  "name": "Áo sơ mi cotton khóa kéo",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Kiểu dáng áo sơ mi lai áo thun có khóa kéo, phong cách casual thoải mái cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "84": {
+  "name": "Áo sơ mi họa tiết viscose ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu viscose mỏng nhẹ cùng họa tiết bắt mắt lý tưởng cho thời tiết nóng và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "85": {
+  "name": "Áo sơ mi họa tiết cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết cây dừa đặc trưng cho đi biển, chất cotton ngắn tay thoáng mát.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "86": {
+  "name": "Áo sơ mi cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế cổ resort và tay ngắn phóng khoáng, phù hợp cho những ngày trời nóng hoặc đi du lịch.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "87": {
+  "name": "Áo sơ mi cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết hoa lá và chất liệu cotton pha viscose mềm mại, mát mẻ cho mùa hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "88": {
+  "name": "Áo sơ mi kẻ caro cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi flannel kẻ caro dài tay dày dặn, phù hợp để giữ ấm nhẹ trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "89": {
+  "name": "Áo sơ mi kẻ caro cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu poplin cotton mỏng mát cùng màu sắc tươi sáng phù hợp cho đi chơi ngày nắng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "90": {
+  "name": "Áo sơ mi cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu twill dày dặn và kiểu dáng worker dài tay phù hợp cho thời tiết se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "91": {
+  "name": "Áo sơ mi họa tiết cotton ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết hình học nhỏ trên nền vải poplin ngắn tay, lịch sự nhưng vẫn thoáng mát.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "92": {
+  "name": "Áo sơ mi cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi Oxford trắng dài tay là món đồ cơ bản, lịch sự cho mọi dịp từ đi làm đến dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "93": {
+  "name": "Áo sơ mi kẻ sọc cổ lọ sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế sát nách và chất vải dệt mỏng nhẹ rất phù hợp cho thời tiết nóng bức.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "94": {
+  "name": "Áo sơ mi kẻ sọc cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo sơ mi thắt nơ cổ thanh lịch và điệu đà, rất hợp cho môi trường công sở hoặc đi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "95": {
+  "name": "Áo sơ mi kẻ caro lụa dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu lụa cao cấp và họa tiết kẻ trang nhã, mang lại vẻ sang trọng cho người mặc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "96": {
+  "name": "Áo sơ mi cotton dài tay dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo sơ mi trắng dáng ôm cơ bản, lịch sự tuyệt đối cho môi trường công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "97": {
+  "name": "Áo sơ mi ngắn tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu organza xuyên thấu thời trang, phù hợp cho các buổi tiệc tối hoặc đi chơi nổi bật.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "98": {
+  "name": "Áo sơ mi kẻ caro cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu flannel mềm mại và dài tay giúp giữ ấm tốt trong những ngày trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "99": {
+  "name": "Áo sơ mi kẻ sọc cotton",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Dáng áo loose-fit rộng rãi, thoải mái cho các hoạt động thường ngày hoặc mặc tại nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "100": {
+  "name": "Áo sơ mi kẻ caro dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo kiểu có dây thắt eo nhẹ nhàng, thanh lịch phù hợp cho cả đi làm và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "101": {
+  "name": "Áo sơ mi thêu dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi thêu hoa casual phù hợp để đi chơi hoặc đi học hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "102": {
+  "name": "Áo sơ mi cotton",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi tay bồng thanh lịch, phù hợp cho cả môi trường công sở và các buổi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "103": {
+  "name": "Áo sơ mi cổ tim dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi cổ V đơn giản, lịch sự cho đi làm hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "104": {
+  "name": "Áo sơ mi cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi cotton màu xanh nhạt cơ bản, phù hợp nhiều hoàn cảnh thông thường.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "105": {
+  "name": "Áo sơ mi denim dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu denim dày dặn và dáng rộng phù hợp cho thời tiết se lạnh và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "106": {
+  "name": "Áo sơ mi kẻ caro cotton dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ caro mang phong cách năng động, phù hợp đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "107": {
+  "name": "Áo sơ mi nhung tăm dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu nhung tăm dày dặn giúp giữ ấm tốt trong mùa lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "108": {
+  "name": "Áo sơ mi ren lụa dài tay dáng ôm",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu lụa satin phối ren sang trọng, thiết kế ôm dáng phù hợp dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "109": {
+  "name": "Áo sơ mi da",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo chất liệu da dày dặn, giữ ấm và có vẻ ngoài thời thượng cho các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "110": {
+  "name": "Áo sơ mi bạc",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Hiệu ứng ánh kim bạc nổi bật, rất phù hợp cho các buổi tiệc tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "111": {
+  "name": "Áo sơ mi thêu cổ tròn khóa kéo",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Váy thêu hoa nữ tính, phù hợp cho các buổi hẹn hò hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "112": {
+  "name": "Áo sơ mi kẻ sọc",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ sọc dọc thanh lịch, phù hợp cho môi trường công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "113": {
+  "name": "Áo sơ mi denim dáng rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi denim dáng rộng phong cách casual năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "114": {
+  "name": "Áo sơ mi họa tiết dài tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết paisley và thiết kế buộc vạt phù hợp cho các chuyến đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "115": {
+  "name": "Áo sơ mi cotton ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi ngắn tay chất cotton thoáng mát, lịch sự cho mùa hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "116": {
+  "name": "Áo sơ mi cổ lọ ngắn tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu nhung tăm và thiết kế cổ lọ thời trang phù hợp đi chơi, hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "117": {
+  "name": "Áo sơ mi ren dài tay dáng rộng",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu ren xuyên thấu thời trang, phù hợp cho các buổi tiệc hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "118": {
+  "name": "Áo sơ mi kẻ sọc viscose dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi kẻ sọc có đai thắt eo lịch sự, phù hợp đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "119": {
+  "name": "Áo sơ mi họa tiết viscose ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng"
+  ],
+  "reason": "Họa tiết da báo và thiết kế buộc vạt, chất viscose mát mẻ cho đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "120": {
+  "name": "Áo sơ mi lụa cổ tim cổ lọ",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu lụa cao cấp và tay bồng thanh lịch, phù hợp đi làm hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "121": {
+  "name": "Áo kiểu kẻ caro cổ tròn dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo kiểu kẻ caro thanh lịch, kín đáo phù hợp cho cả môi trường công sở và đi học, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "122": {
+  "name": "Áo kiểu cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu cotton thoáng mát, kiểu dáng tunic rộng rãi phù hợp cho thời tiết nóng hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "123": {
+  "name": "Áo kiểu cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo cotton mỏng nhẹ, thiết kế boho phóng khoáng hợp đi biển hoặc dạo phố ngày nắng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "124": {
+  "name": "Áo kiểu họa tiết cổ tròn dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết hoa nổi bật và chi tiết thắt nơ điệu đà rất phù hợp cho các buổi hẹn hò hoặc tiệc nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "125": {
+  "name": "Áo kiểu cotton cổ tim",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng boho với chi tiết thêu và dây buộc tua rua, chất liệu cotton mát mẻ cho ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "126": {
+  "name": "Áo kiểu cotton cổ lọ dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sơ mi trắng cổ trụ thanh lịch, lịch sự, rất phù hợp để đi làm văn phòng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "127": {
+  "name": "Áo kiểu ren dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu ren và chi tiết thêu đục lỗ nữ tính, phù hợp cho các dịp đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "128": {
+  "name": "Áo kiểu dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế hở vai (cold shoulder) phối ren quyến rũ, thích hợp cho các buổi tiệc tối hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "129": {
+  "name": "Áo kiểu dáng ôm",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng áo ôm sát phối chun (smocked) và tay bồng thời trang, phù hợp để đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "130": {
+  "name": "Áo kiểu họa tiết dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết da báo nổi bật cùng chi tiết bèo nhún tạo vẻ ngoài sành điệu cho các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "131": {
+  "name": "Áo kiểu dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng sơ mi cơ bản, màu tối thanh lịch, rất phù hợp cho môi trường công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "132": {
+  "name": "Áo kiểu cotton",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo ngắn tay, chất liệu cotton modal mỏng nhẹ và thêu đục lỗ thoáng mát cho trời nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "133": {
+  "name": "Áo kiểu lụa",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu satin bóng bẩy cùng thiết kế bèo nhún sang trọng, phù hợp cho các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "134": {
+  "name": "Áo kiểu kẻ sọc cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ sọc xanh trắng thanh lịch, chất liệu cotton đứng dáng phù hợp đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "135": {
+  "name": "Áo kiểu kẻ sọc cotton dài tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế vắt chéo (wrapover) có cổ bẻ lịch sự, phù hợp cho môi trường công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "136": {
+  "name": "Áo kiểu denim cổ lọ dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời lạnh"
+  ],
+  "reason": "Chất liệu denim dày dặn vừa phải, phù hợp cho các hoạt động dạo phố hoặc khi trời se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "137": {
+  "name": "Áo kiểu denim dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời lạnh"
+  ],
+  "reason": "Áo denim dài tay kín đáo, phù hợp cho phong cách casual hàng ngày hoặc thời tiết mát mẻ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "138": {
+  "name": "Áo kiểu sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế trễ vai, sát nách mỏng mát, cực kỳ phù hợp cho đi biển hoặc ngày hè oi bức.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "139": {
+  "name": "Áo kiểu họa tiết cổ lọ",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi làm"
+  ],
+  "reason": "Họa tiết da báo sang trọng kết hợp cổ cao thanh lịch, phù hợp cả đi làm và dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "140": {
+  "name": "Áo kiểu họa tiết",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết vằn nổi bật, chất liệu voan rủ nhẹ nhàng phù hợp cho các buổi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "141": {
+  "name": "Áo kiểu lụa cổ tròn dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu lụa cao cấp, thiết kế dài tay thanh lịch phù hợp cho cả môi trường công sở và các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "142": {
+  "name": "Áo kiểu họa tiết cổ lọ ngắn tay",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo kiểu ngắn tay có cổ đứng lịch sự, họa tiết nổi bật phù hợp đi làm hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "143": {
+  "name": "Áo kiểu kẻ sọc",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Sơ mi kẻ sọc là trang phục cơ bản, lịch sự cho đi học và đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "144": {
+  "name": "Áo kiểu họa tiết cổ tim dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo voan họa tiết hoa nữ tính, nhẹ nhàng phù hợp cho các buổi hẹn hò hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "145": {
+  "name": "Áo kiểu cổ lọ",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế cổ đứng và tay bồng thanh lịch, chất vải voan có lót sang trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "146": {
+  "name": "Áo kiểu họa tiết viscose dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Áo họa tiết hoa nhí, cổ vuông rộng và có bo chun eo mang phong cách dạo phố năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "147": {
+  "name": "Áo kiểu lụa cổ lọ dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu nhung pha lụa dày dặn và sang trọng, giữ ấm tốt và phù hợp cho các sự kiện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "trời lạnh"
+  ]
+ },
+ "148": {
+  "name": "Áo kiểu họa tiết sát nách khóa kéo",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Dáng áo bustier sát nách, họa tiết thời trang phù hợp cho đi biển hoặc đi chơi tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "149": {
+  "name": "Áo kiểu họa tiết cổ tim dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Áo voan mỏng nhẹ, họa tiết hoa và cổ tim thoáng mát cho ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "150": {
+  "name": "Áo kiểu họa tiết voan",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu voan mỏng, dáng áo rộng thoải mái phù hợp cho thời tiết nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "151": {
+  "name": "Áo hai dây vải thể thao sát nách",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Dòng H&M Sport với vải chức năng nhanh khô, thiết kế chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "152": {
+  "name": "Áo hai dây in hình vải thể thao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo sát nách vải thể thao chuyên dụng, thoáng khí cho việc tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "153": {
+  "name": "Áo hai dây họa tiết cổ tim sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Dáng áo bodysuit có sợi kim tuyến lấp lánh, phù hợp cho các buổi tiệc tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "154": {
+  "name": "Áo hai dây cổ lọ sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế bodysuit hở lưng và có kim tuyến nổi bật cho các dịp đi chơi, hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "155": {
+  "name": "Áo hai dây cotton dáng ôm",
+  "occasions": [
+   "mặc ở nhà",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Áo ống cotton mềm mại, thoải mái mặc lót hoặc mặc ở nhà, đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "156": {
+  "name": "Áo hai dây sát nách",
+  "occasions": [
+   "đi chơi / đi học",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Áo croptop sát nách thun năng động cho các hoạt động dạo phố ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "157": {
+  "name": "Áo hai dây cotton croptop",
+  "occasions": [
+   "đi biển / trời nóng"
+  ],
+  "reason": "Chất liệu cotton móc (crochet) mỏng nhẹ, dáng croptop rất hợp đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "158": {
+  "name": "Áo hai dây cotton sát nách dáng ôm",
+  "occasions": [
+   "mặc ở nhà",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Áo hai dây cotton cơ bản, mỏng mát phù hợp mặc nhà hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "159": {
+  "name": "Áo hai dây thêu cotton",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo thun cotton có thêu hoa nhẹ nhàng, phù hợp mặc hàng ngày hoặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "160": {
+  "name": "Áo hai dây vải thể thao sát nách dáng ôm",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo tập chuyên dụng có sẵn áo ngực bên trong, vải nhanh khô phù hợp tập yoga.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "161": {
+  "name": "Áo hai dây sát nách khóa kéo",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hai dây vải dệt có thiết kế xếp ly điệu đà, phù hợp đi chơi hoặc hẹn hò ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "162": {
+  "name": "Áo hai dây vải thể thao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Sản phẩm thuộc dòng H&M Sport với chất liệu nhanh khô chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "163": {
+  "name": "Áo hai dây len sát nách croptop",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len mỏng dáng croptop có kim tuyến lấp lánh, phù hợp cho các buổi tiệc hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "164": {
+  "name": "Áo hai dây kẻ sọc cotton sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Chất liệu cotton organic mềm mại, thiết kế sát nách thoải mái cho mẹ bỉm sữa mặc ở nhà hoặc ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "165": {
+  "name": "Áo hai dây cổ tim sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo kiểu vải dệt thanh lịch, cổ tim kín đáo vừa đủ để mặc đi làm hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi làm"
+  ]
+ },
+ "166": {
+  "name": "Áo hai dây ren cổ tim sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo kiểu phối ren nữ tính, chất liệu vải dệt đẹp phù hợp cho các dịp đi chơi, hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "167": {
+  "name": "Áo hai dây họa tiết cotton sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo sát nách họa tiết hoa, chất cotton thoáng mát lý tưởng cho đi biển hoặc đi chơi ngày hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "168": {
+  "name": "Áo hai dây lụa cổ tim sát nách",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu satin bóng sang trọng cùng thiết kế hai dây mảnh phù hợp cho các buổi tiệc tối hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "169": {
+  "name": "Áo hai dây lụa sát nách",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo lụa mềm mại, màu sắc nổi bật phù hợp cho cả đi biển và các buổi hẹn hò thanh lịch.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "170": {
+  "name": "Áo hai dây vải thể thao sát nách",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo tập chuyên dụng dòng H&M Sport với vải chức năng nhanh khô và thiết kế lưng vận động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "171": {
+  "name": "Áo len phối màu",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt kim phối màu lịch sự, giữ ấm tốt cho nam giới đi làm hoặc đi học khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "172": {
+  "name": "Áo len kẻ sọc cổ tim có mũ",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len có mũ dày dặn, phong cách casual năng động phù hợp mặc giữ ấm khi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "173": {
+  "name": "Áo len cổ tròn dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len cổ tròn dệt kim mảnh, màu sắc trung tính dễ phối đồ đi làm hoặc đi học ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "174": {
+  "name": "Áo len xanh dương",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu len cừu giữ ấm tốt, kiểu dáng cơ bản lịch sự cho mọi hoạt động ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "175": {
+  "name": "Áo len kẻ sọc dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len kẻ sọc thanh lịch, chất liệu len pha giữ ấm vừa phải, phù hợp môi trường công sở và đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "176": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len cotton cao cấp, bề mặt dệt vân sang trọng, phù hợp mặc đi làm lịch sự.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "177": {
+  "name": "Áo len kẻ caro",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ caro nổi bật và chất len dày phù hợp để đi chơi hoặc đi học trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "178": {
+  "name": "Áo len xanh lá",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt gân màu rêu trầm tĩnh, phong cách tối giản phù hợp đi làm và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "179": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu cotton pha cashmere cao cấp, mềm mại và lịch sự cho nam giới công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "180": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt gân mỏng, kiểu dáng thoải mái phù hợp mặc ở nhà hoặc đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "181": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len vặn thừng dài tay thanh lịch, phù hợp giữ ấm và mặc đi làm hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "182": {
+  "name": "Áo len xanh dương",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế cổ shawl sang trọng, chất liệu cotton dệt kim dày dặn hợp cho dịp trang trọng và giữ ấm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "183": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt kim màu xanh năng động, phù hợp cho các hoạt động thường ngày khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "184": {
+  "name": "Áo len khóa kéo",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Dòng H&M Sport với chất liệu nhanh khô, thiết kế không đường may chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "185": {
+  "name": "Áo len đen",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dáng rộng, ngắn vừa phải, phong cách trẻ trung cho các bạn nữ đi chơi ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "186": {
+  "name": "Áo len cổ tim dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu len mỏng nhẹ có ánh kim và thiết kế dây đan chéo ở cổ phù hợp cho các buổi tiệc tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "187": {
+  "name": "Áo len đen",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len mohair mềm mại, dáng rộng thoải mái, giữ ấm tốt cho các hoạt động dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "188": {
+  "name": "Áo len cổ lọ dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Dạng bodysuit ôm sát, chất liệu thun ánh kim nổi bật, phù hợp để phối đồ đi tiệc hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "189": {
+  "name": "Áo len đen",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt kim kiểu polo ngắn tay thanh lịch, phù hợp cho môi trường công sở hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "190": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt kim mỏng nhẹ, màu sắc trung tính, dễ dàng phối đồ cho nhiều dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "191": {
+  "name": "Áo len dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Dáng áo dài, rộng và cổ lọ giữ ấm tốt, mang lại sự thoải mái tối đa khi ở nhà hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "192": {
+  "name": "Áo len cổ tim dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len vặn thừng cổ tim cổ điển, lịch sự cho cả đi làm và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "193": {
+  "name": "Áo len xám",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế thắt dây ở tay áo độc đáo, dáng rộng trẻ trung phù hợp cho các buổi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "194": {
+  "name": "Áo len cổ lọ dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh"
+  ],
+  "reason": "Chất liệu len merino cao cấp, dáng ôm và cổ đứng thanh lịch, rất phù hợp cho môi trường công sở.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "195": {
+  "name": "Áo len dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế trễ vai nữ tính và quyến rũ, phù hợp cho các buổi hẹn hò hoặc tiệc nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "196": {
+  "name": "Áo len cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo len cổ lọ dày dặn, xẻ tà hai bên thoải mái, lý tưởng để giữ ấm tại nhà hoặc đi dạo.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "197": {
+  "name": "Áo len ngắn tay dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dệt kim gân ngắn tay, dáng ôm cơ bản và thanh lịch cho nhiều dịp.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "198": {
+  "name": "Áo len cổ lọ dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh"
+  ],
+  "reason": "Chất liệu len cashmere cao cấp, cổ lọ đôi giữ ấm tốt và sang trọng cho môi trường làm việc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "199": {
+  "name": "Áo len trắng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế hở vai (cold shoulder) và thắt nơ ở tay áo mang phong cách dạo phố năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "200": {
+  "name": "Áo len họa tiết cổ tim dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Họa tiết jacquard kết hợp sợi ánh kim và thiết kế cổ sơ mi thanh lịch, phù hợp đi làm hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "201": {
+  "name": "Áo len cổ lọ",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len cổ lọ chất liệu cashmere thanh lịch, giữ ấm tốt, phù hợp nhiều dịp từ công sở đến hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "202": {
+  "name": "Áo len cổ lọ",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dày dặn với họa tiết đục lỗ thời trang, phù hợp cho các dịp đi chơi hoặc hẹn hò trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "203": {
+  "name": "Áo len dáng rộng",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo dệt kim dáng rộng thoải mái, phù hợp để mặc hàng ngày hoặc thư giãn tại nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "204": {
+  "name": "Áo len cổ tim dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len đan dây cổ V cá tính, chất liệu len giữ ấm phù hợp cho các hoạt động dạo phố ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "205": {
+  "name": "Áo len cổ lọ dài tay",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế cut-out ở ngực hiện đại và nổi bật, rất phù hợp cho các buổi hẹn hò hoặc đi chơi tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "206": {
+  "name": "Áo nỉ dài tay khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ trơn có khóa kéo sườn đơn giản, giữ ấm tốt, phù hợp mặc thường ngày hoặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "207": {
+  "name": "Áo nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ có cổ shawl lạ mắt, chất liệu nỉ bông ấm áp cho các hoạt động ngoài trời ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "208": {
+  "name": "Áo nỉ xám",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ cổ tròn cơ bản, dễ mặc, phù hợp cho nhiều hoạt động thường nhật và giữ ấm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "209": {
+  "name": "Áo nỉ phối màu cổ lọ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ phối màu có khóa kéo cổ và túi kangaroo năng động, phù hợp đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "210": {
+  "name": "Áo nỉ in hình dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ in hình chữ nhật bản lớn, phong cách casual năng động cho nam giới.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "211": {
+  "name": "Áo nỉ in hình dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ đỏ in chữ nổi bật, phù hợp cho các dịp đi chơi dạo phố ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "212": {
+  "name": "Áo nỉ in hình có mũ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie in hình hổ cá tính, chất nỉ dày dặn giữ ấm tốt cho phong cách đường phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "213": {
+  "name": "Áo nỉ phối màu",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ phối màu ngang đơn giản, trẻ trung, phù hợp cho học sinh, sinh viên.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "214": {
+  "name": "Áo nỉ phối màu dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ phối màu chữ V khỏe khoắn, phù hợp mặc đi chơi hoặc đi học hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "215": {
+  "name": "Áo nỉ phối màu len",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Sự kết hợp giữa thân áo nỉ và tay áo len dệt kim tạo điểm nhấn thú vị cho trang phục dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "216": {
+  "name": "Áo nỉ in hình có mũ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng áo nỉ dài có mũ in hình ngộ nghĩnh, phù hợp cho các bạn nữ đi chơi năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "217": {
+  "name": "Áo nỉ in hình dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ dáng rộng in hình phong cách thể thao, phù hợp cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "218": {
+  "name": "Áo nỉ dài tay croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ dáng croptop thời trang, phù hợp cho các bạn nữ phối đồ đi chơi năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "219": {
+  "name": "Áo nỉ xám",
+  "occasions": [
+   "đi chơi / đi học",
+   "mặc ở nhà"
+  ],
+  "reason": "Thiết kế trễ vai nữ tính trên nền vải nỉ thoải mái, phù hợp đi chơi hoặc mặc nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "220": {
+  "name": "Áo nỉ thêu croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ croptop thêu họa tiết thổ cẩm và tua rua độc đáo, phù hợp đi chơi hoặc dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "221": {
+  "name": "Áo nỉ in hình dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ dài tay dày dặn, in hình năng động phù hợp cho ngày lạnh, đi học hoặc mặc nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "222": {
+  "name": "Áo nỉ dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ dày tay, thiết kế vai xếp nếp thời trang phù hợp đi chơi hoặc đi học khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "223": {
+  "name": "Áo nỉ phối màu có mũ khóa kéo",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Dòng H&M Sport với chất liệu nỉ mềm, có mũ, phù hợp tập luyện hoặc mặc thường ngày khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "224": {
+  "name": "Áo nỉ họa tiết cổ lọ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ cổ lọ dáng croptop thời trang, phù hợp cho các hoạt động đi chơi, đi học ngày se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "225": {
+  "name": "Áo nỉ be",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ tay ngắn, chất liệu mỏng nhẹ phù hợp mặc nhà hoặc đi chơi trong thời tiết mát mẻ/hơi nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi biển / trời nóng"
+  ]
+ },
+ "226": {
+  "name": "Áo nỉ có mũ",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ có mũ in hình ông già Noel, phù hợp mặc đi chơi dịp lễ hội khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "227": {
+  "name": "Áo nỉ phối màu",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ phối màu năng động, tay dài giữ ấm tốt cho các dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "228": {
+  "name": "Áo nỉ dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Thiết kế trễ vai nữ tính trên chất liệu nỉ mỏng, phù hợp cho các buổi hẹn hò hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi tiệc / hẹn hò"
+  ]
+ },
+ "229": {
+  "name": "Áo nỉ dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ trơn dáng rộng cơ bản, dễ mặc cho nhiều dịp thường ngày khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "230": {
+  "name": "Áo nỉ cổ lọ dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo nỉ cổ lọ dáng oversized giữ ấm tốt và phong cách cho việc đi học, đi chơi ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "231": {
+  "name": "Áo hoodie cổ lọ khóa kéo",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Dòng H&M Sport, chất liệu thun chuyên dụng cho chạy bộ, có lỗ xỏ ngón và chi tiết phản quang.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "232": {
+  "name": "Áo hoodie nỉ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác nỉ có mũ cơ bản, tiện dụng để giữ ấm khi đi học hoặc mặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "233": {
+  "name": "Áo hoodie nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ mỏng nhẹ, phù hợp cho các hoạt động năng động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "234": {
+  "name": "Áo hoodie in hình nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ in chữ trẻ trung, phù hợp cho nam giới đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "235": {
+  "name": "Áo hoodie nỉ",
+  "occasions": [
+   "trời lạnh"
+  ],
+  "reason": "Áo hoodie có lớp lót lông cừu bên trong mũ, giữ ấm rất tốt cho thời tiết lạnh giá.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "236": {
+  "name": "Áo hoodie in hình nỉ",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie trắng đơn giản, dễ phối đồ cho các dịp đi chơi hoặc mặc nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "237": {
+  "name": "Áo hoodie nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie đỏ nổi bật, chất liệu nỉ dày dặn phù hợp cho mùa đông.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "238": {
+  "name": "Áo hoodie phối màu nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie phối màu hiện đại, phù hợp với phong cách năng động của nam giới.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "239": {
+  "name": "Áo hoodie họa tiết nỉ",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie họa tiết rằn ri cá tính, phù hợp cho các buổi đi chơi dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "240": {
+  "name": "Áo hoodie vải thể thao khóa kéo",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Áo tập chạy bộ chuyên dụng, vải nhanh khô, có lỗ thông hơi và chi tiết phản quang.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "241": {
+  "name": "Áo hoodie nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie chất liệu nỉ dày dặn, giữ ấm tốt, phù hợp cho các hoạt động thường ngày khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "242": {
+  "name": "Áo hoodie nỉ dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ dáng rộng thoải mái, giữ ấm tốt cho mùa đông hoặc mặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "243": {
+  "name": "Áo hoodie in hình nỉ ngắn tay croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie ngắn tay dáng croptop có in hình năng động, phù hợp đi chơi hoặc đi biển khi trời mát.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi biển / trời nóng"
+  ]
+ },
+ "244": {
+  "name": "Áo hoodie cổ lọ khóa kéo",
+  "occasions": [
+   "trời lạnh"
+  ],
+  "reason": "Áo khoác chần bông (puffer) cổ lọ dày dặn, chuyên dụng để giữ ấm trong thời tiết lạnh giá.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "245": {
+  "name": "Áo hoodie nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ trơn cơ bản, dài tay, phù hợp để giữ ấm và mặc thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "246": {
+  "name": "Áo hoodie in hình cotton dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie cotton dài tay có in chữ, phong cách năng động cho đi học, đi chơi hoặc mặc nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "247": {
+  "name": "Áo hoodie in hình nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ dài tay có túi kangaroo, giữ ấm tốt và phù hợp phong cách casual.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "248": {
+  "name": "Áo hoodie khóa kéo",
+  "occasions": [
+   "trời lạnh"
+  ],
+  "reason": "Áo khoác chần bông có mũ, thiết kế dày dặn để giữ ấm tối đa trong trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "249": {
+  "name": "Áo hoodie nỉ",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ màu sắc nổi bật, chất vải dày dặn phù hợp cho thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "250": {
+  "name": "Áo hoodie in hình nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ có in hình ở tay và thân, phong cách trẻ trung cho đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "251": {
+  "name": "Áo hoodie cổ lọ dài tay",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Dòng H&M Sport với chất liệu velour mềm, phù hợp cho các hoạt động vận động hoặc giữ ấm nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "252": {
+  "name": "Áo hoodie nỉ dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ màu tối cơ bản, dễ phối đồ cho các dịp đi chơi thường ngày hoặc mặc nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "253": {
+  "name": "Áo hoodie in hình nỉ dài tay croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie croptop in hình cá tính, phù hợp cho các bạn nữ đi chơi, dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "254": {
+  "name": "Áo hoodie nỉ",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie nỉ đen trơn cơ bản, giữ ấm tốt và rất dễ ứng dụng hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "255": {
+  "name": "Áo hoodie in hình nỉ dài tay croptop",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo hoodie croptop thêu hoa ở tay áo, thiết kế thời trang phù hợp đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "256": {
+  "name": "Áo cardigan nỉ dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo cardigan dáng bomber chất nỉ, phong cách casual năng động cho nam giới.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "257": {
+  "name": "Áo cardigan nỉ cổ lọ có mũ",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo cardigan nỉ có mũ và khóa kéo chéo độc đáo, phù hợp mặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "258": {
+  "name": "Áo cardigan cổ lọ khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo cardigan thun gân nhẹ nhàng, phù hợp khoác ngoài khi đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "259": {
+  "name": "Áo cardigan len cổ tim dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo cardigan len cổ tim thanh lịch, chất liệu lụa pha cotton cao cấp phù hợp môi trường công sở hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "260": {
+  "name": "Áo cardigan len khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo cardigan len Merino khóa kéo, kiểu dáng gọn gàng, lịch sự cho đi làm hoặc gặp gỡ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "261": {
+  "name": "Áo cardigan len dài tay khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo cardigan len dày tay có khóa kéo phù hợp để giữ ấm và mặc hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "262": {
+  "name": "Áo cardigan họa tiết len dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu len viscose mỏng nhẹ, họa tiết hoa phù hợp khoác nhẹ khi trời nóng hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi biển / trời nóng"
+  ]
+ },
+ "263": {
+  "name": "Áo cardigan len dài tay",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu len xù mềm mại, giữ ấm tốt, phù hợp mặc ở nhà hoặc đi chơi khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "264": {
+  "name": "Áo cardigan len dài tay dáng rộng",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo len có cúc trang trí đá thanh lịch, phù hợp cho môi trường công sở hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "265": {
+  "name": "Áo cardigan len cổ tim dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng áo croptop trẻ trung, năng động phù hợp cho các dịp đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "266": {
+  "name": "Áo cardigan len dài tay dáng rộng",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo cardigan dáng dài có thắt eo thanh lịch, phù hợp đi làm hoặc hẹn hò trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "267": {
+  "name": "Áo cardigan nỉ có mũ khóa kéo",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác nỉ có mũ dáng casual, thoải mái cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "268": {
+  "name": "Áo cardigan len",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo len dáng dài, rộng rãi, phù hợp để giữ ấm khi đi chơi hoặc mặc ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "269": {
+  "name": "Áo cardigan len dài tay",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng cardigan len cơ bản, lịch sự, phù hợp nhiều hoàn cảnh trong thời tiết lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "270": {
+  "name": "Áo cardigan len dài tay",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu len mohair mềm và ấm, phù hợp khoác ngoài khi đi chơi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "271": {
+  "name": "Áo khoác len",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dạ dáng dài sang trọng, lịch sự, rất hợp cho công sở và các sự kiện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "272": {
+  "name": "Áo khoác có mũ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo parka có lớp lót bông dày dặn, chuyên dụng để giữ ấm khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "273": {
+  "name": "Áo khoác cổ lọ",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác bóng chày (varsity jacket) năng động, phù hợp cho học sinh, sinh viên đi học, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "274": {
+  "name": "Áo khoác len khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác bomber chất liệu len có cổ lông lịch sự, giữ ấm tốt cho nhiều dịp.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "275": {
+  "name": "Áo khoác cổ lọ khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác kaki mỏng nhẹ, phong cách quân đội phù hợp đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "276": {
+  "name": "Áo khoác dài tay khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời mưa / gió"
+  ],
+  "reason": "Áo khoác dáng dài có tính năng trượt nước (water-repellent), phù hợp đi làm khi trời mưa gió.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "277": {
+  "name": "Áo khoác cổ lọ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác bomber có lót bông, phù hợp giữ ấm và mặc đi chơi năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "278": {
+  "name": "Áo khoác nỉ có mũ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác phao (puffer) dày dặn, giữ ấm tối đa trong thời tiết lạnh giá.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "279": {
+  "name": "Áo khoác vải thể thao cổ lọ dài tay",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Chất liệu vải chức năng nhanh khô, thiết kế chuyên dụng cho việc tập luyện thể thao.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "280": {
+  "name": "Áo khoác nhung tăm",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác nhung tăm dày dặn, phong cách casual phù hợp đi chơi khi trời se lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "281": {
+  "name": "Áo khoác kẻ caro viscose",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dáng dài họa tiết kẻ caro thanh lịch, phù hợp môi trường công sở hoặc các buổi hẹn hò trang trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "282": {
+  "name": "Áo khoác nỉ cổ lọ có mũ",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác nỉ pile thuộc dòng H&M Sport, giữ ấm tốt cho các hoạt động thể thao hoặc đi chơi ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "283": {
+  "name": "Áo khoác cotton có mũ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo parka có lớp lót và mũ lông dày dặn, thiết kế casual phù hợp giữ ấm khi đi học, đi chơi ngày đại hàn.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "284": {
+  "name": "Áo khoác da khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác da lót lông cừu nhân tạo thời trang và ấm áp, phù hợp cho nhiều dịp từ đi chơi đến hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "285": {
+  "name": "Áo khoác phối màu cổ lọ có mũ",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời mưa / gió"
+  ],
+  "reason": "Áo khoác gió (windbreaker) có khả năng chống gió, phù hợp đi ngoài trời khi có gió hoặc mưa nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "286": {
+  "name": "Áo khoác kẻ caro",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác dáng ngắn với khuy đính đá và tay bồng điệu đà, phù hợp để diện đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "287": {
+  "name": "Áo khoác nỉ",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác nỉ pile dáng dài giữ ấm tốt, phong cách trẻ trung năng động cho các dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "288": {
+  "name": "Áo khoác cổ lọ có mũ",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phao có mũ và đai thắt eo giữ ấm hiệu quả cho mùa đông.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "289": {
+  "name": "Áo khoác có mũ khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo parka mỏng nhẹ, thiết kế casual năng động phù hợp cho các hoạt động đi học, đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "290": {
+  "name": "Áo khoác lụa hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dạ hai hàng khuy phối cổ lông sang trọng, phù hợp đi làm công sở hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "291": {
+  "name": "Áo khoác da dài tay khóa kéo",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác da biker cá tính, phù hợp cho các buổi đi chơi hoặc hẹn hò buổi tối.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "292": {
+  "name": "Áo khoác kẻ caro len hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dạ họa tiết houndstooth thanh lịch, phù hợp cho cả môi trường công sở và đi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "293": {
+  "name": "Áo khoác cotton dáng rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác cotton dáng hộp trẻ trung, phù hợp mặc khoác ngoài khi đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "294": {
+  "name": "Áo khoác kẻ caro len dài tay",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dạ kẻ caro phối màu nổi bật nhưng vẫn giữ được nét thanh lịch của blazer dáng dài.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "295": {
+  "name": "Áo khoác họa tiết khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo phao họa tiết da rắn thời trang, phù hợp giữ ấm và tạo điểm nhấn khi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "296": {
+  "name": "Áo khoác len",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác len dáng đứng tối giản, màu sắc nhã nhặn phù hợp đi làm hoặc hẹn hò thanh lịch.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "297": {
+  "name": "Áo khoác denim",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác denim là món đồ casual kinh điển, phù hợp cho các dịp đi chơi, đi học năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "298": {
+  "name": "Áo khoác họa tiết lụa",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo kimono chất liệu satin mỏng nhẹ, họa tiết nhiệt đới phù hợp đi biển hoặc mặc khoác nhẹ ở nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "299": {
+  "name": "Áo khoác họa tiết viscose",
+  "occasions": [
+   "mặc ở nhà"
+  ],
+  "reason": "Áo khoác kiểu pyjama chất liệu viscose mềm mại, phù hợp để mặc thoải mái tại nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "300": {
+  "name": "Áo khoác phối màu vải thể thao cổ lọ có mũ",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Áo anorak dòng H&M Sport làm từ vải chức năng nhanh khô, thiết kế chuyên dụng cho tập luyện.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "301": {
+  "name": "Áo khoác denim dài tay dáng rộng",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác denim có lớp lót lông dày dặn, phù hợp để giữ ấm trong thời tiết lạnh và mặc đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "302": {
+  "name": "Áo khoác họa tiết vải thể thao cổ lọ có mũ",
+  "occasions": [
+   "tập thể thao",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác chất liệu vải thể thao nhanh khô, có mũ, thuộc dòng H&M Sport nên rất hợp để tập luyện hoặc mặc casual.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "303": {
+  "name": "Áo khoác len khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo khoác dáng dài chất liệu len thanh lịch, lịch sự, phù hợp cho môi trường công sở, dự tiệc và giữ ấm tốt.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "304": {
+  "name": "Áo khoác lụa ngắn tay",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Áo choàng chất liệu lụa mỏng nhẹ, ngắn tay, phù hợp để mặc thoải mái ở nhà hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "305": {
+  "name": "Áo khoác denim dáng rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác denim đỏ dáng rộng năng động, phù hợp cho các hoạt động đi chơi, đi học thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "306": {
+  "name": "Áo khoác denim",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác denim màu sắc trẻ trung, phong cách casual phù hợp để đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "307": {
+  "name": "Áo khoác cổ lọ khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác phao (puffer) có lớp đệm dày, cổ cao giúp giữ ấm hiệu quả trong mùa đông.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "308": {
+  "name": "Áo khoác phối màu nỉ cổ lọ có mũ",
+  "occasions": [
+   "tập thể thao",
+   "trời lạnh"
+  ],
+  "reason": "Áo khoác nỉ dòng H&M Sport có lớp lót fleece giữ ấm, phù hợp cho các hoạt động thể thao ngoài trời khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "309": {
+  "name": "Áo khoác họa tiết cotton",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác họa tiết rằn ri chất liệu cotton bền bỉ, phong cách bụi bặm phù hợp đi chơi, dã ngoại.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "310": {
+  "name": "Áo khoác denim dài tay",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác denim dáng chore jacket đơn giản, phù hợp mặc hàng ngày đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "311": {
+  "name": "Áo blazer cotton dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer cotton dáng ôm thanh lịch, phù hợp cho môi trường công sở hoặc các buổi hẹn hò trang trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "312": {
+  "name": "Áo blazer len",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer chất liệu len cao cấp, giữ ấm nhẹ và mang lại vẻ ngoài sang trọng cho các dịp quan trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "313": {
+  "name": "Áo blazer cotton dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer màu trung tính, dáng ôm lịch sự, rất phù hợp để đi làm hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "314": {
+  "name": "Áo blazer cổ lọ khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác bomber chất liệu thun dày dặn, phong cách năng động phù hợp đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "315": {
+  "name": "Áo blazer dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo blazer chất liệu thun (jersey) thoải mái nhưng vẫn giữ được form dáng lịch sự, có thể mặc đi làm hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "316": {
+  "name": "Áo blazer cotton khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo khoác dạng sơ mi (shirt jacket) chất liệu thun dày, phù hợp phong cách casual năng động.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "317": {
+  "name": "Áo blazer linen dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer chất liệu linen thoáng mát, phù hợp cho các dịp trang trọng trong thời tiết nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "318": {
+  "name": "Áo blazer cotton dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo blazer thun không lót, thoải mái và trẻ trung, dễ dàng ứng dụng cho nhiều dịp thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "319": {
+  "name": "Áo blazer kẻ sọc hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer họa tiết kẻ sọc nổi bật và thời trang, phù hợp để đi làm hoặc đi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "320": {
+  "name": "Áo blazer dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Áo blazer đen dáng ôm cơ bản với chi tiết khuy đính hạt sang trọng, phù hợp cho công sở và các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "321": {
+  "name": "Áo blazer len dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "trời lạnh"
+  ],
+  "reason": "Áo blazer len cao cấp, dáng ôm thanh lịch phù hợp cho môi trường công sở, dự tiệc và giữ ấm tốt.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "322": {
+  "name": "Áo blazer dài tay hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế hai hàng khuy cổ điển, lịch sự, rất phù hợp để đi làm hoặc đi các sự kiện quan trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "323": {
+  "name": "Áo blazer kẻ caro",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời lạnh"
+  ],
+  "reason": "Họa tiết kẻ caro và chất liệu vải dệt bề mặt mềm mại tạo vẻ ngoài năng động, ấm áp cho ngày lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "324": {
+  "name": "Áo blazer dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời lạnh"
+  ],
+  "reason": "Dáng áo khoác sơ mi (shacket) kẻ caro trẻ trung, phù hợp để đi học hoặc đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "325": {
+  "name": "Áo blazer da dài tay",
+  "occasions": [
+   "đi chơi / đi học",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu da nhân tạo chần bông thời thượng, giữ ấm tốt và tạo điểm nhấn nổi bật khi đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "326": {
+  "name": "Áo blazer kẻ sọc",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ sọc thanh mảnh trên nền vải dệt tạo sự trẻ trung nhưng vẫn đủ lịch sự để đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "327": {
+  "name": "Áo blazer kẻ caro viscose hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Áo blazer kẻ caro nhỏ trang nhã, dễ dàng phối đồ cho cả môi trường công sở và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "328": {
+  "name": "Áo blazer xám",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế tay lỡ nhún bèo và dáng ôm nhẹ tạo vẻ nữ tính, thanh lịch cho các buổi hẹn hò hoặc đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "329": {
+  "name": "Áo blazer dáng rộng hai hàng khuy",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng oversized hiện đại, màu sắc trung tính phù hợp cho phong cách công sở năng động hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "330": {
+  "name": "Áo blazer dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Màu hồng nổi bật cùng dáng ôm thanh lịch, rất phù hợp để gây ấn tượng tại các buổi tiệc hoặc đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "331": {
+  "name": "Quần jeans dáng rộng ống đứng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans có pha linen giúp thoáng mát hơn, phù hợp cho các hoạt động ngoài trời ngày nóng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi biển / trời nóng"
+  ]
+ },
+ "332": {
+  "name": "Quần jeans ống côn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng quần tapered hiện đại, chất liệu denim co giãn thoải mái cho các hoạt động thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "333": {
+  "name": "Quần jeans khóa kéo ống đứng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans đen cơ bản, dáng đứng thoải mái, dễ mặc cho mọi dịp đi chơi hay đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "334": {
+  "name": "Quần jeans khóa kéo rách",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Chi tiết rách và vá bụi bặm, chỉ phù hợp cho phong cách dạo phố năng động, không hợp đi làm.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "335": {
+  "name": "Quần jeans khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans trắng dáng ôm sạch sẽ, trẻ trung, phù hợp để đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "336": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Màu vàng mù tạt lạ mắt và dáng skinny tạo phong cách thời trang cá tính khi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "337": {
+  "name": "Quần jeans dáng ôm",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans trắng dáng siêu ôm (skinny) mang lại vẻ ngoài hiện đại, năng động cho nam giới.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "338": {
+  "name": "Quần jeans xanh dương",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Màu xanh denim truyền thống với các vết mài nhẹ, phù hợp cho phong cách casual hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "339": {
+  "name": "Quần jeans khóa kéo ống côn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu Selvedge denim cao cấp, bền bỉ, phù hợp cho những người yêu thích phong cách denim cổ điển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "340": {
+  "name": "Quần jeans khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans trắng dáng ôm cơ bản, dễ phối đồ cho các dịp đi chơi, dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "341": {
+  "name": "Quần jeans họa tiết dáng ôm",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans denim dày dặn với họa tiết rằn ri năng động, phù hợp cho các hoạt động thường ngày hoặc giữ ấm khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "342": {
+  "name": "Quần jeans khóa kéo ống rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống rộng thoải mái, phong cách casual phù hợp để đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "343": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans có chi tiết rách và khóa kéo ở gấu, mang phong cách bụi bặm phù hợp đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "344": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans dáng ôm cơ bản, chất liệu denim dày dặn phù hợp mặc hàng ngày hoặc khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "345": {
+  "name": "Quần jeans khóa kéo ống côn",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống côn màu xanh denim cơ bản, dễ phối đồ cho các dịp đi học, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "346": {
+  "name": "Quần jeans ống côn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans có sọc trắng hai bên tạo điểm nhấn thể thao, năng động cho các buổi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "347": {
+  "name": "Quần jeans khóa kéo rách",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans rách kèm dây xích kim loại mang phong cách cá tính, phù hợp đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "348": {
+  "name": "Quần jeans khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần treggings denim cạp cao có sọc họa tiết da báo, phù hợp cho các bạn nữ đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "349": {
+  "name": "Quần jeans cạp cao ống rộng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống rộng cạp cao thời trang, phù hợp cho các hoạt động dạo phố, đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "350": {
+  "name": "Quần jeans khóa kéo rách",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans dáng ôm có chi tiết rách gối nhẹ, phù hợp mặc đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "351": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống đứng chất liệu denim dày dặn, bền bỉ, phù hợp mặc hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "352": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans dáng ôm cạp cao giúp tôn dáng, phù hợp đi chơi hoặc mặc ấm khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "353": {
+  "name": "Quần jeans khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jegging đen cơ bản, co giãn tốt, phù hợp cho nhiều hoạt động đi chơi, đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "354": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans có đính kim sa (sequins) ở đầu gối tạo điểm nhấn nổi bật, phù hợp đi tiệc hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "355": {
+  "name": "Quần jeans khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans có thêu họa tiết hoa và chim tinh tế, phù hợp cho phong cách đi chơi nữ tính.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "356": {
+  "name": "Quần jeans xám",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jegging giả jeans với phần bụng rộng thoải mái, phù hợp cho phụ nữ mang thai mặc ở nhà hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "mặc ở nhà"
+  ]
+ },
+ "357": {
+  "name": "Quần jeans khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans trắng ống rộng có đường ly giữa thanh lịch, có thể mặc đi làm casual hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": [
+   "đi làm"
+  ]
+ },
+ "358": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jegging dáng ôm màu xám đen dễ phối đồ cho các dịp đi chơi thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "359": {
+  "name": "Quần jeans kẻ sọc dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans họa tiết kẻ sọc chéo độc đáo, phù hợp để tạo phong cách riêng khi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "360": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans dáng ôm có đường gân dọc ống quần, tạo vẻ năng động cho các buổi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "361": {
+  "name": "Quần jeans khóa kéo ống côn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần yếm denim dáng côn năng động, phù hợp cho các hoạt động dạo phố hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "362": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans túi hộp (utility) phong cách casual, thích hợp để đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "363": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans skinny màu đỏ rượu vang nổi bật, phù hợp cho các dịp đi chơi casual.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "364": {
+  "name": "Quần jeans khóa kéo lửng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans dáng rộng thoải mái, phù hợp cho phong cách năng động đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "365": {
+  "name": "Quần jeans khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống rộng màu hồng nhạt trẻ trung, thích hợp cho các buổi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "366": {
+  "name": "Quần jeans cạp cao ống đứng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans thêu hoa màu cam nổi bật, phù hợp cho các dịp đi chơi dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "367": {
+  "name": "Quần jeans khóa kéo ống đứng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống đứng thiết kế gấu lật độc đáo, phù hợp cho phong cách đi chơi thời trang.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "368": {
+  "name": "Quần jeans thêu dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans skinny thêu họa tiết nhỏ trẻ trung, phù hợp cho học sinh, sinh viên đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "369": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans skinny thêu hoa thanh lịch, phù hợp cho các buổi đi chơi dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "370": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans rách gối năng động, phù hợp cho các hoạt động đi chơi thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "371": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans rách gối và gấu tua rua phong cách, phù hợp cho các buổi đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "372": {
+  "name": "Quần jeans khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans ống rộng màu xanh đậm cơ bản, dễ phối đồ để đi học hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "373": {
+  "name": "Quần jeans khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans đen dáng ôm cơ bản, phù hợp cho nhiều hoạt động đi chơi, đi học thường ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "374": {
+  "name": "Quần jeans khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jeans đen rách gối kèm thắt lưng vải cá tính, phù hợp cho giới trẻ đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "375": {
+  "name": "Quần jeans dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jegging đen ôm sát thoải mái, phù hợp cho các hoạt động đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "376": {
+  "name": "Quần dài cotton khóa kéo ống côn",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần dài cotton có chi tiết chần bông ở gối khỏe khoắn, phù hợp cho nam giới đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "377": {
+  "name": "Quần dài cotton khóa kéo ống đứng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần túi hộp (cargo) nam tính và tiện dụng, phù hợp cho các dịp đi chơi dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "378": {
+  "name": "Quần dài kẻ caro cotton dáng ôm khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần họa tiết kẻ caro trẻ trung, phù hợp cho nam giới đi chơi hoặc đi học.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "379": {
+  "name": "Quần dài len khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần chất liệu len ấm áp, dáng đứng lịch sự phù hợp cho môi trường công sở hoặc hẹn hò mùa lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "380": {
+  "name": "Quần dài linen khóa kéo ống côn",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Quần chất liệu linen pha cotton thoáng mát, kiểu dáng thanh lịch phù hợp đi làm hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "381": {
+  "name": "Quần dài linen khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần tây chất liệu len và linen thoáng khí, kiểu dáng thanh lịch phù hợp cho môi trường công sở hoặc các buổi hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "382": {
+  "name": "Quần dài cotton dáng rộng ống đứng",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần cotton dáng rộng có cạp chun và dây rút mang lại sự thoải mái tối đa khi ở nhà hoặc đi chơi casual.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "383": {
+  "name": "Quần dài cotton dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần chinos dáng ôm từ chất liệu cotton cao cấp, thiết kế lịch sự rất hợp để đi làm hoặc dự tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "384": {
+  "name": "Quần dài nhung tăm dáng ôm khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu nhung tăm dày dặn giúp giữ ấm tốt, phù hợp cho các hoạt động ngoài trời khi trời lạnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "385": {
+  "name": "Quần dài cotton khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần chinos cotton dáng đứng cơ bản, bền bỉ và thoải mái cho các hoạt động đi học, đi chơi hàng ngày.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "386": {
+  "name": "Quần dài vải thể thao khóa kéo cạp chun",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Quần legging chuyên dụng cho chạy bộ với vải nhanh khô, thoáng khí và có chi tiết phản quang.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "387": {
+  "name": "Quần dài cotton dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần tây dáng ôm thanh lịch, chất vải dệt đứng dáng phù hợp cho cả môi trường công sở và các dịp trang trọng.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "388": {
+  "name": "Quần dài len khóa kéo ống côn",
+  "occasions": [
+   "đi làm",
+   "trời lạnh"
+  ],
+  "reason": "Chất liệu len chải mềm mại giữ ấm tốt kết hợp cùng kiểu dáng quần tây lịch sự có ly giữa.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "389": {
+  "name": "Quần dài thêu cotton khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần thun ôm có thêu họa tiết ở cạp và gấu quần, tạo điểm nhấn trẻ trung cho trang phục đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "390": {
+  "name": "Quần dài họa tiết viscose ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Chất liệu viscose mỏng nhẹ, họa tiết hoa và dáng rộng thoải mái như đồ mặc nhà hoặc đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "391": {
+  "name": "Quần dài khóa kéo ống rộng",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế ống loe rộng và gấu bất đối xứng rất thời trang và nổi bật, phù hợp cho các buổi tiệc.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "392": {
+  "name": "Quần dài da khóa kéo cạp cao",
+  "occasions": [
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu giả da cá tính và thời thượng, phù hợp để tạo phong cách ấn tượng khi đi chơi hoặc hẹn hò.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "393": {
+  "name": "Quần dài khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần thun ôm có chi tiết bèo nhún dọc hai bên sườn, tạo nét điệu đà cho trang phục dạo phố.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "394": {
+  "name": "Quần dài kẻ sọc ống côn cạp chun",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ sọc thanh mảnh trên nền vải dệt, dáng ống côn lịch sự có thể mặc đi làm hoặc đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "395": {
+  "name": "Quần dài cạp cao ống đứng",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Vải dệt xốp nhẹ, thoáng mát cùng cạp chun thoải mái, thích hợp cho thời tiết nóng hoặc mặc tại nhà.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "396": {
+  "name": "Quần dài kẻ sọc dáng rộng ống côn",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần kẻ sọc dáng rộng ống côn lịch sự nhưng vẫn thoải mái nhờ cạp chun, phù hợp nhiều hoàn cảnh.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "397": {
+  "name": "Quần dài khóa kéo cạp cao",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần culottes ống siêu rộng bằng vải cupro mềm mại, bay bổng, hợp cho đi biển hoặc các buổi tiệc nhẹ.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "398": {
+  "name": "Quần dài kẻ sọc viscose ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu viscose mát mẻ, thiết kế cạp paper bag có thắt nơ nữ tính, hợp cho mùa hè.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "399": {
+  "name": "Quần dài họa tiết viscose ống rộng ống đứng",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Họa tiết hoa poppy rực rỡ trên nền vải viscose thoáng mát, lý tưởng cho những chuyến đi biển.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "400": {
+  "name": "Quần dài linen khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Sự kết hợp giữa linen và cotton tạo nên chiếc quần ống rộng thanh lịch, mát mẻ cho cả đi làm và đi chơi.",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "401": {
+  "name": "Quần dài kẻ caro khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần dài kẻ caro thanh lịch và lịch sự, phù hợp đi làm hoặc đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "402": {
+  "name": "Quần dài họa tiết lụa ống rộng ống đứng",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần lụa ống rộng mỏng nhẹ, thoáng mát, thích hợp mặc khi trời nóng hoặc đi hẹn hò.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "403": {
+  "name": "Quần dài họa tiết khóa kéo lửng",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần dài sọc dọc đứng dáng, thanh lịch cho môi trường công sở và tiệc tùng.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "404": {
+  "name": "Quần dài kẻ sọc khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần ống rộng vải dệt thoáng mát, lịch sự thích hợp đi làm và đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "405": {
+  "name": "Quần dài da khóa kéo ống côn",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần chất liệu da lộn giữ ấm tốt, phù hợp cho ngày trời lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "406": {
+  "name": "Quần dài phối màu vải thể thao cạp chun",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Quần thể thao chuyên dụng co giãn, nhanh khô thiết kế riêng cho việc tập luyện.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "407": {
+  "name": "Quần dài vải thể thao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Quần legging thể thao chức năng nhanh khô, chuyên dùng để tập thể thao.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "408": {
+  "name": "Quần dài kaki khóa kéo ống côn",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần kaki kiểu dáng lịch sự, gọn gàng phù hợp mặc đi làm và đi học.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "409": {
+  "name": "Quần dài kaki dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần dài dáng ôm chất kaki đứng dáng, lịch sự khi đi làm hoặc đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "410": {
+  "name": "Quần dài nhung tăm khóa kéo",
+  "occasions": [
+   "trời lạnh",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần nhung tăm giữ ấm tốt, phù hợp mặc trong những ngày trời lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "411": {
+  "name": "Quần âu linen dáng ôm",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần âu pha linen nhẹ nhàng, thoáng mát, thích hợp đi làm và dạo phố ngày nóng.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "412": {
+  "name": "Quần âu dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu nam dáng ôm lịch sự, chuẩn trang phục công sở và dự tiệc.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "413": {
+  "name": "Quần âu kẻ caro linen khóa kéo ống côn",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng"
+  ],
+  "reason": "Quần âu pha linen mỏng nhẹ, thoáng mát cho thời tiết ấm áp.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "414": {
+  "name": "Quần âu kẻ caro len dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu pha len giữ ấm vừa phải, lịch lãm cho môi trường công sở hoặc hẹn hò.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "415": {
+  "name": "Quần âu kẻ caro len dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu chất liệu len mềm mại, sang trọng, phù hợp đi làm và dự tiệc.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "416": {
+  "name": "Quần âu cotton dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu cotton đứng dáng, lịch sự, hoàn hảo cho trang phục công sở.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "417": {
+  "name": "Quần âu kẻ caro dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu kẻ caro dáng ôm thanh lịch, thích hợp đi làm và gặp gỡ đối tác.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "418": {
+  "name": "Quần âu kẻ caro dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu vải dày dặn vừa phải, giữ ấm tốt và lịch sự cho mùa lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "419": {
+  "name": "Quần âu kẻ caro dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu kẻ caro thiết kế gọn gàng, lịch sự cho nam giới khi đi làm.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "420": {
+  "name": "Quần âu cotton dáng ôm khóa kéo",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần âu cotton dáng ôm trẻ trung, phù hợp đi làm và đi học hàng ngày.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "421": {
+  "name": "Quần âu ống côn",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Jumpsuit chất liệu nhung phối ren sang trọng, thiết kế hai dây phù hợp cho các buổi tiệc hoặc hẹn hò tối.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "422": {
+  "name": "Quần âu voan ống rộng cạp chun",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Jumpsuit voan có sợi kim tuyến lấp lánh và chi tiết bèo nhún điệu đà, rất hợp để đi tiệc.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "423": {
+  "name": "Quần âu khóa kéo cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Jumpsuit chất liệu nỉ nhung (velour) dày dặn, có mũ trùm đầu giúp giữ ấm, phù hợp mặc nhà hoặc đi chơi casual.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "424": {
+  "name": "Quần âu kẻ sọc linen ống rộng lửng",
+  "occasions": [
+   "đi làm",
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu linen thoáng mát, họa tiết kẻ sọc và cổ vest thanh lịch, phù hợp cho cả đi làm và đi chơi ngày hè.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "425": {
+  "name": "Quần âu họa tiết ống rộng",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế cổ V sâu, tay dài và ống rộng với họa tiết tinh tế, phù hợp cho các dịp hẹn hò hoặc sự kiện trang trọng.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "426": {
+  "name": "Quần âu họa tiết ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết nhiệt đới rực rỡ trên nền vải dệt mỏng nhẹ, lý tưởng cho các chuyến đi biển hoặc dạo phố trời nóng.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "427": {
+  "name": "Quần âu họa tiết viscose cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Dáng playsuit ngắn, chất liệu viscose mềm mát và họa tiết hoa nhí phù hợp cho các hoạt động ngoài trời khi trời nóng.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "428": {
+  "name": "Quần âu cotton ống côn cạp chun",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng boilersuit năng động, chất liệu cotton bền bỉ, phù hợp cho phong cách dạo phố hàng ngày.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "429": {
+  "name": "Quần âu len khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần âu chất liệu len dày dặn, đứng dáng, rất lịch sự cho môi trường công sở hoặc đi tiệc trong thời tiết lạnh.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "430": {
+  "name": "Quần âu cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Dáng playsuit ngắn tay, chất liệu thun jersey mềm mại, thoải mái để mặc ở nhà hoặc đi chơi ngày hè.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "431": {
+  "name": "Quần âu len khóa kéo ống rộng",
+  "occasions": [
+   "đi làm",
+   "trời lạnh",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần tây chất liệu len cao cấp, ống đứng thanh lịch, phù hợp cho đi làm công sở hoặc các dịp trang trọng.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "432": {
+  "name": "Quần âu kẻ caro khóa kéo ống rộng",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Họa tiết kẻ caro cổ điển, dáng lửng hiện đại, phù hợp cho cả môi trường làm việc và đi học.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "433": {
+  "name": "Quần âu khóa kéo cạp cao",
+  "occasions": [
+   "đi làm",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần âu màu sắc nhã nhặn, thiết kế cạp cao thanh lịch, phù hợp cho nữ giới đi làm hoặc đi chơi.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "434": {
+  "name": "Quần âu khóa kéo ống đứng",
+  "occasions": [
+   "đi làm",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Màu sắc nổi bật cùng dáng quần tây ống đứng chỉn chu, phù hợp để đi làm hoặc tham dự các buổi hẹn hò.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "435": {
+  "name": "Quần âu lửng",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế cổ yếm, chất liệu vải rủ mỏng nhẹ và màu vàng rực rỡ, rất hợp cho đi biển hoặc tiệc ngoài trời.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "436": {
+  "name": "Quần jogger cotton dáng ôm cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger cotton co giãn, kiểu dáng đơn giản, thoải mái cho việc mặc ở nhà hoặc đi chơi casual.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "437": {
+  "name": "Quần jogger phối màu ống côn cạp chun",
+  "occasions": [
+   "tập thể thao",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu vải có độ bóng nhẹ, phối sọc thể thao, phù hợp cho các hoạt động vận động hoặc đi chơi năng động.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "438": {
+  "name": "Quần jogger in hình nỉ ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu nỉ có lớp chải bông bên trong giữ ấm tốt, phù hợp cho thời tiết lạnh.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "439": {
+  "name": "Quần jogger cotton cạp chun",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Kiểu dáng quần túi hộp (cargo) năng động, chất liệu cotton bền bỉ, phù hợp cho đi chơi hoặc đi học.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "440": {
+  "name": "Quần jogger nỉ cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ dày dặn, có sọc bên hông, phù hợp mặc ấm ở nhà hoặc đi chơi hàng ngày.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "441": {
+  "name": "Quần jogger dáng ôm lửng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger dáng ôm chất liệu vải dệt phù hợp mặc đi chơi năng động.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "442": {
+  "name": "Quần jogger nỉ khóa kéo cạp chun",
+  "occasions": [
+   "tập thể thao",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ thể thao thoải mái, phù hợp tập luyện và hoạt động thường ngày.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "443": {
+  "name": "Quần jogger nỉ dáng ôm cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger chất nỉ ấm áp, thoải mái cho các hoạt động thường ngày.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "444": {
+  "name": "Quần jogger nỉ cạp chun",
+  "occasions": [
+   "tập thể thao",
+   "mặc ở nhà"
+  ],
+  "reason": "Thiết kế quần lót legging kết hợp short thun thể thao tiện lợi cho việc tập luyện.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "445": {
+  "name": "Quần jogger vải thể thao cạp chun",
+  "occasions": [
+   "tập thể thao",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger vải thể thao chuyên dụng nhanh khô, thích hợp tập luyện.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "446": {
+  "name": "Quần jogger ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger chất liệu nhung ấm áp, thoải mái mặc ở nhà hoặc trời lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "447": {
+  "name": "Quần jogger nỉ",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger nỉ cạp cao ấm áp, thích hợp mặc ở nhà hoặc trời lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "448": {
+  "name": "Quần jogger họa tiết nỉ cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ họa tiết mềm mại, ấm áp cho ngày lạnh và đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "449": {
+  "name": "Quần jogger linen ống côn cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger chất liệu linen mỏng thoáng, lý tưởng cho trời nóng.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "450": {
+  "name": "Quần jogger ống côn cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger thun cơ bản thoải mái cho các hoạt động thường ngày.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "451": {
+  "name": "Quần jogger kẻ caro ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger họa tiết caro chất thun mềm, hợp mặc nhà hoặc đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "452": {
+  "name": "Quần jogger phối màu nỉ cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ lót bông ấm áp, năng động cho ngày lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "453": {
+  "name": "Quần jogger nỉ ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger nỉ cạp bầu ấm áp, thoải mái cho thai sản và mặc nhà.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "454": {
+  "name": "Quần jogger nỉ ống côn lửng",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ túi hộp cá tính, ấm áp cho ngày lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "455": {
+  "name": "Quần jogger len ống côn",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger chất liệu len cashmere cao cấp giữ ấm tốt trong ngày lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "456": {
+  "name": "Quần jogger phối màu nỉ cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ phối màu ấm áp, năng động cho ngày lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "457": {
+  "name": "Quần jogger len cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần jogger chất liệu len dệt kim dày dặn, giữ ấm hoàn hảo cho mùa đông.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "458": {
+  "name": "Quần jogger nỉ ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ dày dặn lót bông ấm áp, thích hợp ngày lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "459": {
+  "name": "Quần jogger nỉ cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ dây rút cá tính, ấm áp cho thời tiết lạnh.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "460": {
+  "name": "Quần jogger nỉ ống côn cạp chun",
+  "occasions": [
+   "trời lạnh",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần jogger nỉ mỏng nhẹ vừa phải, thoải mái cho các hoạt động hàng ngày.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "461": {
+  "name": "Quần short nỉ cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short nỉ túi hộp thoải mái, phù hợp mặc ở nhà hoặc đi chơi dạo phố.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "462": {
+  "name": "Quần short cotton khóa kéo cạp chun",
+  "occasions": [
+   "tập thể thao",
+   "mặc ở nhà"
+  ],
+  "reason": "Dòng H&M Sport với chất liệu jersey dày và túi khóa kéo, lý tưởng cho tập luyện.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "463": {
+  "name": "Quần short kẻ caro cotton khóa kéo",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu cotton twill họa tiết kẻ caro thanh lịch, phù hợp đi chơi hoặc đi biển.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "464": {
+  "name": "Quần short dáng rộng khóa kéo",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Chất liệu vải dệt mỏng nhẹ, dáng rộng thoải mái cho ngày nóng hoặc ở nhà.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "465": {
+  "name": "Quần short vải thể thao cạp chun",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Chất liệu vải thể thao nhanh khô, thoáng khí chuyên dụng cho tập luyện.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "466": {
+  "name": "Quần short nỉ khóa kéo cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short nỉ màu sắc nhẹ nhàng, phù hợp mặc hàng ngày hoặc ở nhà.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "467": {
+  "name": "Quần short cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu nylon mỏng nhẹ, kiểu dáng túi hộp năng động cho các hoạt động ngoài trời.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "468": {
+  "name": "Quần short cotton khóa kéo",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short cotton dáng đứng lịch sự, phù hợp cho các buổi đi chơi casual.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "469": {
+  "name": "Quần short cotton ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà"
+  ],
+  "reason": "Chất liệu cotton mỏng, ống rộng thoải mái cho thời tiết nóng.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "470": {
+  "name": "Quần short nỉ cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short nỉ cơ bản, mềm mại, phù hợp mặc ở nhà hoặc đi chơi năng động.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "471": {
+  "name": "Quần short họa tiết vải thể thao cạp chun",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Vải thể thao chuyên dụng, nhanh khô và thoáng khí cho việc tập luyện.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "472": {
+  "name": "Quần short kaki",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short kaki cơ bản, dễ phối đồ cho các dịp đi chơi hàng ngày.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "473": {
+  "name": "Quần short viscose cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Thiết kế playsuit sát nách, chất liệu viscose mát mẻ và điệu đà cho đi biển hoặc hẹn hò.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "474": {
+  "name": "Quần short lụa cạp cao",
+  "occasions": [
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu lụa cao cấp, thiết kế cạp cao thanh lịch phù hợp cho các buổi hẹn hò.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "475": {
+  "name": "Quần short cạp cao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Dạng quần cycling shorts co giãn, phù hợp cho các hoạt động vận động, tập luyện.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "476": {
+  "name": "Quần short denim cạp cao rách",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần denim rách năng động, phù hợp cho phong cách đi chơi dạo phố.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "477": {
+  "name": "Quần short nỉ cạp chun",
+  "occasions": [
+   "mặc ở nhà"
+  ],
+  "reason": "Quần short nỉ ngắn, cạp chun thoải mái tối đa khi mặc ở nhà.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "478": {
+  "name": "Quần short denim dáng rộng cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần denim dáng rộng cạp cao thời trang, phù hợp đi chơi.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "479": {
+  "name": "Quần short lụa cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Chất liệu satin bóng bẩy, có thể mặc ở nhà sang chảnh hoặc phối đồ đi chơi.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "480": {
+  "name": "Quần short kẻ sọc linen ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Chất liệu linen phối viscose mát mẻ, họa tiết kẻ sọc phù hợp đi biển hoặc đi chơi.",
+  "model": "gemini-3-flash-preview",
+  "source": "gemini-3-flash-preview",
+  "removed_by_rule": []
+ },
+ "481": {
+  "name": "Quần short denim khóa kéo",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short denim năng động, phù hợp mặc đi chơi hoặc đi biển trong ngày hè.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "482": {
+  "name": "Quần short họa tiết lụa dáng rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short lụa dáng rộng mỏng mát, thích hợp cho thời tiết nóng và đi chơi dạo phố.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "483": {
+  "name": "Quần short vải thể thao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Đồ bộ thể thao chuyên dụng với vải nhanh khô, thiết kế riêng cho việc tập luyện.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "484": {
+  "name": "Quần short lụa cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short mềm mại, thoải mái để mặc ở nhà hoặc đi chơi dạo phố ngày nóng.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "485": {
+  "name": "Quần short họa tiết cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short ngắn họa tiết tươi tắn, rất hợp đi biển hay đi chơi mùa hè.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "486": {
+  "name": "Quần short họa tiết ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short ống rộng thoáng mát, phù hợp cho các buổi đi chơi hoặc du lịch biển.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "487": {
+  "name": "Quần short họa tiết cotton khóa kéo cạp cao",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short cotton họa tiết rằn ri cá tính, hợp đi chơi năng động.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "488": {
+  "name": "Quần short khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần short lịch sự có đỉa thắt lưng, có thể mặc đi chơi hoặc đi làm thanh lịch.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": [
+   "đi làm"
+  ]
+ },
+ "489": {
+  "name": "Quần short họa tiết khóa kéo cạp cao",
+  "occasions": [
+   "đi chơi / đi học",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Quần short họa tiết thời trang, điệu đà, hợp đi hẹn hò hoặc dạo phố.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "490": {
+  "name": "Quần short lụa ống rộng cạp chun",
+  "occasions": [
+   "đi biển / trời nóng",
+   "đi tiệc / hẹn hò"
+  ],
+  "reason": "Bộ liền quần chất satin sang trọng, thích hợp đi tiệc nhẹ hoặc đi biển dạo phố.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "491": {
+  "name": "Quần legging cotton cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging thun cơ bản, thoải mái mặc ở nhà hoặc phối đồ đi học, đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "492": {
+  "name": "Quần legging họa tiết cạp chun",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging họa tiết caro nổi bật, phù hợp cho các dịp đi chơi cá tính.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "493": {
+  "name": "Quần legging cạp chun",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging ánh kim lấp lánh thích hợp mặc đi chơi dạo phố.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "494": {
+  "name": "Quần legging đen",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging đen cơ bản tiện lợi mặc ở nhà hoặc kết hợp đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "495": {
+  "name": "Quần legging xám",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging cạp cao ôm bụng bầu thiết kế ánh kim lấp lánh để đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "496": {
+  "name": "Quần legging linen ống côn",
+  "occasions": [
+   "đi biển / trời nóng",
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần linen pha thoáng mát, thoải mái cho mùa hè và đi chơi dạo phố.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "497": {
+  "name": "Quần legging kẻ caro cotton cạp chun",
+  "occasions": [
+   "mặc ở nhà",
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging kẻ caro chất thun dày dặn, hợp mặc nhà hoặc đi học.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "498": {
+  "name": "Quần legging kẻ caro lửng",
+  "occasions": [
+   "đi chơi / đi học"
+  ],
+  "reason": "Quần legging giả vải âu lịch sự, có thể mặc đi làm gọn gàng hoặc đi chơi.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": [
+   "đi làm"
+  ]
+ },
+ "499": {
+  "name": "Quần legging phối màu vải thể thao",
+  "occasions": [
+   "tập thể thao"
+  ],
+  "reason": "Quần legging thể thao chuyên dụng co giãn, nhanh khô hỗ trợ tập luyện.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ },
+ "500": {
+  "name": "Quần legging nâu",
+  "occasions": [
+   "tập thể thao",
+   "mặc ở nhà"
+  ],
+  "reason": "Quần short biker ôm sát co giãn tốt, thích hợp tập thể thao hoặc mặc ở nhà thoải mái.",
+  "model": "gemini-3.5-flash-lite",
+  "source": "gemini-3.5-flash-lite",
+  "removed_by_rule": []
+ }
+}

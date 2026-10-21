@@ -35,7 +35,7 @@ def _build_entries():
         add("unsupported", value, aliases)
     for value, aliases in L.CATEGORIES.items():
         add("category", value, aliases)
-    for value, (aliases, _) in L.OCCASIONS.items():
+    for value, aliases in L.OCCASIONS.items():
         add("occasion", value, aliases)
     for value, aliases in L.SORTS.items():
         add("sort", value, aliases)
@@ -127,7 +127,13 @@ class RuleParser:
             if s != t:
                 notes.append({"kind": "dialect", "text": t, "label": f"{t} → {s}"})
             std.extend(s.split())
-        toks = std
+        # "áo thun lạnh": "thun lạnh" is a fabric (cool-touch jersey), not cold weather
+        toks = []
+        for t in std:
+            if t == "lạnh" and toks[-1:] == ["thun"] and toks[-2:-1] != ["vải"]:
+                toks += ["vải", "thun", "lạnh"]
+            else:
+                toks.append(t)
         # 2. typo correction
         toks = self._correct(toks, notes)
         un = [strip_accents(t) for t in toks]
@@ -136,7 +142,6 @@ class RuleParser:
                  "categories": [], "genders": [], "colors": [], "materials": [],
                  "patterns": [], "brands": [], "features": [], "occasions": [],
                  "min_price": None, "max_price": None, "sort": None, "in_stock": False,
-                 "sportswear": False,
                  "keywords": [], "unsupported": [], "understood": notes, "parser": "rule"}
 
         # 3. order intent
@@ -407,20 +412,7 @@ class RuleParser:
         q["understood"].append({"kind": kind, "text": span, "label": label, "value": value})
 
     def _post_process(self, q):
-        q["sportswear"] = L.SPORTSWEAR_OCCASION in q["occasions"]
-        # occasion -> categories (intersect with the explicit ones when possible)
-        occ_cats = []
-        for occ in q["occasions"]:
-            occ_cats += [c for c in L.OCCASIONS[occ][1] if c not in occ_cats]
-        if occ_cats:
-            if not q["categories"]:
-                q["categories"] = occ_cats
-            else:
-                parents = {c for c in q["categories"] if c in ("ao", "quan")}
-                specific = [c for c in q["categories"] if c not in ("ao", "quan")]
-                inter = [c for c in occ_cats if c.split("_")[0] in parents]
-                if inter and not specific:
-                    q["categories"] = inter
+        # occasions stay occasions: the products carry their own occasion labels
         # "áo lửng" is a crop top, "quần lửng" is cropped trousers
         if "lửng" in q["features"] and q["categories"] and all(
                 c.startswith("ao") for c in q["categories"]):

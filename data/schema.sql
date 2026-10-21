@@ -35,6 +35,7 @@ CREATE TABLE product (
     description_en text,
     image_path     varchar(500) NOT NULL,
     popularity     numeric(4,3) NOT NULL DEFAULT 0.5,
+    occasions      text[]       NOT NULL DEFAULT '{}',   -- labelled by tools/label_occasions.py
     source_url     varchar(500),
     created_at     timestamp    NOT NULL DEFAULT now(),
     -- text used by keyword / fuzzy search (no accents, lower case)
@@ -49,6 +50,7 @@ CREATE INDEX product_category_idx ON product (category_id);
 CREATE INDEX product_price_idx    ON product (price);
 CREATE INDEX product_filter_idx   ON product (gender, color);
 CREATE INDEX product_trgm_idx     ON product USING gin (search_doc gin_trgm_ops);
+CREATE INDEX product_occasion_idx ON product USING gin (occasions);
 
 CREATE TABLE customer (
     customer_id  varchar(20)  PRIMARY KEY,

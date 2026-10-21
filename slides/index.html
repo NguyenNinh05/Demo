@@ -341,7 +341,7 @@ td .muted { color: var(--muted); }
     <table>
       <thead><tr><th style="width:230px">Yêu cầu</th><th>Quyết định thiết kế</th><th style="width:470px">Bằng chứng</th></tr></thead>
       <tbody>
-        <tr><td>Hiệu năng</td><td>Vector ảnh giữ trong một ma trận; tìm ảnh gần nhất chỉ là một phép nhân ma trận</td><td class="muted">Trung bình: chữ 591 ms, ảnh 349 ms trên bộ đánh giá 138 truy vấn</td></tr>
+        <tr><td>Hiệu năng</td><td>Vector ảnh giữ trong một ma trận; tìm ảnh gần nhất chỉ là một phép nhân ma trận</td><td class="muted">Trung bình: chữ 423 ms, ảnh 254 ms trên bộ đánh giá 148 truy vấn</td></tr>
         <tr><td>Dễ sử dụng</td><td>Một ô tìm kiếm chung; SearchUI tự gọi đúng service theo loại đầu vào</td><td class="muted">Chữ, giọng nói, ảnh và chữ + ảnh dùng chung một màn hình kết quả</td></tr>
         <tr><td>Tin cậy</td><td>ImageUpload kiểm tra ảnh; không có kết quả thì báo rõ "Không tìm thấy sản phẩm phù hợp"</td><td class="muted">Chỉ nhận PNG, JPG, WEBP, BMP và tối đa 10 MB</td></tr>
         <tr><td>Dễ bảo trì</td><td>Mỗi tầng là một thư mục riêng, giao tiếp qua service</td><td class="muted">Giao diện web và giao diện console dùng chung các service</td></tr>
@@ -367,6 +367,7 @@ td .muted { color: var(--muted); }
         <dt>Mua hàng</dt><dd><code>customer</code>, <code>orders</code>, <code>order_item</code>.</dd>
         <dt>Thanh toán</dt><dd><code>payment</code>, gắn với một đơn hàng.</dd>
         <dt>Phục vụ xếp hạng</dt><dd>Cột <code>popularity</code> và <code>stock</code> của <code>product</code> tạo điểm S_business.</dd>
+        <dt>Dịp phù hợp</dt><dd>Cột <code>occasions</code>: các dịp sản phẩm hợp (đi làm, đi biển…), gắn nhãn sẵn từ ảnh và mô tả.</dd>
       </dl>
     </div>
   </div>
@@ -536,7 +537,7 @@ td .muted { color: var(--muted); }
     </table>
     <div class="grid3" style="margin-top:22px">
       <div class="card"><h3>1 · Chuẩn hóa</h3><p>Từ địa phương về từ phổ thông, sửa lỗi gõ, hiểu cả khi gõ không dấu.</p></div>
-      <div class="card"><h3>2 · Nhận diện thuộc tính</h3><p>Loại, màu, giới tính, chất liệu, họa tiết, kiểu dáng.</p></div>
+      <div class="card"><h3>2 · Nhận diện thuộc tính</h3><p>Loại, màu, giới tính, chất liệu, họa tiết, kiểu dáng, dịp (đi làm, đi biển…).</p></div>
       <div class="card"><h3>3 · Đọc giá</h3><p>"1tr5", "300 ngàn", "dưới", "đổ lại", "tầm 600–900".</p></div>
     </div>
   </div>

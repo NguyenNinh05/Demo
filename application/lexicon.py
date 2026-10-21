@@ -23,7 +23,7 @@ CATEGORIES = {
     "ao_hoodie": ["áo hoodie", "hoodie", "áo hoodies", "hoodies", "áo nỉ có mũ"],
     "ao_cardigan": ["áo cardigan", "cardigan", "áo khoác len", "áo len cài khuy"],
     "ao_khoac": ["áo khoác", "khoác", "jacket", "áo jacket", "áo măng tô", "măng tô",
-                 "áo dạ", "áo phao", "áo gió", "áo bomber", "bomber", "áo parka", "parka",
+                 "áo dạ", "áo phao", "áo bomber", "bomber", "áo parka", "parka",
                  "coat", "áo trench coat", "trench coat", "áo khoác ngoài", "áo chống nắng"],
     "ao_blazer": ["áo blazer", "blazer", "áo vest", "vest", "áo vét", "áo comple"],
     "quan_jeans": ["quần jeans", "quần jean", "quần bò", "quần denim", "jeans", "jean",
@@ -137,34 +137,25 @@ FEATURES = {
     "rách": ["rách", "rách gối", "ripped"],
 }
 
-# occasions -> categories that fit (understanding WHY the customer buys)
+# occasions (WHY the customer buys) -> the words that name them. Which products suit an
+# occasion is not a category list ("áo thể thao" is not every T-shirt, "đồ đi biển" is
+# not a wool T-shirt): every product carries its own occasions, labelled from its photo
+# and description (tools/label_occasions.py), and the search filters on them.
+# Only words that name an occasion: adjectives such as "thoải mái" or "lịch sự" are not.
 OCCASIONS = {
-    "đi làm": (["đi làm", "công sở", "văn phòng", "đi phỏng vấn", "phỏng vấn", "đi họp",
-                "lịch sự", "thanh lịch"],
-               ["ao_so_mi", "ao_blazer", "ao_kieu", "ao_polo", "quan_au"]),
-    # no category list: sportswear is a property of the product (see SPORTSWEAR_OCCASION)
-    "tập thể thao": (["đi tập", "tập gym", "gym", "chạy bộ", "tập thể dục", "thể thao", "yoga",
-                      "đá bóng", "đi bộ"],
-                     []),
-    "đi biển / trời nóng": (["đi biển", "đi chơi biển", "du lịch biển", "mùa hè", "trời nóng",
-                             "nóng", "thoáng mát", "mát mẻ"],
-                            ["ao_phong", "ao_hai_day", "quan_short", "ao_so_mi"]),
-    "trời lạnh": (["mùa đông", "trời lạnh", "lạnh", "giữ ấm", "ấm áp", "rét", "thu đông",
-                   "mùa thu"],
-                  ["ao_len", "ao_khoac", "ao_hoodie", "ao_cardigan", "ao_ni"]),
-    "đi tiệc / hẹn hò": (["đi tiệc", "dự tiệc", "đám cưới", "đi đám cưới", "sự kiện",
-                          "hẹn hò", "đi date"],
-                         ["ao_kieu", "ao_blazer", "ao_so_mi", "quan_au"]),
-    "mặc ở nhà": (["ở nhà", "mặc nhà", "thoải mái"],
-                  ["ao_phong", "quan_jogger", "quan_short", "ao_ni"]),
-    "đi chơi / đi học": (["đi chơi", "dạo phố", "đi cà phê", "đi cafe", "đi học"],
-                         ["ao_phong", "quan_jeans", "ao_so_mi", "ao_hoodie", "quan_short"]),
-    "trời mưa / gió": (["đi mưa", "trời mưa", "mưa", "chống nước", "chống gió"],
-                       ["ao_khoac"]),
+    "đi làm": ["đi làm", "công sở", "văn phòng", "đi phỏng vấn", "phỏng vấn", "đi họp"],
+    "tập thể thao": ["đi tập", "tập gym", "gym", "chạy bộ", "tập thể dục", "thể thao", "yoga",
+                     "đá bóng", "đi bộ"],
+    "đi biển / trời nóng": ["đi biển", "đi chơi biển", "du lịch biển", "mùa hè", "trời nóng",
+                            "nóng", "thoáng mát", "mát mẻ"],
+    "trời lạnh": ["mùa đông", "trời lạnh", "lạnh", "ấm", "giữ ấm", "ấm áp", "rét", "thu đông",
+                  "mùa thu"],
+    "đi tiệc / hẹn hò": ["đi tiệc", "dự tiệc", "đám cưới", "đi đám cưới", "sự kiện", "hẹn hò",
+                         "đi date"],
+    "mặc ở nhà": ["ở nhà", "mặc nhà", "đồ nhà"],
+    "đi chơi / đi học": ["đi chơi", "dạo phố", "đi cà phê", "đi cafe", "đi học"],
+    "trời mưa / gió": ["đi mưa", "trời mưa", "mưa", "chống nước", "chống gió", "áo gió"],
 }
-# "áo thể thao" means sportswear of any kind (sports tops, sports jackets...), not every
-# T-shirt or hoodie: this occasion becomes the `sportswear` filter of ProductRepository
-SPORTSWEAR_OCCASION = "tập thể thao"
 
 SORTS = {
     "price_asc": ["rẻ nhất", "giá rẻ nhất", "giá thấp nhất", "rẻ", "giá rẻ", "rẻ rẻ",

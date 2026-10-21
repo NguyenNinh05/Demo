@@ -29,6 +29,7 @@ Vector được cache trong `data/catalog/image_vectors.npz`.
 | `python main.py --evaluate` | Chạy bộ đánh giá, ghi `results/evaluation.md` |
 | `python main.py --build-index` | Tính lại vector ảnh |
 | `python tools/export_erd.py` | Sinh ERD (Mermaid) từ database vào `docs/erd.md` |
+| `python tools/label_occasions.py --single` | Gắn lại nhãn dịp cho sản phẩm bằng Gemini (sau đó `--init-db`) |
 
 ## Kiến trúc 3 tầng
 
@@ -81,6 +82,12 @@ Lấy key miễn phí tại https://aistudio.google.com/apikey rồi điền và
 `tomytjandra/h-and-m-fashion-caption` + bảng articles của H&M), chỉ dùng cho mục đích học tập.
 Giá (theo mức H&M Việt Nam), tồn kho, độ phổ biến, khách hàng và đơn hàng là dữ liệu mẫu.
 Muốn tạo lại catalogue: `python tools/prepare_catalog.py --articles <articles.parquet>`.
+
+**Dịp phù hợp** (đi làm, đi biển, trời lạnh, đi tiệc, tập thể thao…) không suy ra từ loại sản
+phẩm mà được gắn sẵn cho từng sản phẩm: `tools/label_occasions.py` gửi Gemini ảnh, tên, chất liệu
+và mô tả gốc của H&M kèm định nghĩa từng dịp, rồi áp các điều "KHÔNG gắn cho…" của định nghĩa thành
+luật cứng (ví dụ áo sát nách không bao giờ là "đi làm"). Nhãn và lý do nằm trong
+`data/catalog/occasions.json`; tìm "đồ đi biển" sẽ lọc theo nhãn này.
 
 ## Xem ERD
 

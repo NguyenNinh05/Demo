@@ -11,7 +11,7 @@ PRODUCT_COLUMNS = """
     p.product_id, p.category_id, c.name AS category_name, c.parent_id AS category_parent,
     p.name, p.brand, p.gender, p.price, p.stock, p.color, p.color_detail, p.material,
     p.pattern, p.description, p.description_en, p.image_path,
-    p.popularity::float AS popularity, p.source_url, p.created_at
+    p.popularity::float AS popularity, p.occasions, p.source_url, p.created_at
 """
 
 
@@ -53,12 +53,12 @@ class ProductRepository:
     # ---------------------------------------------------------- filtering
     def find(self, categories=None, genders=None, colors=None, materials=None,
              patterns=None, brands=None, min_price=None, max_price=None, in_stock=False,
-             sportswear=False, fuzzy_terms=None):
+             occasions=None, fuzzy_terms=None):
         """Products that satisfy every given condition.
 
         categories: ids at any level ("ao" also returns every kind of top,
         through a recursive query on category.parent_id).
-        sportswear: only the H&M Sport line or products in sports fabric.
+        occasions: the product must suit every one of them (product.occasions).
         fuzzy_terms: words compared with pg_trgm word_similarity, so a typo
         such as "hodie" still matches "hoodie".
         Returns {product_id: trigram score in [0, 1]}.
@@ -83,8 +83,9 @@ class ProductRepository:
             params["max_price"] = int(max_price)
         if in_stock:
             where.append("p.stock > 0")
-        if sportswear:
-            where.append("(p.brand = 'H&M Sport' OR p.material = 'vải thể thao')")
+        if occasions:
+            where.append("p.occasions @> %(occasions)s::text[]")
+            params["occasions"] = list(occasions)
         fuzzy = "0.0"
         if fuzzy_terms:
             fuzzy = ("(SELECT avg(word_similarity(t, p.search_doc)) "

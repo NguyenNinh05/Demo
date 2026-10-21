@@ -55,6 +55,7 @@ entity Product {
   description : varchar(255) <<null>>
   image_path : varchar(500)
   popularity : decimal(4,3)
+  occasions : text[]
   source_url : varchar(500) <<null>>
 }
 

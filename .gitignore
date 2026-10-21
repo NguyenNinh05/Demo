@@ -7,3 +7,4 @@ data/catalog/*_vectors.npz
 results/
 .DS_Store
 *.pdf
+data/catalog/.labels/

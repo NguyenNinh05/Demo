@@ -51,9 +51,10 @@ class GeminiClient:
             model=model, contents=contents, config=self._types.GenerateContentConfig(**config))
         return json.loads(response.text)
 
-    def _one_model(self, model, contents, base):
+    def _one_model(self, model, contents, base, think=False):
         # thinking off = lower latency; a model that does not allow it gets the plain config
-        configs = [dict(base, thinking_config=self._types.ThinkingConfig(thinking_budget=0)), base]
+        configs = [base] if think else \
+            [dict(base, thinking_config=self._types.ThinkingConfig(thinking_budget=0)), base]
         attempt = 0
         while True:
             try:
@@ -68,8 +69,9 @@ class GeminiClient:
                     continue
                 raise
 
-    def generate_json(self, models, contents, schema, system=None):
-        """models: one model name or a list tried in order."""
+    def generate_json(self, models, contents, schema, system=None, think=False):
+        """models: one model name or a list tried in order. think: let the model reason
+        first (slower, for offline work such as labelling the catalogue)."""
         if isinstance(models, str):
             models = [m.strip() for m in models.split(",") if m.strip()]
         base = dict(system_instruction=system, temperature=0,
@@ -77,7 +79,7 @@ class GeminiClient:
         last = None
         for model in models:
             try:
-                result = self._one_model(model, contents, base)
+                result = self._one_model(model, contents, base, think)
                 self.last_model = model
                 return result
             except self._errors.APIError as e:
@@ -89,4 +91,7 @@ class GeminiClient:
         raise GeminiError(_reason(last), last)
 
     def audio(self, data, mime_type):
+        return self._types.Part.from_bytes(data=data, mime_type=mime_type)
+
+    def image(self, data, mime_type="image/jpeg"):
         return self._types.Part.from_bytes(data=data, mime_type=mime_type)

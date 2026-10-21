@@ -205,7 +205,7 @@ class WebSearchUI:
     @staticmethod
     def _clean(query):
         keep = ("type", "query", "normalized", "intent", "categories", "genders", "colors",
-                "materials", "patterns", "features", "occasions", "sportswear", "min_price", "max_price",
+                "materials", "patterns", "features", "occasions", "min_price", "max_price",
                 "sort", "in_stock", "keywords", "unknown", "understood", "parser", "confidence",
                 "parse_ms", "llm_name", "llm_ms", "llm_error", "llm_skipped", "explanation",
                 "semantic_text", "similar_to", "weights", "prefer", "soft_keywords")
