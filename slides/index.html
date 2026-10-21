@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhóm 05 · Kiến trúc và Thiết kế chi tiết</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0B1E3F;
+  --navy-2: #15294F;
+  --orange: #FF6B2C;
+  --orange-ink: #C2410C;
+  --peach: #FDEDE4;
+  --ink: #0F172A;
+  --muted: #5B6B82;
+  --card: #F2F4F8;
+  --line: #DCE2EA;
+  --white: #FFFFFF;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: #05101F;
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  overflow: hidden;
+}
+
+/* ---------- stage: every slide is designed at 1600 x 900 and scaled ---------- */
+#stage {
+  position: absolute; left: 50%; top: 50%;
+  width: 1600px; height: 900px;
+  transform-origin: center center;
+}
+.slide {
+  position: absolute; inset: 0;
+  background: var(--white);
+  padding: 64px 96px 0;
+  display: none;
+  overflow: hidden;
+}
+.slide.active { display: block; }
+.slide.dark { background: var(--navy); color: var(--white); }
+
+.kicker {
+  color: var(--orange); font-weight: 700; font-size: 18px;
+  letter-spacing: .18em; text-transform: uppercase;
+}
+h1 { font-size: 50px; font-weight: 800; line-height: 1.15; margin-top: 10px; letter-spacing: -.01em; }
+.lead { font-size: 22px; color: var(--muted); margin-top: 10px; }
+.body { position: absolute; left: 96px; right: 96px; top: 210px; bottom: 90px; }
+.footer {
+  position: absolute; left: 96px; right: 96px; bottom: 30px;
+  display: flex; justify-content: space-between;
+  font-size: 15px; color: var(--muted);
+}
+.dark .footer { color: #8FA0BD; }
+code, .mono { font-family: var(--mono); font-size: .92em; }
+
+/* ---------- section divider ---------- */
+.divider .big {
+  position: absolute; left: 60px; top: 110px;
+  font-size: 330px; font-weight: 800; line-height: .9; color: var(--orange);
+  letter-spacing: -.04em;
+}
+.divider .name { position: absolute; left: 80px; top: 470px; font-size: 76px; font-weight: 800; }
+.divider .sub  { position: absolute; left: 80px; top: 575px; font-size: 30px; color: #9FB0CC; }
+.divider .who {
+  position: absolute; left: 80px; top: 660px;
+  background: var(--navy-2); border-radius: 40px; padding: 16px 30px;
+  font-size: 22px; font-weight: 700; display: flex; gap: 12px; align-items: center;
+}
+.divider .who::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--orange); }
+.divider .orb {
+  position: absolute; right: -140px; top: -180px; width: 560px; height: 560px;
+  border-radius: 50%; background: var(--navy-2);
+}
+.toc {
+  position: absolute; right: 80px; top: 200px; width: 560px;
+  background: var(--navy-2); border-radius: 22px; padding: 40px 44px;
+}
+.toc .kicker { font-size: 16px; margin-bottom: 18px; }
+.toc ol { list-style: none; }
+.toc li { display: flex; align-items: center; gap: 22px; font-size: 26px; padding: 13px 0; }
+.toc li span {
+  flex: none; width: 46px; height: 46px; border-radius: 50%;
+  background: var(--orange); color: var(--white);
+  display: grid; place-items: center; font-weight: 700; font-size: 20px;
+}
+
+/* ---------- generic building blocks ---------- */
+.card { background: var(--card); border-radius: 18px; padding: 26px 30px; }
+.card h3 { font-size: 24px; font-weight: 700; }
+.card p { font-size: 19px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chip {
+  font-size: 15px; font-weight: 600; padding: 6px 12px; border-radius: 8px;
+  background: var(--white); border: 1px solid var(--line); font-family: var(--mono);
+}
+.tag {
+  display: inline-block; font-size: 15px; font-weight: 700; color: var(--orange-ink);
+  background: var(--peach); padding: 4px 12px; border-radius: 20px; font-family: var(--mono);
+}
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* layered architecture */
+.layers { position: absolute; left: 0; top: 0; width: 930px; }
+.layer {
+  display: grid; grid-template-columns: 250px 1fr; gap: 24px; align-items: start;
+  background: var(--card); border-radius: 18px; padding: 24px 28px;
+}
+.layer + .layer { margin-top: 40px; position: relative; }
+.layer + .layer::before {
+  content: "▼"; position: absolute; top: -36px; left: 120px;
+  color: var(--orange); font-size: 22px;
+}
+.layer h3 { font-size: 26px; font-weight: 800; }
+.layer .dir { margin-top: 6px; }
+.layer p { font-size: 19px; color: var(--muted); line-height: 1.45; }
+.side { position: absolute; right: 0; top: 0; width: 440px; }
+.callout {
+  background: var(--navy); color: var(--white); border-radius: 18px; padding: 28px 30px;
+}
+.callout .kicker { font-size: 15px; }
+.callout p { font-size: 20px; line-height: 1.5; margin-top: 12px; }
+.callout p b { color: #FFB089; }
+
+/* diagrams */
+.diagram {
+  position: absolute; left: 0; top: 0; bottom: 0;
+  border: 2px dashed var(--line); border-radius: 18px; background: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  padding: 18px; cursor: zoom-in; min-height: 0;
+}
+.diagram.full { right: 0; }
+.diagram.wide { width: 950px; }
+.diagram img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.placeholder {
+  text-align: center; color: var(--muted); cursor: default;
+  display: flex; flex-direction: column; align-items: center; gap: 14px; max-width: 640px;
+}
+.placeholder .icon {
+  width: 72px; height: 72px; border-radius: 18px; background: var(--card);
+  display: grid; place-items: center; font-size: 34px; color: #9AA8BC;
+}
+.placeholder b { font-size: 24px; color: var(--ink); }
+.placeholder code { font-size: 18px; color: var(--orange-ink); background: var(--peach); padding: 4px 10px; border-radius: 6px; }
+.placeholder p { font-size: 17px; line-height: 1.5; }
+.notes { position: absolute; right: 0; top: 0; bottom: 0; width: 420px; overflow: hidden; }
+.notes h4 { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.notes dl dt { font-size: 21px; font-weight: 700; margin-top: 14px; }
+.notes dl dt:first-child { margin-top: 0; }
+.notes dl dd { font-size: 17px; color: var(--muted); line-height: 1.45; margin-top: 3px; }
+.steps { list-style: none; counter-reset: s; }
+.steps li {
+  counter-increment: s; position: relative; padding-left: 42px;
+  font-size: 17px; line-height: 1.4; margin-top: 11px;
+}
+.steps li::before {
+  content: counter(s); position: absolute; left: 0; top: -1px;
+  width: 28px; height: 28px; border-radius: 50%; background: var(--peach); color: var(--orange-ink);
+  display: grid; place-items: center; font-weight: 700; font-size: 14px;
+}
+.steps li.alt { counter-increment: none; }
+.steps li.alt::before { content: "!"; background: var(--orange); color: var(--white); }
+.steps code { font-size: 15px; }
+
+/* tables */
+table { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+th {
+  background: var(--navy); color: var(--white); text-align: left;
+  font-size: 18px; font-weight: 700; padding: 14px 22px;
+}
+th:first-child { border-radius: 12px 0 0 12px; }
+th:last-child { border-radius: 0 12px 12px 0; }
+td { background: var(--card); font-size: 19px; padding: 14px 22px; vertical-align: top; line-height: 1.4; }
+td:first-child { border-radius: 12px 0 0 12px; font-weight: 700; }
+td:last-child { border-radius: 0 12px 12px 0; }
+td .mono, td code { font-size: 16px; }
+td .muted { color: var(--muted); }
+
+/* method slides */
+.sig {
+  background: var(--navy); color: var(--white); border-radius: 16px;
+  padding: 20px 28px; font-family: var(--mono); font-size: 22px; line-height: 1.5;
+}
+.sig .k { color: #FFB089; }
+.sig .c { color: #8FA0BD; }
+.pcr { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: 20px; margin-top: 22px; }
+.pcr .card h3 { font-size: 16px; letter-spacing: .14em; text-transform: uppercase; color: var(--orange-ink); }
+.pcr ul { list-style: none; margin-top: 12px; }
+.pcr li { font-size: 18px; line-height: 1.45; padding: 6px 0; border-top: 1px solid var(--line); }
+.pcr li:first-child { border-top: 0; }
+.pcr li code { font-size: 16px; }
+
+.flow { display: grid; grid-template-columns: 1fr 40px 1.5fr 40px 1fr; align-items: stretch; margin-top: 22px; }
+.flow .arrow { display: grid; place-items: center; color: var(--orange); font-size: 28px; font-weight: 800; }
+.flow .card h3 { font-size: 22px; }
+.flow .num { font-size: 15px; font-weight: 800; color: var(--orange); letter-spacing: .12em; }
+.branch { margin-top: 12px; background: var(--white); border-radius: 12px; padding: 12px 16px; }
+.branch b { font-size: 17px; }
+.branch p { font-size: 16px; margin-top: 4px; }
+
+.formula {
+  background: var(--navy); color: var(--white); border-radius: 20px;
+  padding: 26px 34px; text-align: center; font-size: 40px; font-weight: 700; letter-spacing: .01em;
+}
+.formula small { display: block; font-size: 18px; font-weight: 500; color: #9FB0CC; margin-top: 8px; }
+.formula .o { color: #FFB089; }
+
+/* stats */
+.stat { background: var(--card); border-radius: 18px; padding: 28px 30px; }
+.stat .n { font-size: 64px; font-weight: 800; color: var(--orange); line-height: 1; }
+.stat h3 { font-size: 22px; margin-top: 12px; }
+.stat p { font-size: 17px; color: var(--muted); margin-top: 6px; }
+.next {
+  background: var(--navy); color: var(--white); border-radius: 18px; padding: 36px 40px; margin-top: 28px;
+}
+.next .kicker { font-size: 16px; }
+.next h2 { font-size: 40px; font-weight: 800; margin-top: 10px; }
+.next p { font-size: 20px; color: #9FB0CC; margin-top: 8px; }
+
+/* ---------- chrome: progress, counter, zoom ---------- */
+#progress { position: fixed; left: 0; top: 0; height: 4px; background: var(--orange); transition: width .25s; z-index: 5; }
+#counter {
+  position: fixed; right: 18px; bottom: 14px; z-index: 5;
+  font-size: 13px; color: #8FA0BD; font-variant-numeric: tabular-nums;
+}
+#hint {
+  position: fixed; right: 18px; top: 14px; z-index: 5; font-size: 13px; color: #5D6F8E;
+  transition: opacity .6s;
+}
+#zoom {
+  position: fixed; inset: 0; background: rgba(5, 16, 31, .94); z-index: 10;
+  display: none; place-items: center; cursor: zoom-out; padding: 24px;
+}
+#zoom.open { display: grid; }
+#zoom img { max-width: 100%; max-height: 100%; background: var(--white); border-radius: 10px; padding: 12px; }
+
+@media print {
+  @page { size: 1600px 900px; margin: 0; }
+  body { background: none; overflow: visible; }
+  #stage { position: static; transform: none !important; }
+  .slide { display: block !important; position: relative; width: 1600px; height: 900px; page-break-after: always; }
+  #progress, #counter, #hint, #zoom { display: none !important; }
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="stage">
+
+<!-- ======================================================= 02 · ARCHITECTURE -->
+<section class="slide dark divider" data-section="02 · Architecture Design">
+  <div class="orb"></div>
+  <div class="big">02</div>
+  <div class="name">Architecture Design</div>
+  <div class="sub">Thiết kế kiến trúc phân tầng</div>
+  <div class="who">Trình bày: Đinh Tuấn Thành</div>
+  <div class="toc">
+    <div class="kicker">Nội dung phần này</div>
+    <ol>
+      <li><span>1</span>Kiến trúc 3 tầng</li>
+      <li><span>2</span>Sơ đồ component</li>
+      <li><span>3</span>Kiến trúc đáp ứng yêu cầu phi chức năng</li>
+      <li><span>4</span>Thiết kế cơ sở dữ liệu</li>
+    </ol>
+  </div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Kiến trúc 3 tầng</div>
+  <h1>Mỗi tầng chỉ gọi tầng ngay bên dưới</h1>
+  <div class="body">
+    <div class="layers">
+      <div class="layer">
+        <div><h3>Presentation</h3><div class="dir tag">presentation/</div></div>
+        <div>
+          <p>Nhận chữ, giọng nói, ảnh hoặc chữ + ảnh. Hiển thị danh sách sản phẩm đã xếp hạng hoặc thông tin đơn hàng.</p>
+          <div class="chips"><span class="chip">SearchUI</span><span class="chip">VoiceInput</span><span class="chip">ImageUpload</span><span class="chip">SearchResultView</span></div>
+        </div>
+      </div>
+      <div class="layer">
+        <div><h3>Application</h3><div class="dir tag">application/</div></div>
+        <div>
+          <p>Đưa mọi đầu vào về một Query chung, truy xuất ứng viên rồi xếp hạng.</p>
+          <div class="chips"><span class="chip">QueryService</span><span class="chip">RuleParser</span><span class="chip">SpeechService</span><span class="chip">ImageService</span><span class="chip">SearchService</span><span class="chip">RankingService</span></div>
+        </div>
+      </div>
+      <div class="layer">
+        <div><h3>Data</h3><div class="dir tag">data/</div></div>
+        <div>
+          <p>Lưu sản phẩm và đơn hàng trong PostgreSQL, cùng chỉ mục văn bản và chỉ mục vector ảnh.</p>
+          <div class="chips"><span class="chip">ProductRepository</span><span class="chip">OrderRepository</span><span class="chip">TextIndex</span><span class="chip">VectorIndex</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="callout">
+        <div class="kicker">Quy tắc phụ thuộc</div>
+        <p>Presentation chỉ gọi <b>SpeechService</b>, <b>ImageService</b> và <b>SearchService</b>.</p>
+        <p>Presentation <b>không bao giờ</b> truy cập trực tiếp tầng Data.</p>
+      </div>
+      <div class="card" style="margin-top:24px">
+        <h3>Dùng chung</h3>
+        <p><span class="tag">shared/</span></p>
+        <p>Xử lý chuỗi tiếng Việt (bỏ dấu, tách từ) cho cả tầng Application và Data.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Sơ đồ component</div>
+  <h1>Sơ đồ component theo 3 tầng</h1>
+  <div class="body">
+    <figure class="diagram full">
+      <img src="diagrams/component.png" alt="Sơ đồ component 3 tầng"
+           data-hint="Sơ đồ component 3 tầng (Presentation, Application, Data).">
+    </figure>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Yêu cầu phi chức năng</div>
+  <h1>Kiến trúc đáp ứng 5 yêu cầu phi chức năng</h1>
+  <div class="body">
+    <table>
+      <thead><tr><th style="width:230px">Yêu cầu</th><th>Quyết định thiết kế</th><th style="width:470px">Bằng chứng</th></tr></thead>
+      <tbody>
+        <tr><td>Hiệu năng</td><td>Vector ảnh giữ trong một ma trận; tìm ảnh gần nhất chỉ là một phép nhân ma trận</td><td class="muted">Trung bình: chữ 663 ms, ảnh 330 ms trên bộ đánh giá 135 truy vấn</td></tr>
+        <tr><td>Dễ sử dụng</td><td>Một ô tìm kiếm chung; SearchUI tự gọi đúng service theo loại đầu vào</td><td class="muted">Chữ, giọng nói, ảnh và chữ + ảnh dùng chung một màn hình kết quả</td></tr>
+        <tr><td>Tin cậy</td><td>ImageUpload kiểm tra ảnh; không có kết quả thì tự nới điều kiện và báo cho khách</td><td class="muted">Chỉ nhận PNG, JPG, WEBP, BMP và tối đa 10 MB</td></tr>
+        <tr><td>Dễ bảo trì</td><td>Mỗi tầng là một thư mục riêng, giao tiếp qua service</td><td class="muted">Giao diện web và giao diện console dùng chung các service</td></tr>
+        <tr><td>Dễ mở rộng</td><td>Mô hình AI nằm sau ImageService; chỉ mục nằm sau VectorIndex</td><td class="muted">Đổi mô hình ảnh chỉ sửa ImageService; VectorIndex có thể thay bằng pgvector hoặc FAISS</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Cơ sở dữ liệu</div>
+  <h1>Thiết kế cơ sở dữ liệu: 6 bảng</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/erd.png" alt="ERD"
+           data-hint="ERD 6 bảng xuất từ Visual Paradigm. Nhớ xóa các cột khóa ngoại bị lặp (Orderorder_id, Productproduct_id, Categorycategory_id).">
+    </figure>
+    <div class="notes">
+      <h4>Các nhóm bảng</h4>
+      <dl>
+        <dt>Sản phẩm</dt><dd><code>category</code>, <code>product</code>. Mỗi sản phẩm có đường dẫn ảnh dùng để tạo vector trong VectorIndex.</dd>
+        <dt>Mua hàng</dt><dd><code>customer</code>, <code>orders</code>, <code>order_item</code>.</dd>
+        <dt>Thanh toán</dt><dd><code>payment</code>, gắn với một đơn hàng.</dd>
+        <dt>Phục vụ xếp hạng</dt><dd>Cột <code>popularity</code> và <code>stock</code> của <code>product</code> tạo điểm S_business.</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Quy tắc chuyển đổi</div>
+  <h1>Class Diagram được chuyển thành bảng dữ liệu</h1>
+  <div class="body">
+    <table>
+      <thead><tr><th style="width:300px">Class Diagram</th><th style="width:420px">Cơ sở dữ liệu</th><th>Ví dụ trong hệ thống</th></tr></thead>
+      <tbody>
+        <tr><td>Lớp</td><td>Bảng</td><td><code>Order</code> → <code>orders</code> <span class="muted">(vì ORDER là từ khóa SQL)</span></td></tr>
+        <tr><td>Thuộc tính</td><td>Cột</td><td><code>price</code> → <code>price bigint</code> <span class="muted">(tiền VNĐ không có phần lẻ)</span></td></tr>
+        <tr><td>Quan hệ 1 – n</td><td>Khóa ngoại ở bảng phía n</td><td><code>orders.customer_id</code>, <code>product.category_id</code></td></tr>
+        <tr><td>Composition ◆</td><td>Khóa ngoại + <code>ON DELETE CASCADE</code></td><td><code>order_item.order_id</code>, <code>payment.order_id</code>: xóa đơn thì xóa theo</td></tr>
+        <tr><td>Aggregation ◇</td><td>Khóa ngoại thường</td><td><code>order_item.product_id</code>: xóa đơn không xóa sản phẩm</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<section class="slide" data-section="02 · Architecture Design">
+  <div class="kicker">02 · Architecture Design · Tóm tắt</div>
+  <h1>Kiến trúc là khung cho phần thiết kế chi tiết</h1>
+  <div class="body">
+    <div class="grid3">
+      <div class="stat"><div class="n">3</div><h3>Tầng</h3><p>Presentation, Application, Data</p></div>
+      <div class="stat"><div class="n">1</div><h3>Chiều phụ thuộc</h3><p>Tầng trên gọi tầng dưới, không gọi ngược</p></div>
+      <div class="stat"><div class="n">6</div><h3>Bảng dữ liệu</h3><p>Chuyển từ 6 lớp thực thể của phần Analysis</p></div>
+    </div>
+    <div class="next">
+      <div class="kicker">Tiếp theo</div>
+      <h2>03 · Detailed Design</h2>
+      <p>Trình bày: Phạm Lê An</p>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>02 · Architecture Design</span></div>
+</section>
+
+<!-- ======================================================= 03 · DETAILED DESIGN -->
+<section class="slide dark divider" data-section="03 · Detailed Design">
+  <div class="orb"></div>
+  <div class="big">03</div>
+  <div class="name">Detailed Design</div>
+  <div class="sub">Thiết kế chi tiết module tìm kiếm</div>
+  <div class="who">Trình bày: Phạm Lê An</div>
+  <div class="toc">
+    <div class="kicker">Nội dung phần này</div>
+    <ol>
+      <li><span>1</span>Phạm vi và truy vết</li>
+      <li><span>2</span>Class Diagram thiết kế</li>
+      <li><span>3</span>Method / Function</li>
+      <li><span>4</span>Sequence Diagram</li>
+    </ol>
+  </div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Phạm vi</div>
+  <h1>Mỗi bước trong Activity Diagram có lớp đảm nhận</h1>
+  <p class="lead">Phần này thiết kế chi tiết module tìm kiếm: FR1 – FR4.</p>
+  <div class="body" style="top:250px">
+    <table>
+      <thead><tr><th style="width:470px">Hoạt động (Activity Diagram)</th><th style="width:520px">Lớp · phương thức</th><th>Tầng</th></tr></thead>
+      <tbody>
+        <tr><td>Speak query</td><td><code>VoiceInput.capture()</code></td><td class="muted">Presentation</td></tr>
+        <tr><td>Convert speech to text</td><td><code>SpeechService.transcribe()</code></td><td class="muted">Application</td></tr>
+        <tr><td>Upload photo · Validate image</td><td><code>ImageUpload.upload()</code></td><td class="muted">Presentation</td></tr>
+        <tr><td>Extract image features</td><td><code>ImageService.encode()</code></td><td class="muted">Application</td></tr>
+        <tr><td>Analyze keywords</td><td><code>QueryService</code> → <code>RuleParser.parse()</code></td><td class="muted">Application</td></tr>
+        <tr><td>Find matching products · Rank by relevance</td><td><code>SearchService.retrieve()</code> → <code>RankingService.rank()</code></td><td class="muted">Application</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Class Diagram thiết kế</div>
+  <h1>Các lớp xử lý đầu vào</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/class-input.png" alt="Class diagram xử lý đầu vào"
+           data-hint="Gồm SearchUI, VoiceInput, ImageUpload (boundary); SpeechService, ImageService, QueryService, RuleParser (control); Query (entity).">
+    </figure>
+    <div class="notes">
+      <dl>
+        <dt>SearchUI</dt><dd>Nhận đầu vào và gọi đúng service theo cách tìm.</dd>
+        <dt>VoiceInput · ImageUpload</dt><dd>Nhận ghi âm; kiểm tra định dạng và dung lượng ảnh.</dd>
+        <dt>SpeechService</dt><dd>Chuyển giọng nói thành văn bản.</dd>
+        <dt>ImageService</dt><dd>Cắt ảnh sát sản phẩm, rồi mã hóa thành vector bằng mô hình CLIP thời trang.</dd>
+        <dt>QueryService · RuleParser</dt><dd>Hiểu câu tiếng Việt và tạo một Query chung cho mọi cách tìm.</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Class Diagram thiết kế</div>
+  <h1>Các lớp truy xuất và xếp hạng</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/class-search.png" alt="Class diagram truy xuất và xếp hạng"
+           data-hint="Gồm SearchService, RankingService (control); ProductRepository, TextIndex, VectorIndex (tầng Data); Query, Product (entity).">
+    </figure>
+    <div class="notes">
+      <dl>
+        <dt>SearchService</dt><dd>Điều phối: tạo Query, lấy ứng viên, gọi RankingService.</dd>
+        <dt>ProductRepository</dt><dd>Lọc sản phẩm trong PostgreSQL theo loại, màu, giá…</dd>
+        <dt>TextIndex</dt><dd>Chấm điểm BM25: từ hiếm như "hoodie" nặng hơn từ phổ biến như "áo".</dd>
+        <dt>VectorIndex</dt><dd>Độ tương đồng cosine giữa vector ảnh truy vấn và ảnh sản phẩm.</dd>
+        <dt>RankingService</dt><dd>Gộp điểm văn bản, ảnh và kinh doanh; trả về Top-K.</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Method / Function</div>
+  <h1>QueryService: bốn cách nhập, một Query</h1>
+  <div class="body" style="top:200px">
+    <div class="sig">
+      text_query(<span class="k">text</span>) · voice_query(<span class="k">text</span>) · image_query(<span class="k">embedding, image</span>)<br>
+      multimodal_query(<span class="k">text, embedding, image, λ_text, λ_image</span>)
+    </div>
+    <div class="pcr">
+      <div class="card"><h3>Precondition</h3><ul>
+        <li>Văn bản không rỗng</li>
+        <li>Ảnh đã qua <code>ImageUpload</code> và đã được mã hóa</li>
+        <li><code>λ_text + λ_image &gt; 0</code></li>
+      </ul></div>
+      <div class="card"><h3>Process</h3><ul>
+        <li><b>Chữ / giọng nói:</b> <code>RuleParser.parse()</code> nhận ra loại, màu, giá, giới tính, chất liệu</li>
+        <li><b>Ảnh:</b> giữ vector, chưa có điều kiện lọc</li>
+        <li><b>Chữ + ảnh:</b> chữ cho điều kiện lọc, ảnh cho vẻ ngoài; chuẩn hóa λ về tổng bằng 1</li>
+      </ul></div>
+      <div class="card"><h3>Result · Query</h3><ul>
+        <li><code>type</code>, <code>intent</code></li>
+        <li><code>keywords</code>, <code>categories</code>, <code>colors</code></li>
+        <li><code>min_price</code>, <code>max_price</code>, <code>sort</code></li>
+        <li><code>embedding</code>, <code>weights</code> (khi có ảnh)</li>
+      </ul></div>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Method / Function</div>
+  <h1>RuleParser.parse(): hiểu câu tiếng Việt</h1>
+  <p class="lead">Phân tích bằng luật, khoảng 1 ms mỗi câu.</p>
+  <div class="body" style="top:250px">
+    <table>
+      <thead><tr><th style="width:560px">Khách nhập</th><th>Hệ thống hiểu</th></tr></thead>
+      <tbody>
+        <tr><td>"áo khoác 1tr5 đổ lại"</td><td>Áo khoác · Dưới 1.500.000₫</td></tr>
+        <tr><td>"cho tui coi quần đùi hông quá 300 ngàn"</td><td><span class="muted">coi → xem, hông → không, ngàn → nghìn</span> · Quần đùi · Dưới 300.000₫</td></tr>
+        <tr><td>"ao so mi trang tay dai"</td><td><span class="muted">gõ không dấu</span> · Áo sơ mi · Màu trắng · Dài tay</td></tr>
+        <tr><td>"áo hodie xám"</td><td><span class="muted">hodie → hoodie</span> · Áo hoodie · Màu xám</td></tr>
+      </tbody>
+    </table>
+    <div class="grid3" style="margin-top:22px">
+      <div class="card"><h3>1 · Chuẩn hóa</h3><p>Từ địa phương về từ phổ thông, sửa lỗi gõ, hiểu cả khi gõ không dấu.</p></div>
+      <div class="card"><h3>2 · Nhận diện thuộc tính</h3><p>Loại, màu, giới tính, chất liệu, họa tiết, kiểu dáng.</p></div>
+      <div class="card"><h3>3 · Đọc giá</h3><p>"1tr5", "300 ngàn", "dưới", "đổ lại", "tầm 600–900".</p></div>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Method / Function</div>
+  <h1>SearchService.search(): tạo Query, truy xuất, xếp hạng</h1>
+  <div class="body" style="top:200px">
+    <div class="sig">search(<span class="k">text, modality, embedding, image, top_k = 24</span>) → <span class="k">Response</span></div>
+    <div class="flow">
+      <div class="card">
+        <div class="num">BƯỚC 1</div><h3>Tạo Query</h3>
+        <p>Gọi hàm <code>*_query()</code> của QueryService theo <code>modality</code>.</p>
+        <p>Nếu hỏi đơn hàng, chuyển sang OrderRepository.</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="card">
+        <div class="num">BƯỚC 2</div><h3>retrieve(query) → ứng viên</h3>
+        <div class="branch"><b>Chữ / giọng nói</b><p>Lọc trong PostgreSQL theo điều kiện; rỗng thì nới bớt điều kiện; chấm S_text bằng BM25 và khớp gần đúng.</p></div>
+        <div class="branch"><b>Ảnh</b><p>Chấm S_image bằng cosine trên VectorIndex.</p></div>
+        <div class="branch"><b>Chữ + ảnh</b><p>Chữ lọc ứng viên, ảnh chấm độ giống.</p></div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="card">
+        <div class="num">BƯỚC 3</div><h3>rank(…, top_k)</h3>
+        <p>RankingService tính điểm cuối và cắt Top-K.</p>
+        <p style="margin-top:16px"><b style="color:var(--ink)">Response:</b> kết quả, trọng số, các điều kiện đã nới, thời gian xử lý.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Method / Function</div>
+  <h1>RankingService.rank(): một công thức cho mọi cách tìm</h1>
+  <div class="body" style="top:200px">
+    <div class="formula">
+      S = <span class="o">α</span>·S_text + <span class="o">β</span>·S_image + <span class="o">γ</span>·S_business
+      <small>S_business = 0,6 · độ phổ biến + 0,4 · còn hàng</small>
+    </div>
+    <div class="grid2" style="margin-top:24px; grid-template-columns: 1.1fr 1fr">
+      <table style="margin-top:-8px">
+        <thead><tr><th>Cách tìm</th><th>α</th><th>β</th><th>γ</th></tr></thead>
+        <tbody>
+          <tr><td>Chữ · Giọng nói</td><td>0,85</td><td>0</td><td>0,15</td></tr>
+          <tr><td>Ảnh</td><td>0</td><td>0,97</td><td>0,03</td></tr>
+          <tr><td>Chữ + ảnh</td><td>0,92·λ_text</td><td>0,92·λ_image</td><td>0,08</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <div class="card"><h3>Độ liên quan luôn đứng trước</h3><p>γ nhỏ: độ phổ biến chỉ phân định giữa các sản phẩm phù hợp như nhau.</p></div>
+        <div class="card" style="margin-top:16px"><h3>"Rẻ nhất", "đắt nhất"</h3><p>Chỉ sắp theo giá trong nhóm có điểm ≥ 60% điểm cao nhất.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Sequence Diagram</div>
+  <h1>Search by Keyword</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/seq-keyword.png" alt="Sequence Search by Keyword"
+           data-hint="Customer, SearchUI, SearchService, QueryService, RuleParser, ProductRepository, TextIndex, RankingService. Có khối alt khi không có kết quả.">
+    </figure>
+    <div class="notes">
+      <h4>Ví dụ: "áo phông dưới 100k"</h4>
+      <ol class="steps">
+        <li>SearchUI → SearchService: <code>search(text, "text")</code></li>
+        <li>SearchService → QueryService: <code>text_query(text)</code></li>
+        <li>QueryService → RuleParser: <code>parse(text)</code>, trả về Query</li>
+        <li>SearchService → ProductRepository: <code>find(điều kiện)</code></li>
+        <li class="alt">Không có kết quả: nới điều kiện, tìm lại và báo cho khách</li>
+        <li>SearchService → TextIndex: <code>score(từ khóa)</code></li>
+        <li>SearchService → RankingService: <code>rank(…, top_k)</code></li>
+        <li>SearchUI hiển thị kết quả</li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Sequence Diagram</div>
+  <h1>Search by Voice</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/seq-voice.png" alt="Sequence Search by Voice"
+           data-hint="Customer, SearchUI, SpeechService, SearchService, QueryService, ProductRepository, RankingService.">
+    </figure>
+    <div class="notes">
+      <h4>Giọng nói đi chung luồng với chữ</h4>
+      <ol class="steps">
+        <li>Khách nói: "cho tui coi quần đùi hông quá 300 ngàn"</li>
+        <li>SearchUI → SpeechService: <code>transcribe(audio)</code></li>
+        <li class="alt">Không nhận dạng được: báo cho khách nói lại</li>
+        <li>SearchUI → SearchService: <code>search(text, "voice")</code></li>
+        <li>Từ đây giống Search by Keyword: tạo Query, truy xuất, xếp hạng</li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Sequence Diagram</div>
+  <h1>Search by Image</h1>
+  <div class="body">
+    <figure class="diagram wide">
+      <img src="diagrams/seq-image.png" alt="Sequence Search by Image"
+           data-hint="Customer, SearchUI, ImageUpload, ImageService, SearchService, QueryService, VectorIndex, ProductRepository, RankingService. Có khối alt khi ảnh không hợp lệ.">
+    </figure>
+    <div class="notes">
+      <h4>Khách tải lên ảnh một chiếc áo</h4>
+      <ol class="steps">
+        <li>SearchUI → ImageUpload: <code>upload(path)</code></li>
+        <li class="alt">Ảnh không hợp lệ: báo lỗi, dừng</li>
+        <li>SearchUI → ImageService: <code>encode(path)</code>, trả về vector</li>
+        <li>SearchUI → SearchService: <code>search(embedding, "image")</code></li>
+        <li>SearchService → QueryService: <code>image_query(embedding)</code></li>
+        <li>SearchService → VectorIndex: <code>scores(embedding)</code></li>
+        <li>SearchService → ProductRepository: <code>get_product(id)</code></li>
+        <li>SearchService → RankingService: <code>rank(…, top_k)</code></li>
+      </ol>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+<section class="slide" data-section="03 · Detailed Design">
+  <div class="kicker">03 · Detailed Design · Tóm tắt</div>
+  <h1>Thiết kế chi tiết sẵn sàng để cài đặt</h1>
+  <div class="body">
+    <div class="grid3">
+      <div class="stat"><div class="n">1</div><h3>Query chung</h3><p>Chữ, giọng nói, ảnh và chữ + ảnh đều về cùng một cấu trúc</p></div>
+      <div class="stat"><div class="n">3</div><h3>Bước tìm kiếm</h3><p>Tạo Query, truy xuất ứng viên, xếp hạng</p></div>
+      <div class="stat"><div class="n">1</div><h3>Công thức xếp hạng</h3><p>Chỉ đổi trọng số α, β, γ theo cách tìm</p></div>
+    </div>
+    <div class="next">
+      <div class="kicker">Tiếp theo</div>
+      <h2>04 · Code &amp; Demo</h2>
+      <p>Trình bày: Nguyễn Văn Ninh</p>
+    </div>
+  </div>
+  <div class="footer"><span>Nhóm 05 · Multimodal Search System</span><span>03 · Detailed Design</span></div>
+</section>
+
+</div>
+
+<div id="counter"></div>
+<div id="hint">← → chuyển slide · F toàn màn hình · bấm vào sơ đồ để phóng to</div>
+<div id="zoom"><img alt=""></div>
+
+<script>
+(function () {
+  var stage = document.getElementById("stage");
+  var slides = Array.prototype.slice.call(document.querySelectorAll(".slide"));
+  var counter = document.getElementById("counter");
+  var progress = document.getElementById("progress");
+  var zoom = document.getElementById("zoom");
+  var current = 0;
+
+  function fit() {
+    var s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
+    stage.style.transform = "translate(-50%, -50%) scale(" + s + ")";
+  }
+
+  function show(i) {
+    current = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach(function (el, k) { el.classList.toggle("active", k === current); });
+    counter.textContent = (current + 1) + " / " + slides.length;
+    progress.style.width = ((current + 1) / slides.length * 100) + "%";
+    if (location.hash !== "#" + (current + 1)) history.replaceState(null, "", "#" + (current + 1));
+  }
+
+  // a missing Visual Paradigm export shows a labelled placeholder instead of a broken image
+  document.querySelectorAll(".diagram img").forEach(function (img) {
+    img.addEventListener("error", function () {
+      var fig = img.parentNode;
+      var box = document.createElement("div");
+      box.className = "placeholder";
+      box.innerHTML = '<div class="icon">＋</div><b>Chèn ảnh từ Visual Paradigm</b>' +
+        "<code>slides/" + img.getAttribute("src") + "</code><p></p>";
+      box.querySelector("p").textContent = img.dataset.hint || "";
+      fig.style.cursor = "default";
+      fig.replaceChild(box, img);
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (zoom.classList.contains("open")) { zoom.classList.remove("open"); return; }
+    var img = e.target.closest(".diagram") && e.target.closest(".diagram").querySelector("img");
+    if (img) { zoom.querySelector("img").src = img.src; zoom.classList.add("open"); }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (zoom.classList.contains("open") && e.key === "Escape") { zoom.classList.remove("open"); return; }
+    if (["ArrowRight", "PageDown", " ", "Enter"].indexOf(e.key) >= 0) { e.preventDefault(); show(current + 1); }
+    else if (["ArrowLeft", "PageUp", "Backspace"].indexOf(e.key) >= 0) { e.preventDefault(); show(current - 1); }
+    else if (e.key === "Home") show(0);
+    else if (e.key === "End") show(slides.length - 1);
+    else if (e.key === "f" || e.key === "F") {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+    }
+  });
+
+  var touchX = null;
+  document.addEventListener("touchstart", function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+  document.addEventListener("touchend", function (e) {
+    if (touchX === null) return;
+    var dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+    touchX = null;
+  });
+
+  window.addEventListener("resize", fit);
+  setTimeout(function () { document.getElementById("hint").style.opacity = 0; }, 4000);
+  fit();
+  show((parseInt(location.hash.slice(1), 10) || 1) - 1);
+})();
+</script>
+</body>
+</html>

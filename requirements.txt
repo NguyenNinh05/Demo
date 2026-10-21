@@ -1,0 +1,14 @@
+fastapi==0.156.8
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+Jinja2==3.1.6
+psycopg[binary]==3.3.6
+numpy==2.5.4
+pillow==13.0.0
+torch==2.14.1
+sentence-transformers==6.1.0
+open_clip_torch==3.3.0
+timm==1.0.30
+google-genai==2.32.0
+# only for tools/prepare_catalog.py (rebuilding the catalogue from the H&M dataset)
+pyarrow==26.0.0

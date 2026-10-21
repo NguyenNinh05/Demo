@@ -1,0 +1,682 @@
+[
+ {
+  "file": "heldout_01_quan_jogger.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jogger",
+  "gender": "nam",
+  "color": "đen",
+  "original_name": "BASIL CLEAN SWEATS"
+ },
+ {
+  "file": "heldout_02_ao_khoac.jpg",
+  "kind": "heldout",
+  "category_id": "ao_khoac",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "W ANACONA JACKET EQ"
+ },
+ {
+  "file": "heldout_03_ao_khoac.jpg",
+  "kind": "heldout",
+  "category_id": "ao_khoac",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Vincent"
+ },
+ {
+  "file": "heldout_04_ao_so_mi.jpg",
+  "kind": "heldout",
+  "category_id": "ao_so_mi",
+  "gender": "nam",
+  "color": "trắng",
+  "original_name": "SS RESORT"
+ },
+ {
+  "file": "heldout_05_ao_phong.jpg",
+  "kind": "heldout",
+  "category_id": "ao_phong",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Sparkles oversized tee"
+ },
+ {
+  "file": "heldout_06_ao_kieu.jpg",
+  "kind": "heldout",
+  "category_id": "ao_kieu",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "Miracle"
+ },
+ {
+  "file": "heldout_07_ao_ni.jpg",
+  "kind": "heldout",
+  "category_id": "ao_ni",
+  "gender": "nam",
+  "color": "xanh dương",
+  "original_name": "Pip crewneck"
+ },
+ {
+  "file": "heldout_08_quan_short.jpg",
+  "kind": "heldout",
+  "category_id": "quan_short",
+  "gender": "nu",
+  "color": "xanh rêu",
+  "original_name": "Hudson shorts (1)"
+ },
+ {
+  "file": "heldout_09_ao_len.jpg",
+  "kind": "heldout",
+  "category_id": "ao_len",
+  "gender": "nam",
+  "color": "đen",
+  "original_name": "PARSLEY cotton saddle sleeve"
+ },
+ {
+  "file": "heldout_10_ao_so_mi.jpg",
+  "kind": "heldout",
+  "category_id": "ao_so_mi",
+  "gender": "nu",
+  "color": "xanh dương",
+  "original_name": "Virgil shirt"
+ },
+ {
+  "file": "heldout_11_quan_dai.jpg",
+  "kind": "heldout",
+  "category_id": "quan_dai",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "Snoodle"
+ },
+ {
+  "file": "heldout_12_ao_phong.jpg",
+  "kind": "heldout",
+  "category_id": "ao_phong",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "ED Frille tee"
+ },
+ {
+  "file": "heldout_13_quan_au.jpg",
+  "kind": "heldout",
+  "category_id": "quan_au",
+  "gender": "nam",
+  "color": "xanh dương",
+  "original_name": "Nial slim linen trs"
+ },
+ {
+  "file": "heldout_14_ao_phong.jpg",
+  "kind": "heldout",
+  "category_id": "ao_phong",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Gavino"
+ },
+ {
+  "file": "heldout_15_ao_blazer.jpg",
+  "kind": "heldout",
+  "category_id": "ao_blazer",
+  "gender": "nu",
+  "color": "vàng",
+  "original_name": "Avignon"
+ },
+ {
+  "file": "heldout_16_ao_kieu.jpg",
+  "kind": "heldout",
+  "category_id": "ao_kieu",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "Cole S/L blouse"
+ },
+ {
+  "file": "heldout_17_ao_khoac.jpg",
+  "kind": "heldout",
+  "category_id": "ao_khoac",
+  "gender": "nu",
+  "color": "be",
+  "original_name": "Dragon Fluid Parka"
+ },
+ {
+  "file": "heldout_18_ao_ni.jpg",
+  "kind": "heldout",
+  "category_id": "ao_ni",
+  "gender": "nam",
+  "color": "be",
+  "original_name": "NICNAK CREW"
+ },
+ {
+  "file": "heldout_19_ao_cardigan.jpg",
+  "kind": "heldout",
+  "category_id": "ao_cardigan",
+  "gender": "nu",
+  "color": "xám",
+  "original_name": "Robbie Cardigan"
+ },
+ {
+  "file": "heldout_20_quan_jeans.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jeans",
+  "gender": "nu",
+  "color": "nhiều màu",
+  "original_name": "ED stella RW cropped denim"
+ },
+ {
+  "file": "heldout_21_quan_short.jpg",
+  "kind": "heldout",
+  "category_id": "quan_short",
+  "gender": "nu",
+  "color": "be",
+  "original_name": "Gardenia Shorts"
+ },
+ {
+  "file": "heldout_22_ao_ni.jpg",
+  "kind": "heldout",
+  "category_id": "ao_ni",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "SC AVA sweatshirt"
+ },
+ {
+  "file": "heldout_23_ao_len.jpg",
+  "kind": "heldout",
+  "category_id": "ao_len",
+  "gender": "nam",
+  "color": "nhiều màu",
+  "original_name": "Westwood Knit"
+ },
+ {
+  "file": "heldout_24_ao_len.jpg",
+  "kind": "heldout",
+  "category_id": "ao_len",
+  "gender": "nu",
+  "color": "xám",
+  "original_name": "PE MELISSA R-NECK"
+ },
+ {
+  "file": "heldout_25_quan_dai.jpg",
+  "kind": "heldout",
+  "category_id": "quan_dai",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "W STACY TRS EQ"
+ },
+ {
+  "file": "heldout_26_ao_hoodie.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hoodie",
+  "gender": "nu",
+  "color": "cam",
+  "original_name": "LOGG Basic Hood"
+ },
+ {
+  "file": "heldout_27_ao_blazer.jpg",
+  "kind": "heldout",
+  "category_id": "ao_blazer",
+  "gender": "nu",
+  "color": "be",
+  "original_name": "Jasba check"
+ },
+ {
+  "file": "heldout_28_quan_dai.jpg",
+  "kind": "heldout",
+  "category_id": "quan_dai",
+  "gender": "nam",
+  "color": "xám",
+  "original_name": "Billy cargo pants"
+ },
+ {
+  "file": "heldout_29_ao_hoodie.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hoodie",
+  "gender": "nu",
+  "color": "đỏ",
+  "original_name": "Eclipse hood"
+ },
+ {
+  "file": "heldout_30_ao_hai_day.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hai_day",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "Piper top"
+ },
+ {
+  "file": "heldout_31_ao_cardigan.jpg",
+  "kind": "heldout",
+  "category_id": "ao_cardigan",
+  "gender": "nu",
+  "color": "xanh dương",
+  "original_name": "Genevieve cardigan"
+ },
+ {
+  "file": "heldout_32_ao_kieu.jpg",
+  "kind": "heldout",
+  "category_id": "ao_kieu",
+  "gender": "nu",
+  "color": "xanh dương",
+  "original_name": "ED Dottie blouse"
+ },
+ {
+  "file": "heldout_33_ao_cardigan.jpg",
+  "kind": "heldout",
+  "category_id": "ao_cardigan",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "Kimono Cardigan"
+ },
+ {
+  "file": "heldout_34_quan_legging.jpg",
+  "kind": "heldout",
+  "category_id": "quan_legging",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Floyd HW PU trousers"
+ },
+ {
+  "file": "heldout_35_ao_hoodie.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hoodie",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "AK Aiko hoodie"
+ },
+ {
+  "file": "heldout_36_ao_hai_day.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hai_day",
+  "gender": "nu",
+  "color": "trắng",
+  "original_name": "YIKES PRICE BODY"
+ },
+ {
+  "file": "heldout_37_quan_short.jpg",
+  "kind": "heldout",
+  "category_id": "quan_short",
+  "gender": "nu",
+  "color": "hồng",
+  "original_name": "Moira Skort"
+ },
+ {
+  "file": "heldout_38_ao_hai_day.jpg",
+  "kind": "heldout",
+  "category_id": "ao_hai_day",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Maran"
+ },
+ {
+  "file": "heldout_39_quan_jeans.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jeans",
+  "gender": "nu",
+  "color": "xanh dương",
+  "original_name": "Girlfriend R.W Petite"
+ },
+ {
+  "file": "heldout_40_quan_jeans.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jeans",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "PE SOL DENIM"
+ },
+ {
+  "file": "heldout_41_quan_au.jpg",
+  "kind": "heldout",
+  "category_id": "quan_au",
+  "gender": "nu",
+  "color": "xanh lá",
+  "original_name": "Serpente HW slim trouser"
+ },
+ {
+  "file": "heldout_42_ao_so_mi.jpg",
+  "kind": "heldout",
+  "category_id": "ao_so_mi",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "MANGO SHIRT"
+ },
+ {
+  "file": "heldout_43_quan_jogger.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jogger",
+  "gender": "nam",
+  "color": "xanh rêu",
+  "original_name": "Christopher Poplin Cargo"
+ },
+ {
+  "file": "heldout_44_quan_jogger.jpg",
+  "kind": "heldout",
+  "category_id": "quan_jogger",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Mallorca"
+ },
+ {
+  "file": "heldout_45_quan_au.jpg",
+  "kind": "heldout",
+  "category_id": "quan_au",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Sydney jumpsuit"
+ },
+ {
+  "file": "heldout_46_ao_blazer.jpg",
+  "kind": "heldout",
+  "category_id": "ao_blazer",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Jackal Fluid Blazer"
+ },
+ {
+  "file": "heldout_47_quan_legging.jpg",
+  "kind": "heldout",
+  "category_id": "quan_legging",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "FIRRE conscious"
+ },
+ {
+  "file": "heldout_48_quan_legging.jpg",
+  "kind": "heldout",
+  "category_id": "quan_legging",
+  "gender": "nu",
+  "color": "đen",
+  "original_name": "Kelly PU"
+ },
+ {
+  "file": "heldout_49_ao_polo.jpg",
+  "kind": "heldout",
+  "category_id": "ao_polo",
+  "gender": "nam",
+  "color": "đỏ",
+  "original_name": "Fav polo solid"
+ },
+ {
+  "file": "heldout_50_ao_polo.jpg",
+  "kind": "heldout",
+  "category_id": "ao_polo",
+  "gender": "nam",
+  "color": "đen",
+  "original_name": "SEED LS POLO"
+ },
+ {
+  "file": "aug_01_p0059.jpg",
+  "kind": "augmented",
+  "product_id": 59,
+  "category_id": "ao_phong",
+  "color": "cam"
+ },
+ {
+  "file": "aug_02_p0217.jpg",
+  "kind": "augmented",
+  "product_id": 217,
+  "category_id": "ao_ni",
+  "color": "đen"
+ },
+ {
+  "file": "aug_03_p0287.jpg",
+  "kind": "augmented",
+  "product_id": 287,
+  "category_id": "ao_khoac",
+  "color": "đen"
+ },
+ {
+  "file": "aug_04_p0365.jpg",
+  "kind": "augmented",
+  "product_id": 365,
+  "category_id": "quan_jeans",
+  "color": "hồng"
+ },
+ {
+  "file": "aug_05_p0373.jpg",
+  "kind": "augmented",
+  "product_id": 373,
+  "category_id": "quan_jeans",
+  "color": "đen"
+ },
+ {
+  "file": "aug_06_p0139.jpg",
+  "kind": "augmented",
+  "product_id": 139,
+  "category_id": "ao_kieu",
+  "color": "be"
+ },
+ {
+  "file": "aug_07_p0240.jpg",
+  "kind": "augmented",
+  "product_id": 240,
+  "category_id": "ao_hoodie",
+  "color": "xanh ngọc"
+ },
+ {
+  "file": "aug_08_p0018.jpg",
+  "kind": "augmented",
+  "product_id": 18,
+  "category_id": "ao_phong",
+  "color": "nâu"
+ },
+ {
+  "file": "aug_09_p0362.jpg",
+  "kind": "augmented",
+  "product_id": 362,
+  "category_id": "quan_jeans",
+  "color": "xanh rêu"
+ },
+ {
+  "file": "aug_10_p0068.jpg",
+  "kind": "augmented",
+  "product_id": 68,
+  "category_id": "ao_polo",
+  "color": "xanh rêu"
+ },
+ {
+  "file": "aug_11_p0130.jpg",
+  "kind": "augmented",
+  "product_id": 130,
+  "category_id": "ao_kieu",
+  "color": "đen"
+ },
+ {
+  "file": "aug_12_p0323.jpg",
+  "kind": "augmented",
+  "product_id": 323,
+  "category_id": "ao_blazer",
+  "color": "be"
+ },
+ {
+  "file": "aug_13_p0260.jpg",
+  "kind": "augmented",
+  "product_id": 260,
+  "category_id": "ao_cardigan",
+  "color": "xanh dương"
+ },
+ {
+  "file": "aug_14_p0313.jpg",
+  "kind": "augmented",
+  "product_id": 313,
+  "category_id": "ao_blazer",
+  "color": "nâu"
+ },
+ {
+  "file": "aug_15_p0119.jpg",
+  "kind": "augmented",
+  "product_id": 119,
+  "category_id": "ao_so_mi",
+  "color": "be"
+ },
+ {
+  "file": "aug_16_p0201.jpg",
+  "kind": "augmented",
+  "product_id": 201,
+  "category_id": "ao_len",
+  "color": "xanh dương"
+ },
+ {
+  "file": "aug_17_p0109.jpg",
+  "kind": "augmented",
+  "product_id": 109,
+  "category_id": "ao_so_mi",
+  "color": "nâu"
+ },
+ {
+  "file": "aug_18_p0464.jpg",
+  "kind": "augmented",
+  "product_id": 464,
+  "category_id": "quan_short",
+  "color": "trắng"
+ },
+ {
+  "file": "aug_19_p0186.jpg",
+  "kind": "augmented",
+  "product_id": 186,
+  "category_id": "ao_len",
+  "color": "đen"
+ },
+ {
+  "file": "aug_20_p0191.jpg",
+  "kind": "augmented",
+  "product_id": 191,
+  "category_id": "ao_len",
+  "color": "xám"
+ },
+ {
+  "file": "aug_21_p0154.jpg",
+  "kind": "augmented",
+  "product_id": 154,
+  "category_id": "ao_hai_day",
+  "color": "đen"
+ },
+ {
+  "file": "aug_22_p0086.jpg",
+  "kind": "augmented",
+  "product_id": 86,
+  "category_id": "ao_so_mi",
+  "color": "xanh rêu"
+ },
+ {
+  "file": "aug_23_p0195.jpg",
+  "kind": "augmented",
+  "product_id": 195,
+  "category_id": "ao_len",
+  "color": "trắng"
+ },
+ {
+  "file": "aug_24_p0303.jpg",
+  "kind": "augmented",
+  "product_id": 303,
+  "category_id": "ao_khoac",
+  "color": "xám"
+ },
+ {
+  "file": "aug_25_p0071.jpg",
+  "kind": "augmented",
+  "product_id": 71,
+  "category_id": "ao_polo",
+  "color": "trắng"
+ },
+ {
+  "file": "aug_26_p0096.jpg",
+  "kind": "augmented",
+  "product_id": 96,
+  "category_id": "ao_so_mi",
+  "color": "trắng"
+ },
+ {
+  "file": "aug_27_p0371.jpg",
+  "kind": "augmented",
+  "product_id": 371,
+  "category_id": "quan_jeans",
+  "color": "xanh dương"
+ },
+ {
+  "file": "aug_28_p0229.jpg",
+  "kind": "augmented",
+  "product_id": 229,
+  "category_id": "ao_ni",
+  "color": "nâu"
+ },
+ {
+  "file": "aug_29_p0145.jpg",
+  "kind": "augmented",
+  "product_id": 145,
+  "category_id": "ao_kieu",
+  "color": "đỏ"
+ },
+ {
+  "file": "aug_30_p0337.jpg",
+  "kind": "augmented",
+  "product_id": 337,
+  "category_id": "quan_jeans",
+  "color": "nâu"
+ },
+ {
+  "file": "aug_31_p0025.jpg",
+  "kind": "augmented",
+  "product_id": 25,
+  "category_id": "ao_phong",
+  "color": "đen"
+ },
+ {
+  "file": "aug_32_p0177.jpg",
+  "kind": "augmented",
+  "product_id": 177,
+  "category_id": "ao_len",
+  "color": "đỏ"
+ },
+ {
+  "file": "aug_33_p0193.jpg",
+  "kind": "augmented",
+  "product_id": 193,
+  "category_id": "ao_len",
+  "color": "xám"
+ },
+ {
+  "file": "aug_34_p0297.jpg",
+  "kind": "augmented",
+  "product_id": 297,
+  "category_id": "ao_khoac",
+  "color": "xanh dương"
+ },
+ {
+  "file": "aug_35_p0150.jpg",
+  "kind": "augmented",
+  "product_id": 150,
+  "category_id": "ao_kieu",
+  "color": "cam"
+ },
+ {
+  "file": "aug_36_p0170.jpg",
+  "kind": "augmented",
+  "product_id": 170,
+  "category_id": "ao_hai_day",
+  "color": "xám"
+ },
+ {
+  "file": "aug_37_p0485.jpg",
+  "kind": "augmented",
+  "product_id": 485,
+  "category_id": "quan_short",
+  "color": "vàng"
+ },
+ {
+  "file": "aug_38_p0295.jpg",
+  "kind": "augmented",
+  "product_id": 295,
+  "category_id": "ao_khoac",
+  "color": "be"
+ },
+ {
+  "file": "aug_39_p0282.jpg",
+  "kind": "augmented",
+  "product_id": 282,
+  "category_id": "ao_khoac",
+  "color": "đen"
+ },
+ {
+  "file": "aug_40_p0448.jpg",
+  "kind": "augmented",
+  "product_id": 448,
+  "category_id": "quan_jogger",
+  "color": "xám"
+ }
+]

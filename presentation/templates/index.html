@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapShop — Tìm bằng chữ, giọng nói và hình ảnh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231c1b19'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='%23f7f4ef' font-family='Georgia'>S</text></svg>">
+</head>
+<body class="mode-home">
+  <!-- ============ header ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="logo" href="/" data-action="home">SNAPSHOP</a>
+      <nav class="nav" id="nav">
+        <button data-browse-gender="nu">Nữ</button>
+        <button data-browse-gender="nam">Nam</button>
+        <button data-browse-category="ao">Áo</button>
+        <button data-browse-category="quan">Quần</button>
+        <button data-browse-sort="newest">Mới về</button>
+      </nav>
+      <div class="topbar__actions">
+        <button class="icon-btn" id="ordersBtn" title="Đơn hàng của tôi" aria-label="Đơn hàng của tôi"></button>
+        <button class="icon-btn" id="cartBtn" title="Giỏ hàng" aria-label="Giỏ hàng"><span class="badge" id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ hero + search ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__collage" id="heroCollage" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="eyebrow">Thu · Đông 2026 · H&amp;M Collection</p>
+      <h1 class="hero__title">Tìm đúng món<br><em>bạn đang nghĩ tới.</em></h1>
+      <p class="hero__sub">Gõ, nói hoặc chụp một tấm ảnh — SnapShop hiểu bạn cần gì, kể cả khi bạn nói “hông quá trăm rưỡi”.</p>
+    </div>
+  </section>
+
+  <div class="searchband" id="searchband">
+    <form class="searchbar" id="searchForm" autocomplete="off">
+      <button type="button" class="searchbar__btn" id="cameraBtn" title="Tìm bằng hình ảnh" aria-label="Tìm bằng hình ảnh"></button>
+      <div class="searchbar__thumb" id="thumb" hidden>
+        <img id="thumbImg" alt="">
+        <button type="button" id="thumbClear" aria-label="Bỏ ảnh">×</button>
+      </div>
+      <input id="q" name="q" type="text" placeholder="Tìm áo, quần…" aria-label="Tìm kiếm">
+      <button type="button" class="searchbar__btn" id="micBtn" title="Tìm bằng giọng nói" aria-label="Tìm bằng giọng nói"></button>
+      <button type="submit" class="searchbar__go" id="goBtn">Tìm</button>
+      <input type="file" id="fileInput" accept="image/*" hidden>
+
+      <div class="popover" id="cameraPop" hidden>
+        <div class="popover__head">
+          <strong>Tìm bằng hình ảnh</strong>
+          <span>Kéo thả, dán (Ctrl/⌘ + V) hoặc tải ảnh lên</span>
+        </div>
+        <button type="button" class="btn btn--dark btn--block" id="uploadBtn">Tải ảnh từ máy</button>
+        <p class="popover__label">Hoặc thử ảnh mẫu (sản phẩm không có trong shop)</p>
+        <div class="samples" id="samples"></div>
+      </div>
+    </form>
+    <div class="examples" id="examples"></div>
+  </div>
+
+  <!-- ============ main ============ -->
+  <main class="main" id="main">
+    <section class="understood" id="understood" hidden></section>
+    <section id="notices"></section>
+
+    <section class="categories" id="categoryTiles"></section>
+
+    <section class="results">
+      <div class="results__head" id="resultsHead">
+        <div>
+          <h2 class="results__title" id="resultsTitle">Bán chạy tuần này</h2>
+          <p class="results__meta" id="resultsMeta"></p>
+        </div>
+        <div class="results__tools">
+          <label class="select">
+            <span>Sắp xếp</span>
+            <select id="sortSelect">
+              <option value="relevance">Phù hợp nhất</option>
+              <option value="popular">Bán chạy</option>
+              <option value="price_asc">Giá thấp → cao</option>
+              <option value="price_desc">Giá cao → thấp</option>
+              <option value="newest">Mới nhất</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="orders" id="orders" hidden></div>
+      <div class="more"><button class="btn btn--ghost" id="moreBtn" hidden>Xem thêm</button></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="logo logo--small">SNAPSHOP</div>
+        <p>Đồ án Phân tích &amp; Thiết kế — Multimodal Search System for E-Commerce.<br>
+          Kiến trúc 3 tầng · tìm bằng chữ, giọng nói và hình ảnh.</p>
+      </div>
+      <div class="footer__links">
+        <button class="link" id="evalBtn">Đánh giá hệ thống</button>
+        <a class="link" href="/docs" target="_blank">API docs (Swagger)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ overlays ============ -->
+  <div class="dropzone" id="dropzone" hidden><div>Thả ảnh vào đây để tìm sản phẩm tương tự</div></div>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <aside class="drawer" id="explainDrawer" aria-label="Vì sao có kết quả này" hidden>
+    <div class="drawer__head"><h3>Vì sao có kết quả này?</h3><button class="icon-btn" data-close aria-label="Đóng">×</button></div>
+    <div class="drawer__body" id="explainBody"></div>
+  </aside>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Giỏ hàng" hidden>
+    <div class="drawer__head"><h3>Giỏ hàng</h3><button class="icon-btn" data-close aria-label="Đóng">×</button></div>
+    <div class="drawer__body" id="cartBody"></div>
+  </aside>
+
+  <div class="modal" id="productModal" hidden><div class="modal__card modal__card--wide" id="productBody"></div></div>
+  <div class="modal" id="voiceModal" hidden><div class="modal__card voice" id="voiceBody"></div></div>
+  <div class="modal" id="evalModal" hidden><div class="modal__card modal__card--wide" id="evalBody"></div></div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script id="site-config" type="application/json">{{ config | safe }}</script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
