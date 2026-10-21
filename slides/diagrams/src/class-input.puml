@@ -1,0 +1,74 @@
+@startuml class-input
+!include _style.iuml
+left to right direction
+
+class SearchUI <<boundary>> {
+  - speech_service : SpeechService
+  - image_service : ImageService
+  - search_service : SearchService
+  + text_search(text)
+  + voice_search(transcript)
+  + audio_search(path)
+  + image_search(image_path)
+  + multimodal_search(text, image_path, λ_text, λ_image)
+}
+
+class VoiceInput <<boundary>> {
+  + capture(source) : (audio, mime_type)
+}
+
+class ImageUpload <<boundary>> {
+  - ALLOWED : png, jpg, jpeg, webp, bmp
+  - MAX_BYTES : 10 MB
+  + upload(path) : path
+}
+
+class SpeechService <<control>> {
+  + transcribe(audio, mime_type) : Transcript
+}
+
+class ImageService <<control>> {
+  + preprocess(image) : Image
+  + encode(image) : Vector
+  + encode_text(text) : Vector
+}
+
+class SearchService <<control>> {
+  + search(text, modality, embedding, image, top_k) : Response
+}
+
+class QueryService <<control>> {
+  - rule_parser : RuleParser
+  + text_query(text) : Query
+  + voice_query(text) : Query
+  + image_query(embedding, image) : Query
+  + multimodal_query(text, embedding, image, λ_text, λ_image) : Query
+}
+
+class RuleParser <<control>> {
+  + parse(text) : ParsedText
+}
+
+class Query <<entity>> {
+  type : String
+  intent : String
+  keywords : List
+  categories : List
+  colors : List
+  genders : List
+  min_price : int
+  max_price : int
+  sort : String
+  embedding : Vector
+  weights : Map<String, float>
+}
+
+SearchUI *-- "1" VoiceInput
+SearchUI *-- "1" ImageUpload
+SearchUI ..> SpeechService
+SearchUI ..> ImageService
+SearchUI ..> SearchService
+SearchService ..> QueryService
+QueryService --> "1" RuleParser
+QueryService ..> Query : <<create>>
+@enduml

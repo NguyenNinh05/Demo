@@ -1,0 +1,90 @@
+@startuml class-search
+!include _style.iuml
+
+package "Application Layer" {
+  class SearchService <<control>> {
+    - query_service : QueryService
+    - ranking_service : RankingService
+    - products : ProductRepository
+    - orders : OrderRepository
+    - text_index : TextIndex
+    - vector_index : VectorIndex
+    + search(text, modality, embedding, image, top_k = 24) : Response
+    + retrieve(query, response) : List<Candidate>
+    - retrieve_text(query, response)
+    - retrieve_image(query, response)
+    - retrieve_multimodal(query, response)
+    - find_with_relaxation(query, fuzzy_terms, response)
+    + search_order(query) : List<Order>
+  }
+
+  class RankingService <<control>> {
+    - gamma : Map<type, float>
+    + business_score(product) : float
+    + weights(query) : (α, β, γ)
+    + rank(candidates, query, top_k) : (List<Candidate>, weights)
+  }
+
+  class Candidate <<entity>> {
+    product : Product
+    s_text : float
+    s_image : float
+    s_business : float
+    score : float
+  }
+}
+
+package "Data Layer" {
+  class ProductRepository {
+    + find(filters, fuzzy_terms) : Map<id, float>
+    + get_product(product_id) : Product
+    + image_path(product) : String
+  }
+
+  class OrderRepository {
+    + find_order(order_id) : Order
+    + orders_of_customer(customer_id) : List<Order>
+  }
+
+  class TextIndex {
+    - k1 : float = 1.2
+    - b : float = 0.75
+    + score(terms, product_ids) : Map<id, float>
+  }
+
+  class VectorIndex {
+    - ids : List<int>
+    - matrix : float[n][d]
+    + build(ids, vectors)
+    + scores(query) : Map<id, float>
+    + search(query, k = 10) : List<(id, float)>
+  }
+
+  class Product <<entity>> {
+    product_id : int
+    category_id : String
+    name : String
+    brand : String
+    gender : String
+    price : long
+    stock : int
+    color : String
+    image_path : String
+    popularity : float
+  }
+}
+
+' Data Layer below Application Layer
+RankingService -[hidden]down-> ProductRepository
+Candidate -[hidden]down-> TextIndex
+
+SearchService --> "1" RankingService
+SearchService --> "1" ProductRepository
+SearchService --> "1" OrderRepository
+SearchService --> "1" TextIndex
+SearchService --> "1" VectorIndex
+SearchService ..> Candidate : <<create>>
+RankingService ..> Candidate
+Candidate --> "1" Product
+ProductRepository ..> Product
+@enduml

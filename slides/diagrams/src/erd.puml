@@ -1,0 +1,73 @@
+@startuml erd
+!include _style.iuml
+skinparam linetype ortho
+skinparam ClassBackgroundColor #F5B97A
+skinparam ClassHeaderBackgroundColor #F5B97A
+left to right direction
+
+entity Customer {
+  * customer_id : varchar(20) <<PK>>
+  --
+  full_name : varchar(255)
+  email : varchar(255)
+  phone : varchar(20) <<null>>
+  address : varchar(500) <<null>>
+  created_at : timestamp
+}
+
+entity Order {
+  * order_id : varchar(20) <<PK>>
+  --
+  customer_id : varchar(20) <<FK>>
+  order_date : timestamp
+  total_amount : decimal(19,2)
+  status : varchar(50)
+}
+
+entity OrderItem {
+  * order_item_id : integer(10) <<PK>>
+  --
+  order_id : varchar(20) <<FK>>
+  product_id : integer(10) <<FK>>
+  quantity : integer(10)
+  unit_price : decimal(19,2)
+}
+
+entity Payment {
+  * payment_id : varchar(20) <<PK>>
+  --
+  order_id : varchar(20) <<FK, UNIQUE>>
+  payment_method : varchar(50)
+  payment_date : timestamp <<null>>
+  amount : decimal(19,2)
+  status : varchar(50)
+}
+
+entity Product {
+  * product_id : integer(10) <<PK>>
+  --
+  category_id : varchar(20) <<FK>>
+  name : varchar(255)
+  brand : varchar(100)
+  price : decimal(19,2)
+  stock : integer(10)
+  color : varchar(50) <<null>>
+  description : varchar(255) <<null>>
+  image_path : varchar(500)
+  popularity : decimal(4,3)
+  source_url : varchar(500) <<null>>
+}
+
+entity Category {
+  * category_id : varchar(20) <<PK>>
+  --
+  name : varchar(255)
+  description : varchar(255) <<null>>
+}
+
+Customer ||--o{ Order
+Order ||--|{ OrderItem
+Order ||--o| Payment
+Product ||--o{ OrderItem
+Category ||--o{ Product
+@enduml

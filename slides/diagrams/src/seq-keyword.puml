@@ -1,0 +1,55 @@
+@startuml seq-keyword
+!include _style.iuml
+autonumber
+hide footbox
+
+actor Customer
+boundary SearchUI
+control SearchService
+control QueryService
+control RuleParser
+participant ProductRepository
+participant TextIndex
+control RankingService
+boundary SearchResultView
+
+Customer -> SearchUI : text_search("áo phông dưới 100k")
+activate SearchUI
+SearchUI -> SearchService : search(text, modality = "text")
+activate SearchService
+SearchService -> QueryService : text_query(text)
+activate QueryService
+QueryService -> RuleParser : parse(text)
+activate RuleParser
+RuleParser --> QueryService : loại, màu, giá, từ khóa
+deactivate RuleParser
+QueryService --> SearchService : query
+deactivate QueryService
+
+SearchService -> ProductRepository : find(điều kiện, fuzzy_terms)
+activate ProductRepository
+ProductRepository --> SearchService : ứng viên
+deactivate ProductRepository
+opt không có sản phẩm thỏa mọi điều kiện
+  loop đến khi có kết quả
+    SearchService -> SearchService : nới bớt một điều kiện
+    SearchService -> ProductRepository : find(điều kiện còn lại)
+  end
+end
+
+SearchService -> TextIndex : score(từ khóa, ứng viên)
+activate TextIndex
+TextIndex --> SearchService : điểm BM25
+deactivate TextIndex
+SearchService -> RankingService : rank(candidates, query, top_k)
+activate RankingService
+RankingService --> SearchService : Top-K, (α, β, γ)
+deactivate RankingService
+SearchService --> SearchUI : response
+deactivate SearchService
+SearchUI -> SearchResultView : show_response(response)
+activate SearchResultView
+SearchResultView --> Customer : danh sách đã xếp hạng
+deactivate SearchResultView
+deactivate SearchUI
+@enduml

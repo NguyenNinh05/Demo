@@ -1,0 +1,37 @@
+' Visual Paradigm look: light blue fill, black lines, plain sans-serif font
+skinparam dpi 200
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam backgroundColor white
+skinparam ArrowColor black
+skinparam ArrowFontSize 11
+skinparam ClassBackgroundColor #7ACFF5
+skinparam ClassBorderColor black
+skinparam ClassHeaderBackgroundColor #7ACFF5
+skinparam ClassAttributeIconSize 0
+skinparam ClassStereotypeFontStyle normal
+skinparam PackageBackgroundColor #EAF7FD
+skinparam PackageBorderColor #4A90B8
+skinparam ComponentBackgroundColor #7ACFF5
+skinparam ComponentBorderColor black
+skinparam DatabaseBackgroundColor #7ACFF5
+skinparam FolderBackgroundColor #7ACFF5
+skinparam ParticipantBackgroundColor #7ACFF5
+skinparam ParticipantBorderColor black
+skinparam ActorBackgroundColor #7ACFF5
+skinparam ActorBorderColor black
+skinparam BoundaryBackgroundColor #7ACFF5
+skinparam BoundaryBorderColor black
+skinparam ControlBackgroundColor #7ACFF5
+skinparam ControlBorderColor black
+skinparam EntityBackgroundColor #7ACFF5
+skinparam EntityBorderColor black
+skinparam SequenceLifeLineBorderColor #555555
+skinparam SequenceLifeLineBackgroundColor #7ACFF5
+skinparam SequenceGroupBackgroundColor #F3FAFE
+skinparam SequenceGroupBorderColor #4A90B8
+skinparam SequenceMessageAlign center
+skinparam NoteBackgroundColor #FFF6D5
+skinparam NoteBorderColor #C9A227
+hide circle

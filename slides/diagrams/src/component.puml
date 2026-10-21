@@ -1,0 +1,57 @@
+@startuml component
+!include _style.iuml
+skinparam componentStyle uml2
+top to bottom direction
+
+package "Presentation Layer" {
+  component SearchUI
+  component VoiceInput
+  component ImageUpload
+  component SearchResultView
+}
+
+package "Application / Intelligence Layer" {
+  component SpeechService
+  component ImageService
+  component SearchService
+  component QueryService
+  component RuleParser
+  component RankingService
+}
+
+package "Data Layer" {
+  component ProductRepository
+  component OrderRepository
+  component TextIndex
+  component VectorIndex
+  database "PostgreSQL" as DB
+  folder "ImageStorage" as IMG
+}
+
+SearchUI ..> VoiceInput
+SearchUI ..> ImageUpload
+SearchUI ..> SearchResultView
+
+SearchUI ..> SpeechService
+SearchUI ..> ImageService
+SearchUI ..> SearchService
+
+SearchService ..> QueryService
+QueryService ..> RuleParser
+SearchService ..> RankingService
+
+SearchService ..> ProductRepository
+SearchService ..> OrderRepository
+SearchService ..> TextIndex
+SearchService ..> VectorIndex
+
+ProductRepository ..> DB
+OrderRepository ..> DB
+ProductRepository ..> IMG
+
+' keep the three layers stacked top to bottom
+VoiceInput -[hidden]down-> SpeechService
+SearchResultView -[hidden]down-> SearchService
+RuleParser -[hidden]down-> ProductRepository
+RankingService -[hidden]down-> VectorIndex
+@enduml
