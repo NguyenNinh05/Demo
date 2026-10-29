@@ -97,8 +97,6 @@ PRICE_PATTERNS = [
 ]
 PRICE_RES = [(kind, re.compile(p)) for kind, p in PRICE_PATTERNS]
 NOT_PRICE_BEFORE = {"size", "co", "so", "ma", "don", "dh", "sz"}
-
-# ------------------------------------------------------------------ orders
 ORDER_ID_RE = re.compile(r"\b(dh\s?-?\d{3,})\b")
 NUMBER_ID_RE = re.compile(r"\b(\d{5,12})\b")
 
@@ -113,21 +111,17 @@ class RuleParser:
         self.vocabulary = set(vocabulary or ())
         self.category_names = category_names or {}
         self._correct_pool = sorted(ALIAS_WORDS | {w for w in self.vocabulary if len(w) >= 4})
-
-    # ============================================================== public
     def parse(self, text):
         start = time.perf_counter()
         raw = (text or "").strip()
         toks = tokenize(raw)
         notes = []
-        # 1. regional words -> standard words
         std = []
         for t in toks:
             s = L.DIALECT.get(t, t)
             if s != t:
                 notes.append({"kind": "dialect", "text": t, "label": f"{t} → {s}"})
             std.extend(s.split())
-        # "áo thun lạnh": "thun lạnh" is a fabric (cool-touch jersey), not cold weather
         toks = []
         for t in std:
             if t == "lạnh" and toks[-1:] == ["thun"] and toks[-2:-1] != ["vải"]:
@@ -156,9 +150,7 @@ class RuleParser:
         used = [False] * len(toks)
         kinds = [None] * len(toks)
         understood = 0
-        # 4. price
         understood += self._price(toks, un, used, kinds, query)
-        # 5. lexicon phrases, left to right, longest first
         i = 0
         while i < len(toks):
             if used[i]:
@@ -196,12 +188,9 @@ class RuleParser:
             query["intent"] = "unsupported"
         elif total == 0 or (understood == 0 and known == 0):
             query["intent"] = "unknown"
-        # design details are searched as keywords in the product descriptions
         query["keywords"] = query["features"] + query["keywords"]
         query["parse_ms"] = round((time.perf_counter() - start) * 1000, 2)
         return query
-
-    # ============================================================ helpers
     def _correct(self, toks, notes):
         out = []
         for t in toks:

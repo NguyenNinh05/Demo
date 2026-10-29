@@ -1,25 +1,3 @@
-"""Application / Intelligence Layer - SpeechService (speech-to-text).
-
-Two engines behind one interface:
-
-* Soniox (preferred when SONIOX_API_KEY is set): real-time. streaming_session()
-  gives the browser a temporary key and the stream configuration, so the words
-  appear while the customer speaks; the final sentence is then searched like
-  typed text (the rule parser already understands "hông", "mắc", "trăm rưỡi").
-  transcribe() also accepts a recorded file (console --audio).
-* Gemini (fallback): the recording is sent after the customer stops; Gemini returns
-  * transcript : what the customer said, regional words kept
-                 ("cho tui coi mấy cái áo thun hông quá trăm ngàn")
-  * normalized : the same sentence in standard Vietnamese, prices in digits
-                 ("cho tôi xem mấy cái áo thun không quá 100 nghìn")
-  * dialect    : Bắc / Trung / Nam / không rõ
-The normalized sentence then follows the normal text pipeline.
-
-Without a Gemini key the web page uses the browser's own recogniser
-(Web Speech API, vi-VN) and sends the text; the console accepts a typed
-transcript (simulated speech-to-text). Another engine (FPT.AI, Whisper...)
-can replace transcribe() without changing any other component.
-"""
 import time
 
 PROMPT = """Bạn là hệ thống nhận dạng giọng nói tiếng Việt cho một shop quần áo.
@@ -94,11 +72,11 @@ class SpeechService:
             except Exception as e:
                 if self.gemini is None:
                     raise ValueError(f"Chưa nhận dạng được giọng nói: {getattr(e, 'reason', e)}.") \
-                        from e                       # otherwise fall back to Gemini below
+                        from e                    
         try:
             result = self.gemini.generate_json(
                 self.model, [PROMPT, self.gemini.audio(audio, mime_type)], SCHEMA)
-        except Exception as e:                       # overloaded, quota, bad key, network...
+        except Exception as e:                     
             reason = getattr(e, "reason", "không kết nối được tới dịch vụ nhận dạng")
             raise ValueError(f"Chưa nhận dạng được giọng nói: {reason}. "
                              f"Bạn thử lại hoặc gõ câu tìm kiếm nhé.") from e

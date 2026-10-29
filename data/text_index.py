@@ -1,10 +1,4 @@
-"""Data Layer - TextIndex (BM25 over the product texts).
 
-Unlike a plain "share of matched keywords", BM25 gives a rare word
-("hoodie", "linen") more weight than a common one ("áo"), and a word in the
-name counts more than a word in the description. Terms are accent-free
-unigrams and bigrams, so "cổ tim" also matches as the phrase "co_tim".
-"""
 import math
 from collections import Counter
 

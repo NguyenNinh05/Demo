@@ -1,23 +1,3 @@
-"""Application / Intelligence Layer - RankingService.
-
-Orders the candidates C(q) produced by SearchService:
-
-    S(x|q) = alpha * S_text + beta * S_image + gamma * S_business
-    S_business = 0.6 * popularity + 0.4 * in_stock          (in [0, 1])
-
-    text / voice : gamma = 0.15, alpha = 1 - gamma, beta = 0
-    image        : gamma = 0.03, alpha = 0,         beta = 1 - gamma
-    text + image : gamma = 0.08, alpha = (1 - gamma) * lambda_t, beta = (1 - gamma) * lambda_i
-
-gamma is small for photos: the best photo matches differ by only a few
-hundredths, so a larger business weight would put a popular but different
-garment first (measured: exact-product Top-1 drops from 85 % to about 50 %).
-
-When the customer asks for an order ("rẻ nhất", "bán chạy", "mới nhất"), the
-relevant candidates (score >= 60 % of the best) are re-ordered by that
-attribute; less relevant products stay after them.
-"""
-
 GAMMA = {"text": 0.15, "voice": 0.15, "image": 0.03, "similar": 0.03, "multimodal": 0.08}
 SORT_KEYS = {
     "price_asc": lambda r: r["product"]["price"],

@@ -49,20 +49,9 @@ class ProductRepository:
         assert column in ("brand", "color", "material", "pattern")
         return [r["v"] for r in self.db.query(
             f"SELECT DISTINCT {column} AS v FROM product WHERE {column} IS NOT NULL ORDER BY 1")]
-
-    # ---------------------------------------------------------- filtering
     def find(self, categories=None, genders=None, colors=None, materials=None,
              patterns=None, brands=None, min_price=None, max_price=None, in_stock=False,
              occasions=None, fuzzy_terms=None):
-        """Products that satisfy every given condition.
-
-        categories: ids at any level ("ao" also returns every kind of top,
-        through a recursive query on category.parent_id).
-        occasions: the product must suit every one of them (product.occasions).
-        fuzzy_terms: words compared with pg_trgm word_similarity, so a typo
-        such as "hodie" still matches "hoodie".
-        Returns {product_id: trigram score in [0, 1]}.
-        """
         where, params = [], {}
         if categories:
             where.append("p.category_id IN (SELECT category_id FROM cats)")

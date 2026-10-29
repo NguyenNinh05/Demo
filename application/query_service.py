@@ -36,8 +36,6 @@ class QueryService:
         self.llm = llm_parser
         self.category_names = category_names or {}
         self.llm_threshold = llm_threshold
-
-    # ------------------------------------------------- text understanding
     def _understand(self, text, modality):
         query = self.rules.parse(text)
         need_llm = query["intent"] == "unknown" or query["confidence"] < self.llm_threshold
@@ -92,7 +90,6 @@ class QueryService:
             q["sort"] = g["sort"]
             q["understood"].append({"kind": "sort", "label": SORT_LABELS[g["sort"]],
                                     "source": "llm"})
-        # the AI's own keywords only help the ranking (soft); the customer's words filter
         soft = q.setdefault("soft_keywords", [])
         for kw in g.get("keywords", []):
             for w in tokenize(kw):
