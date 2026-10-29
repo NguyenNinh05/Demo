@@ -238,11 +238,17 @@ def create_web_app(speech_service, image_service, search_service, sample_dir, ev
                 "intent_llm": getattr(search_service.query_service.llm, "name", None),
                 "customer": search_service.customer()}
 
+    def asset_version():
+        # changes whenever a static file is edited, so browsers never pair new HTML with stale CSS/JS
+        static = os.path.join(HERE, "static")
+        return int(max(os.path.getmtime(os.path.join(static, f)) for f in ("style.css", "app.js")))
+
     @app.get("/", response_class=HTMLResponse, include_in_schema=False)
     def index(request: Request):
         return templates.TemplateResponse(request, "index.html",
                                           {"config": json.dumps(site_config(), ensure_ascii=False,
-                                                                default=str)})
+                                                                default=str),
+                                           "v": asset_version()})
 
     @app.get("/api/config", tags=["shop"])
     def api_config():

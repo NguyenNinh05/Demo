@@ -156,7 +156,8 @@ body.scrolled .searchband::before, body.mode-results .searchband::before {
 }
 @keyframes pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 
-.examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; max-width: 980px; }
+.examplesband { max-width: 1320px; margin: 0 auto; padding: 0 28px; }
+.examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; max-width: 980px; }
 body.mode-results .examples { display: none; }
 .chip {
   display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px;
@@ -506,7 +507,7 @@ body.mode-results .categories { display: none; }
 }
 @media (max-width: 760px) {
   :root { --header: 58px; }
-  .topbar__inner, .hero, .searchband, .main, .footer__inner { padding-left: 16px; padding-right: 16px; }
+  .topbar__inner, .hero, .searchband, .examplesband, .main, .footer__inner { padding-left: 16px; padding-right: 16px; }
   .nav { display: none; }
   .topbar__inner { justify-content: space-between; }
   .logo { font-size: 21px; }

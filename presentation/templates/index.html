@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/style.css?v={{ v }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231c1b19'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='%23f7f4ef' font-family='Georgia'>S</text></svg>">
 </head>
 <body class="mode-home">
@@ -61,8 +61,9 @@
         <div class="samples" id="samples"></div>
       </div>
     </form>
-    <div class="examples" id="examples"></div>
   </div>
+  <!-- outside the sticky band so the chips scroll away instead of covering products -->
+  <div class="examplesband"><div class="examples" id="examples"></div></div>
 
   <!-- ============ main ============ -->
   <main class="main" id="main">
@@ -131,6 +132,6 @@
   <div class="toast" id="toast" hidden></div>
 
   <script id="site-config" type="application/json">{{ config | safe }}</script>
-  <script src="/static/app.js"></script>
+  <script src="/static/app.js?v={{ v }}"></script>
 </body>
 </html>
